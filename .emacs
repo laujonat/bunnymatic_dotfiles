@@ -17,7 +17,6 @@
   "Minor mode for incremental blame for Git." t)
 (global-set-key "\C-c\C-b" 'git-blame-mode)
 
-
 (setq whitespace-action '(auto-cleanup)) ;; automatically clean up bad whitespace
 (setq whitespace-style '(trailing space-before-tab indentation empty space-after-tab)) ;; only show bad whitespace
 
@@ -45,19 +44,21 @@
 (color-theme-initialize)
 (color-theme-jsc-dark)
 (custom-set-variables
-  ;; custom-set-variables was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  '(coffee-tab-width 2)
  '(inhibit-startup-screen t)
+ '(iswitchb-mode t)
  '(javascript-indent-level 2)
- '(standard-indent 2))
+ '(standard-indent 2)
+ )
 (custom-set-faces
-  ;; custom-set-faces was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  )
 (require 'recentf)
 (recentf-mode 1)
@@ -76,6 +77,11 @@
 (setq auto-mode-alist (cons '("\\.jade$" . jade-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.coffee$" . coffee-mode) auto-mode-alist))
 
+;;; cmd key for meta
+(setq mac-option-key-is-meta nil
+mac-command-key-is-meta t
+mac-command-modifier 'meta
+mac-option-modifier 'none)
 
 ;; auto revert files
 (global-auto-revert-mode t)
@@ -110,3 +116,22 @@
 )
 
 (set-frame-size-according-to-resolution)
+
+
+(defun insert-quotes ()
+  "Inserts quotes (\") around the current region or work."
+  (interactive)
+  (let (start end bounds)
+    (if (and transient-mark-mode mark-active)
+        (setq start (region-beginning) 
+              end (region-end))
+      (progn
+        (setq bounds (bounds-of-thing-at-point 'symbol))
+        (setq start (car bounds) 
+              end (cdr bounds))))
+    (goto-char start)
+    (insert "\"")
+    (goto-char (+ end 1))
+    (insert "\"")))
+
+(global-set-key "\C-c\C-q" 'insert-quotes)

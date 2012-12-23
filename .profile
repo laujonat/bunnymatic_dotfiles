@@ -15,11 +15,13 @@ alias ber='bundle exec rake'
 alias bi='bundle install '
 alias bu='bundle update '
 
-#export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=$HOME/.rbenv/bin:/usr/local/bin:/usr/local/sbin:$PATH
 export PATH=$PATH:/Users/jon/utils/:/Users/jon/utils/perl:~/.rvm/bin
 export PATH=/Applications/Emacs.app/Contents/MacOS:$PATH
-export PATH=$PATH:/usr/local/mysql/bin
+export PATH=$PATH:/usr/local/mysql/bin:./node_modules/mocha/bin/
 export MANPATH=$MANPATH:/usr/local/man
+
+eval "$(rbenv init -)"
 
 if [ -f /usr/local/etc/bash_completion ]; then
   . /usr/local/etc/bash_completion
@@ -29,9 +31,13 @@ if [ -d ~/bash_completions/ ]; then
     . ~/bash_completions/completion-ruby-all
   fi
 fi
-#if [ -f /usr/local/git/contrib/completion/git-completion.bash ]; then
-#    . /usr/local/git/contrib/completion/git-completion.bash 
-#fi
+
+if [ -f /usr/local/git/contrib/completion/git-completion.bash ]; then
+    . /usr/local/git/contrib/completion/git-completion.bash 
+fi
+if [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
+    . /usr/local/etc/bash_completion.d/git-completion.bash 
+fi
 
 export PYTHONPATH=/usr/local/lib/python2.5/site-packages
 
@@ -45,8 +51,8 @@ export ROMEY=/projects/romeydesigns
 export FAUX=/projects/fauxtaux_booth
 export AM=/projects/anson_mills
 export E1890=/projects/1890web/
-
-export HAZL=/scratch/eventserver/hazl
+export ASIAN=/projects/asian 
+export AAM=/projects/asian 
 
 if [[ -s "$HOME/.rvm/scripts/rvm" ]]; then 
    . "$HOME/.rvm/scripts/rvm"
