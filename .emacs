@@ -20,7 +20,6 @@
 (setq whitespace-action '(auto-cleanup)) ;; automatically clean up bad whitespace
 (setq whitespace-style '(trailing space-before-tab indentation empty space-after-tab)) ;; only show bad whitespace
 
-
 (require 'coffee-mode)
 (require 'sws-mode)
 (require 'jade-mode)
@@ -49,11 +48,11 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(coffee-tab-width 2)
+ '(grep-find-ignored-directories (quote ("SCCS" "RCS" "CVS" "MCVS" ".svn" ".git" ".hg" ".bzr" "_MTN" "_darcs" "{arch}" "log" ".meteor" "node_modules")))
  '(inhibit-startup-screen t)
  '(iswitchb-mode t)
  '(javascript-indent-level 2)
- '(standard-indent 2)
- )
+ '(standard-indent 2))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -70,7 +69,9 @@
 (setq auto-mode-alist (cons '("\\.rhtml$" . html-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.sass$" . css-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.scss$" . css-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.less$" . css-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.haml$" . haml-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.slim$" . haml-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("Rakefile" . ruby-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("Assetfile" . ruby-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("Capfile" . ruby-mode) auto-mode-alist))
@@ -135,3 +136,4 @@ mac-option-modifier 'none)
     (insert "\"")))
 
 (global-set-key "\C-c\C-q" 'insert-quotes)
+

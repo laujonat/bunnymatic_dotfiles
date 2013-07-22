@@ -1,5 +1,3 @@
-export PS1="\h:\W (\!)$ "
-
 alias ll='ls -la '
 
 export UNAME=`uname`
@@ -14,22 +12,52 @@ alias be='bundle exec '
 alias ber='bundle exec rake'
 alias bi='bundle install '
 alias bu='bundle update '
+alias serveit='python -m SimpleHTTPServer '
 
 export PATH=$HOME/.rbenv/bin:/usr/local/bin:/usr/local/sbin:$PATH
-export PATH=$PATH:/Users/jon/utils/:/Users/jon/utils/perl:~/.rvm/bin
+export PATH=$PATH:/Users/jon/utils:/Users/jon/utils/perl:~/.rvm/bin
 export PATH=/Applications/Emacs.app/Contents/MacOS:$PATH
-export PATH=$PATH:/usr/local/mysql/bin:./node_modules/mocha/bin/
+export PATH=$PATH:/usr/local/mysql/bin:./node_modules/mocha/bin:/usr/local/share/npm/bin
 export MANPATH=$MANPATH:/usr/local/man
 
 eval "$(rbenv init -)"
 
+find_git_branch() {
+  # Based on: http://stackoverflow.com/a/13003854/170413
+  local branch
+  if branch=$(git rev-parse --abbrev-ref HEAD 2> /dev/null); then
+    if [[ "$branch" == "HEAD" ]]; then
+      branch='detached*'
+    fi
+    git_branch="($branch)"
+  else
+    git_branch=""
+  fi
+}
+
+find_git_dirty() {
+  local status=$(git status --porcelain 2> /dev/null)
+  if [[ "$status" != "" ]]; then
+    git_dirty='*'
+  else
+    git_dirty=''
+  fi
+}
+
+PROMPT_COMMAND="find_git_branch; find_git_dirty; $PROMPT_COMMAND"
+#\$git_dirty
+export PS1="\h:\W \$git_branch (\!)$ "
+
+
 if [ -f /usr/local/etc/bash_completion ]; then
   . /usr/local/etc/bash_completion
 fi
+
 if [ -d ~/bash_completions/ ]; then
-  if [ -f ~/bash_completions/completion-ruby-all ]; then 
-    . ~/bash_completions/completion-ruby-all
-  fi
+  # regex here is to exclude emacs tmp files
+  for script in ~/bash_completions/completion-*[^~]; do
+    . $script
+  done
 fi
 
 if [ -f /usr/local/git/contrib/completion/git-completion.bash ]; then
@@ -53,6 +81,14 @@ export AM=/projects/anson_mills
 export E1890=/projects/1890web/
 export ASIAN=/projects/asian 
 export AAM=/projects/asian 
+export SC=/projects/selectors_choice
+export LT=/projects/localtakesf
+export LEAP=/projects/leap
+export LEAPDEV=$LEAP/leapdev
+export CENTRAL=$LEAP/central
+export LEAPAUTH=$LEAP/leapauth_helper
+
+export MANDIBLE=/projects/mandible
 
 if [[ -s "$HOME/.rvm/scripts/rvm" ]]; then 
    . "$HOME/.rvm/scripts/rvm"
@@ -61,5 +97,17 @@ alias @mau='cd $MAU'
 alias @hazl='cd $HAZL'
 
 alias git-svn='git svn'
+
+alias xcode='/Applications/Xcode.app/Contents/MacOS/Xcode'
+
 export GIT_SSL_NO_VERIFY=true
 export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
+
+### Added by the Heroku Toolbelt
+#export PATH="/usr/local/heroku/bin:$PATH"
+
+export WUFOO_API_KEY=V8H5-MUJW-KV8U-3LTW
+
+export RACK_ENV=development
+
+export INCLUDE_PRY=1
