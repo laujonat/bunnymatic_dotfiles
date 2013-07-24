@@ -7,7 +7,6 @@
 (setq load-path (cons (expand-file-name "~/emacs/site-lisp/git-emacs") load-path))
 (setq load-path (cons (expand-file-name "~/emacs/site-lisp") load-path))
 
-(require 'whitespace)
 (require 'git-emacs)
 (require 'git-blame)
 
@@ -17,8 +16,10 @@
   "Minor mode for incremental blame for Git." t)
 (global-set-key "\C-c\C-b" 'git-blame-mode)
 
-(setq whitespace-action '(auto-cleanup)) ;; automatically clean up bad whitespace
-(setq whitespace-style '(trailing space-before-tab indentation empty space-after-tab)) ;; only show bad whitespace
+;; (setq whitespace-action '(auto-cleanup)) ;; automatically clean up bad whitespace
+;; (setq whitespace-style '(trailing space-before-tab indentation empty space-after-tab)) ;; only show bad whitespace
+(custom-set-variables
+ '(show-trailing-whitespace t))
 
 (require 'coffee-mode)
 (require 'sws-mode)
@@ -29,12 +30,11 @@
 (setq tramp-default-method "ssh")
 (setq tramp-default-port 2222)
 
-(setq c-basic-offset 2)
-(setq tab-width 2)
-(setq js-indent-level 2)
-(setq css-indent-offset 2)
-(setq indent-tabs-mode nil) 
-(setq-default indent-tabs-mode nil) 
+(setq-default c-basic-offset 2)
+(setq-default tab-width 2)
+(setq-default js-indent-level 2)
+(setq-default css-indent-offset 2)
+(setq-default indent-tabs-mode nil)
 
 (put 'downcase-region 'disabled nil)
 
@@ -50,9 +50,9 @@
  '(coffee-tab-width 2)
  '(grep-find-ignored-directories (quote ("SCCS" "RCS" "CVS" "MCVS" ".svn" ".git" ".hg" ".bzr" "_MTN" "_darcs" "{arch}" "log" ".meteor" "node_modules")))
  '(inhibit-startup-screen t)
- '(iswitchb-mode t)
  '(javascript-indent-level 2)
  '(standard-indent 2))
+ '(iswitchb-mode t)
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -76,6 +76,7 @@
 (setq auto-mode-alist (cons '("Assetfile" . ruby-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("Capfile" . ruby-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.jade$" . jade-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.styl$" . jade-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.coffee$" . coffee-mode) auto-mode-alist))
 
 ;;; cmd key for meta
@@ -118,7 +119,6 @@ mac-option-modifier 'none)
 
 (set-frame-size-according-to-resolution)
 
-
 (defun insert-quotes ()
   "Inserts quotes (\") around the current region or work."
   (interactive)
@@ -137,3 +137,9 @@ mac-option-modifier 'none)
 
 (global-set-key "\C-c\C-q" 'insert-quotes)
 
+(when (> emacs-major-version 23)
+  (require 'package)
+  (package-initialize)
+  (add-to-list 'package-archives
+               '("melpa" . "http://melpa.milkbox.net/packages/")
+               'APPEND))
