@@ -83,11 +83,6 @@ export ASIAN=/projects/asian
 export AAM=/projects/asian 
 export SC=/projects/selectors_choice
 export LT=/projects/localtakesf
-export LEAP=/projects/leap
-export LEAPDEV=$LEAP/leapdev
-export CENTRAL=$LEAP/central
-export LEAPAUTH=$LEAP/leapauth_helper
-
 export MANDIBLE=/projects/mandible
 
 if [[ -s "$HOME/.rvm/scripts/rvm" ]]; then 
@@ -105,8 +100,6 @@ export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
 
 ### Added by the Heroku Toolbelt
 #export PATH="/usr/local/heroku/bin:$PATH"
-
-export WUFOO_API_KEY=V8H5-MUJW-KV8U-3LTW
 
 export RACK_ENV=development
 
