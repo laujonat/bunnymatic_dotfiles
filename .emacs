@@ -143,3 +143,4 @@ mac-option-modifier 'none)
   (add-to-list 'package-archives
                '("melpa" . "http://melpa.milkbox.net/packages/")
                'APPEND))
+(iswitchb-mode t)
