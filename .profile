@@ -13,7 +13,7 @@ alias ber='bundle exec rake'
 alias bi='bundle install '
 alias bu='bundle update '
 alias serveit='python -m SimpleHTTPServer '
-
+alias servit='serveit'
 export PATH=$HOME/.rbenv/bin:/usr/local/bin:/usr/local/sbin:$PATH
 export PATH=$PATH:/Users/jon/utils:/Users/jon/utils/perl:~/.rvm/bin
 export PATH=/Applications/Emacs.app/Contents/MacOS:$PATH
@@ -84,6 +84,7 @@ export AAM=/projects/asian
 export SC=/projects/selectors_choice
 export LT=/projects/localtakesf
 export MANDIBLE=/projects/mandible
+export BRESBO=/projects/bresbo
 
 if [[ -s "$HOME/.rvm/scripts/rvm" ]]; then 
    . "$HOME/.rvm/scripts/rvm"
