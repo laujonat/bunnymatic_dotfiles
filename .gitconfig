@@ -1,0 +1,27 @@
+[user]
+	name = Mr Rogers
+	email = jon@bunnymatic.com
+[alias]
+    st = status
+    ci = commit
+    cia = commit --amend
+    co = checkout
+    br = branch
+    rebaseprep = !sh -c 'git co master && git pull && git co -'
+    lg = log -p
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+    ls = ls-files
+
+[pivotal]
+	api-token = ffa56514e3a370a2f1c146722a7217cf
+	rebase = 1
+	full-name = Jon Rogers
+	delete-branch = 1
+  project-id = 824147
+[merge]
+	tool = kdiff3
+[heroku]
+	account = rcode5
+[push]
+	default = upstream
