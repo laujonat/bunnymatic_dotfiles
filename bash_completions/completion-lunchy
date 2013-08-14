@@ -1,0 +1,7 @@
+__from_lunchy_list() {
+  COMPREPLY=()
+  local cur=${COMP_WORDS[COMP_CWORD]}
+  COMPREPLY=($(compgen -W '$(lunchy list)' -- $cur))
+}
+
+complete -F __from_lunchy_list -o default lunchy
