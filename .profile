@@ -84,6 +84,7 @@ export SC=/projects/selectors_choice
 export LT=/projects/localtakesf
 export MANDIBLE=/projects/mandible
 export BRESBO=/projects/bresbo
+export SNAPSHOT=/projects/snapshot
 
 if [[ -s "$HOME/.rvm/scripts/rvm" ]]; then 
    . "$HOME/.rvm/scripts/rvm"
