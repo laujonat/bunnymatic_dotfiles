@@ -6,9 +6,12 @@
 (setq load-path (cons (expand-file-name "~/emacs/site-lisp/coffee-mode") load-path))
 (setq load-path (cons (expand-file-name "~/emacs/site-lisp/git-emacs") load-path))
 (setq load-path (cons (expand-file-name "~/emacs/site-lisp") load-path))
+(setq load-path (cons (expand-file-name "~/emacs.d/elisp/feature-mode") load-path))
 
+(require 'feature-mode)
 (require 'git-emacs)
 (require 'git-blame)
+(require 'slim-mode)
 
 (require 'vc-git)
 (when (featurep 'vc-git) (add-to-list 'vc-handled-backends 'git))
@@ -71,7 +74,8 @@
 (setq auto-mode-alist (cons '("\\.scss$" . css-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.less$" . css-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.haml$" . haml-mode) auto-mode-alist))
-(setq auto-mode-alist (cons '("\\.slim$" . haml-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.feature$" . feature-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.slim$" . slim-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("Rakefile" . ruby-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("Assetfile" . ruby-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("Capfile" . ruby-mode) auto-mode-alist))
