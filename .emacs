@@ -147,3 +147,19 @@ mac-option-modifier 'none)
                'APPEND))
 (iswitchb-mode t)
 
+
+(defun toggle-fullscreen (&optional f)
+  (interactive)
+  (let ((current-value (frame-parameter nil 'fullscreen)))
+    (set-frame-parameter nil 'fullscreen
+      (if (equal 'fullboth current-value)
+        (if (boundp 'old-fullscreen) old-fullscreen nil)
+        (progn (setq old-fullscreen current-value)
+          'fullboth)))))
+(global-set-key "\C-\M-g" 'toggle-fullscreen)
+
+;; Disable tool-bar
+(tool-bar-mode -1)
+
+;; Disable Menu Bar
+(menu-bar-mode -1)

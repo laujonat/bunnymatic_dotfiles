@@ -1,28 +1,47 @@
 [user]
-	name = Mr Rogers
-	email = jon@bunnymatic.com
+  name = Mr Rogers
+  email = jon@bunnymatic.com
 [alias]
-    st = status
-    ci = commit
-    cia = commit --amend
-    co = checkout
-    br = branch
-    rebaseprep = !sh -c 'git co master && git pull && git co -'
-    lg = log -p
-    lol = log --graph --decorate --pretty=oneline --abbrev-commit
-    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
-    ls = ls-files
+  st = status
+  ci = commit
+  cia = commit --amend
+  co = checkout
+  br = branch
+  rebaseprep = !sh -c 'git co master && git pull && git co -'
+  lg = log -p
+  lol = log --graph --decorate --pretty=oneline --abbrev-commit
+  lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+  ls = ls-files
+	com  = checkout master
+	cod  = checkout develop
+	ds   = diff --staged
+	cv   = commit -v
+	cm   = commit -m
+	cav  = commit -a -v
+	cam  = commit -a -m
+	pick = cherry-pick
+	pl   = pull origin HEAD
+	ph   = push origin HEAD
+	pup  = push -u origin HEAD
 
+
+[color]
+  diff = auto
+  branch = auto
+  status = auto
 [pivotal]
-	api-token = ffa56514e3a370a2f1c146722a7217cf
-	rebase = 1
-	full-name = Jon Rogers
-	delete-branch = 1
-        branch-format = feature-description-id
+  api-token = ffa56514e3a370a2f1c146722a7217cf
+  rebase = 1
+  full-name = Jon Rogers
+  delete-branch = 1
+  branch-format = feature-description-id
   project-id = 824147
+
 [merge]
-	tool = kdiff3
+  tool = kdiff3
+
 [heroku]
-	account = rcode5
+  account = rcode5
 [push]
-	default = upstream
+  default = upstream
+

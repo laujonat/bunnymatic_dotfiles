@@ -14,6 +14,7 @@ alias bi='bundle install '
 alias bu='bundle update '
 alias serveit='python -m SimpleHTTPServer '
 alias servit='serveit'
+alias subl='/Applications/Sublime\ Text\ 2.app/Contents/MacOS/Sublime\ Text\ 2'
 export PATH=$HOME/.rbenv/bin:/usr/local/bin:/usr/local/sbin:$PATH
 export PATH=$PATH:/Users/jon/utils:/Users/jon/utils/perl:~/.rvm/bin
 export PATH=$PATH:/usr/local/mysql/bin:./node_modules/mocha/bin:/usr/local/share/npm/bin
