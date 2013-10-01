@@ -18,6 +18,7 @@
 	rebase = 1
 	full-name = Jon Rogers
 	delete-branch = 1
+        branch-format = feature-description-id
   project-id = 824147
 [merge]
 	tool = kdiff3

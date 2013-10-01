@@ -86,6 +86,7 @@ export MANDIBLE=/projects/mandible
 export BRESBO=/projects/bresbo
 export SNAPSHOT=/projects/snapshot
 export KABLAMMO=/projects/kablammo
+export BAR=/projects/barista
 
 if [[ -s "$HOME/.rvm/scripts/rvm" ]]; then 
    . "$HOME/.rvm/scripts/rvm"

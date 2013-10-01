@@ -6,6 +6,7 @@
 (setq load-path (cons (expand-file-name "~/emacs/site-lisp/coffee-mode") load-path))
 (setq load-path (cons (expand-file-name "~/emacs/site-lisp/git-emacs") load-path))
 (setq load-path (cons (expand-file-name "~/emacs/site-lisp") load-path))
+(setq load-path (cons (expand-file-name "~/.emacs.d/elpa/slim-mode") load-path))
 
 (require 'git-emacs)
 (require 'git-blame)
