@@ -146,28 +146,3 @@ mac-option-modifier 'none)
                'APPEND))
 (iswitchb-mode t)
 
-;; on the fly ctrl
-(defun sacha/increase-font-size ()
-  (interactive)
-  (set-face-attribute 'default
-                      nil
-                      :height
-                      (ceiling (* 1.10
-                                  (face-attribute 'default :height)))))
-(defun sacha/decrease-font-size ()
-  (interactive)
-  (set-face-attribute 'default
-                      nil
-                      :height
-                      (floor (* 0.9
-                                  (face-attribute 'default :height)))))
-(defun sacha/reset-font-size ()
-  (interactive)
-  (set-face-attribute 'default
-                      nil
-                      :height
-                      120)) ;; font height are 1/10 pts
-
-(global-set-key (kbd "C-+") 'sacha/increase-font-size)
-(global-set-key (kbd "C--") 'sacha/decrease-font-size)
-(global-set-key (kbd "C-=") 'sacha/reset-font-size)
