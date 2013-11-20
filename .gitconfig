@@ -6,23 +6,29 @@
   ci = commit
   cia = commit --amend
   co = checkout
+  cob = checkout -b
   br = branch
+  brm = branch --merged
   rebaseprep = !sh -c 'git co master && git pull && git co -'
   lg = log -p
   lol = log --graph --decorate --pretty=oneline --abbrev-commit
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
   ls = ls-files
-	com  = checkout master
-	cod  = checkout develop
-	ds   = diff --staged
-	cv   = commit -v
-	cm   = commit -m
-	cav  = commit -a -v
-	cam  = commit -a -m
-	pick = cherry-pick
-	pl   = pull origin HEAD
-	ph   = push origin HEAD
-	pup  = push -u origin HEAD
+  com  = checkout master
+  cod  = checkout develop
+  ds   = diff --staged
+  cv   = commit -v
+  cm   = commit -m
+  cav  = commit -a -v
+  cam  = commit -a -m
+  pick = cherry-pick
+  pl   = pull origin HEAD
+  ph   = push origin HEAD
+  pup  = push -u origin HEAD
+  prun = remote prune origin
+  # show merged branches that are not current and not master or develop
+  #vmerge = !sh -c 'git branch --merged | egrep -v \'\\*\\s+|master\''
+
 
 
 [color]

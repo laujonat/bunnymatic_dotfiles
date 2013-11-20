@@ -48,6 +48,9 @@ PROMPT_COMMAND="find_git_branch; find_git_dirty; $PROMPT_COMMAND"
 #\$git_dirty
 export PS1="\h:\W \$git_branch (\!)$ "
 
+if [ -f `which hub` ]; then
+  alias git='hub'
+fi
 
 if [ -f /usr/local/etc/bash_completion ]; then
   . /usr/local/etc/bash_completion
@@ -108,3 +111,6 @@ export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
 export RACK_ENV=development
 
 export INCLUDE_PRY=1
+
+# for oracle
+export DYLD_LIBRARY_PATH=/usr/local/instantclient_11_2:$DYLD_LIBRARY_PATH
