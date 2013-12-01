@@ -3,7 +3,7 @@
 (setq load-path (cons (expand-file-name "~/emacs/site-lisp/git-emacs") load-path))
 (setq load-path (cons (expand-file-name "~/emacs/site-lisp") load-path))
 
-c;; added with package installer
+;; added with package installer
 ;;(setq load-path (cons (expand-file-name "~/.emacs.d/elpa/slim-mode") load-path))
 ;;(setq load-path (cons (expand-file-name "~/emacs/site-lisp/haml-mode") load-path))
 ;;(setq load-path (cons (expand-file-name "~/emacs/site-lisp/jade-mode") load-path))
