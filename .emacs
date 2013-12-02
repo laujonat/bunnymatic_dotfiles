@@ -4,28 +4,15 @@
 (setq load-path (cons (expand-file-name "~/emacs/site-lisp") load-path))
 
 ;; added with package installer
-;;(setq load-path (cons (expand-file-name "~/.emacs.d/elpa/slim-mode") load-path))
-;;(setq load-path (cons (expand-file-name "~/emacs/site-lisp/haml-mode") load-path))
-;;(setq load-path (cons (expand-file-name "~/emacs/site-lisp/jade-mode") load-path))
-;;(setq load-path (cons (expand-file-name "~/emacs/site-lisp/coffee-mode") load-path))
-;;(setq load-path (cons (expand-file-name "~/emacs/site-lisp/color-theme-6.6.0") load-path))
 
-(require `ruby-test-mode)
-(require 'git-emacs)
-(require 'git-blame)
-
-(require 'vc-git)
-(when (featurep 'vc-git) (add-to-list 'vc-handled-backends 'git))
-(autoload 'git-blame-mode "git-blame"
-  "Minor mode for incremental blame for Git." t)
-(global-set-key "\C-c\C-b" 'git-blame-mode)
-
-;; (setq whitespace-action '(auto-cleanup)) ;; automatically clean up bad whitespace
-;; (setq whitespace-style '(trailing space-before-tab indentation empty space-after-tab)) ;; only show bad whitespace
-(custom-set-variables
- '(show-trailing-whitespace t))
+(when (>= emacs-major-version 24)
+  (require 'package)
+  (package-initialize)
+  (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
+  )
 
 (require 'coffee-mode)
+(require 'slim-mode)
 (require 'sws-mode)
 (require 'jade-mode)
 (require 'haml-mode)
@@ -43,6 +30,7 @@
 (put 'downcase-region 'disabled nil)
 
 (global-set-key "\C-c\C-g" 'rgrep)
+
 (require 'color-theme)
 (color-theme-initialize)
 (color-theme-jsc-dark)
@@ -83,7 +71,6 @@
 (setq auto-mode-alist (cons '("\\.jade$" . jade-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.styl$" . jade-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.coffee$" . coffee-mode) auto-mode-alist))
-(setq auto-mode-alist (cons '("\\_spec.rb$" . ruby-test-mode) auto-mode-alist))
 
 ;;; cmd key for meta
 (setq mac-option-key-is-meta nil
