@@ -1,13 +1,16 @@
 (setq load-path (cons (expand-file-name "~/emacs/site-lisp/tramp-2.1.3") load-path))
-(setq load-path (cons (expand-file-name "~/emacs/site-lisp/color-theme-6.6.0") load-path))
 (setq load-path (cons (expand-file-name "~/emacs/site-lisp/mm-mode-0.4.8") load-path))
-(setq load-path (cons (expand-file-name "~/emacs/site-lisp/haml-mode") load-path))
-(setq load-path (cons (expand-file-name "~/emacs/site-lisp/jade-mode") load-path))
-(setq load-path (cons (expand-file-name "~/emacs/site-lisp/coffee-mode") load-path))
 (setq load-path (cons (expand-file-name "~/emacs/site-lisp/git-emacs") load-path))
 (setq load-path (cons (expand-file-name "~/emacs/site-lisp") load-path))
-(setq load-path (cons (expand-file-name "~/.emacs.d/elpa/slim-mode") load-path))
 
+;; added with package installer
+;;(setq load-path (cons (expand-file-name "~/.emacs.d/elpa/slim-mode") load-path))
+;;(setq load-path (cons (expand-file-name "~/emacs/site-lisp/haml-mode") load-path))
+;;(setq load-path (cons (expand-file-name "~/emacs/site-lisp/jade-mode") load-path))
+;;(setq load-path (cons (expand-file-name "~/emacs/site-lisp/coffee-mode") load-path))
+;;(setq load-path (cons (expand-file-name "~/emacs/site-lisp/color-theme-6.6.0") load-path))
+
+(require `ruby-test-mode)
 (require 'git-emacs)
 (require 'git-blame)
 
@@ -80,6 +83,7 @@
 (setq auto-mode-alist (cons '("\\.jade$" . jade-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.styl$" . jade-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.coffee$" . coffee-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\_spec.rb$" . ruby-test-mode) auto-mode-alist))
 
 ;;; cmd key for meta
 (setq mac-option-key-is-meta nil

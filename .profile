@@ -16,7 +16,7 @@ alias serveit='python -m SimpleHTTPServer '
 alias servit='serveit'
 alias subl='/Applications/Sublime\ Text\ 2.app/Contents/MacOS/Sublime\ Text\ 2'
 export PATH=$HOME/.rbenv/bin:/usr/local/bin:/usr/local/sbin:$PATH
-export PATH=$PATH:/Users/jon/utils:/Users/jon/utils/perl:~/.rvm/bin
+export PATH=$PATH:/Users/jon/utils:/Users/jon/utils/perl
 export PATH=$PATH:/usr/local/mysql/bin:./node_modules/mocha/bin:/usr/local/share/npm/bin
 export MANPATH=$MANPATH:/usr/local/man
 
@@ -92,21 +92,13 @@ export SNAPSHOT=/projects/snapshot
 export KABLAMMO=/projects/kablammo
 export BAR=/projects/barista
 
-if [[ -s "$HOME/.rvm/scripts/rvm" ]]; then 
-   . "$HOME/.rvm/scripts/rvm"
-fi
-alias @mau='cd $MAU'
-alias @hazl='cd $HAZL'
-
-alias git-svn='git svn'
-
 alias xcode='/Applications/Xcode.app/Contents/MacOS/Xcode'
 
 export GIT_SSL_NO_VERIFY=true
 export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
 
 ### Added by the Heroku Toolbelt
-#export PATH="/usr/local/heroku/bin:$PATH"
+export PATH="/usr/local/heroku/bin:$PATH"
 
 export RACK_ENV=development
 
