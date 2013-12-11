@@ -28,7 +28,7 @@
   prun = remote prune origin
   # show merged branches that are not current and not master or develop
   #vmerge = !sh -c 'git branch --merged | egrep -v \'\\*\\s+|master\''
-
+  scrub = !sh -c 'git checkout master && git branch --merged | grep -v \"*\" | xargs git branch -d && git remote prune origin'
 
 
 [color]
