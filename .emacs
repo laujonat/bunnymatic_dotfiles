@@ -27,6 +27,8 @@
 (setq-default css-indent-offset 2)
 (setq-default indent-tabs-mode nil)
 
+(setq show-trailing-whitespace t)
+
 (put 'downcase-region 'disabled nil)
 
 (global-set-key "\C-c\C-g" 'rgrep)
@@ -95,7 +97,7 @@ mac-option-modifier 'none)
     ;; from the screen height (for panels, menubars and
     ;; whatnot), then divide by the height of a char to
     ;; get the height we want
-    (add-to-list 'default-frame-alist 
+    (add-to-list 'default-frame-alist
                  (cons 'height (/ (- (x-display-pixel-height) 200) (frame-char-height))))
     (add-to-list 'default-frame-alist
                  (cons 'top 50))
@@ -117,11 +119,11 @@ mac-option-modifier 'none)
   (interactive)
   (let (start end bounds)
     (if (and transient-mark-mode mark-active)
-        (setq start (region-beginning) 
+        (setq start (region-beginning)
               end (region-end))
       (progn
         (setq bounds (bounds-of-thing-at-point 'symbol))
-        (setq start (car bounds) 
+        (setq start (car bounds)
               end (cdr bounds))))
     (goto-char start)
     (insert "\"")
