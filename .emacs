@@ -3,6 +3,7 @@
 (setq load-path (cons (expand-file-name "~/emacs/site-lisp/git-emacs") load-path))
 (setq load-path (cons (expand-file-name "~/emacs/site-lisp") load-path))
 
+(x-focus-frame nil)
 ;; added with package installer
 
 (when (>= emacs-major-version 24)
