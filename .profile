@@ -19,7 +19,7 @@ export PATH=$HOME/.rbenv/bin:/usr/local/bin:/usr/local/sbin:$PATH
 export PATH=$PATH:/Users/jon/utils:/Users/jon/utils/perl
 export PATH=$PATH:/usr/local/mysql/bin:./node_modules/mocha/bin:/usr/local/share/npm/bin
 export MANPATH=$MANPATH:/usr/local/man
-
+export PG_USER=jon
 shopt -s histappend
 export HISTCONTROL=ignoreboth:erasedups
 export HISTIGNORE='ls:fg:bg:history'
