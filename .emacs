@@ -17,6 +17,7 @@
 (require 'sws-mode)
 (require 'jade-mode)
 (require 'haml-mode)
+(require 'git-emacs)
 
 (require 'tramp)
 (setq tramp-default-method "ssh")
