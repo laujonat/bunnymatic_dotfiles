@@ -43,16 +43,17 @@ function fish_prompt --description 'Write out the prompt'
 
 end
 
-alias pd="pushd"
-alias pop="popd"
-alias lookfor="history | grep"
-alias js="java -jar ~/utils/rhino/js.jar"
-alias svnchanged='svn status | egrep "^\ M\ |^M\ " |  cut -c8-'
-alias jslint="jsl -process"
-alias be='bundle exec '
-alias ber='bundle exec rake'
-alias bi='bundle install '
-alias bu='bundle update '
-alias serveit='python -m SimpleHTTPServer '
-alias servit='serveit'
-alias subl='/Applications/Sublime\ Text\ 2.app/Contents/MacOS/Sublime\ Text\ 2'
+# TODO - move these aliases (from bash) to functions for fish
+#alias pd="pushd"
+#alias pop="popd"
+#alias lookfor="history | grep"
+#alias js="java -jar ~/utils/rhino/js.jar"
+#alias svnchanged='svn status | egrep "^\ M\ |^M\ " |  cut -c8-'
+#alias jslint="jsl -process"
+#alias be='bundle exec '
+#alias ber='bundle exec rake'
+#alias bi='bundle install '
+#alias bu='bundle update '
+#alias serveit='python -m SimpleHTTPServer '
+#alias servit='serveit'
+#alias subl='/Applications/Sublime\ Text\ 2.app/Contents/MacOS/Sublime\ Text\ 2'
