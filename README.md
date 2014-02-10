@@ -14,4 +14,4 @@ Assuming you've cloned this directory into ~/dotfiles
    
     # for fish
     mkdir -p ~/.config/fish
-    ln -s dotfiles/config/fish.config ~/.config/fish/fish.config
+    ln -s dotfiles/config/fish/fish.config ~/.config/fish/
