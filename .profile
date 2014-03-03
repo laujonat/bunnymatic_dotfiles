@@ -2,6 +2,7 @@ alias ll='ls -la '
 
 export UNAME=`uname`
 
+alias exercism='~/exercism/exercism'
 alias pd="pushd"
 alias pop="popd"
 alias lookfor="history | grep"
@@ -77,11 +78,9 @@ fi
 export PYTHONPATH=/usr/local/lib/python2.5/site-packages
 
 export EDITOR=/usr/bin/vi
-#export SVNROOT=svn+ssh://svn.bunnymatic.com/space/svnroot
 export MAU=/projects/mau
 export QR=/projects/qr4r
 export HAZL=/scratch/eventserver/hazl/
-#export MAUREPO=$SVNROOT/mau/web/
 export ROMEY=/projects/romeydesigns
 export FAUX=/projects/fauxtaux_booth
 export AM=/projects/anson_mills
@@ -95,7 +94,7 @@ export BRESBO=/projects/bresbo
 export SNAPSHOT=/projects/snapshot
 export KABLAMMO=/projects/kablammo
 export BAR=/projects/barista
-
+export ANDROID_HOME=/projects/android-sdk-macosx/
 alias xcode='/Applications/Xcode.app/Contents/MacOS/Xcode'
 
 export GIT_SSL_NO_VERIFY=true
