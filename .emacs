@@ -1,6 +1,6 @@
 (setq load-path (cons (expand-file-name "~/emacs/site-lisp/tramp-2.1.3") load-path))
 (setq load-path (cons (expand-file-name "~/emacs/site-lisp/mm-mode-0.4.8") load-path))
-(setq load-path (cons (expand-file-name "~/emacs/site-lisp/git-emacs") load-path))
+;; (setq load-path (cons (expand-file-name "~/emacs/site-lisp/git-emacs") load-path))
 (setq load-path (cons (expand-file-name "~/emacs/site-lisp") load-path))
 
 (x-focus-frame nil)
@@ -17,7 +17,7 @@
 (require 'sws-mode)
 (require 'jade-mode)
 (require 'haml-mode)
-(require 'git-emacs)
+;; (require 'git-emacs)
 
 (require 'tramp)
 (setq tramp-default-method "ssh")

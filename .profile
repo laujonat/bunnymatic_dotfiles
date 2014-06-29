@@ -15,6 +15,9 @@ alias bu='bundle update '
 alias serveit='python -m SimpleHTTPServer '
 alias servit='serveit'
 alias subl='/Applications/Sublime\ Text\ 2.app/Contents/MacOS/Sublime\ Text\ 2'
+
+export GOPATH=/projects/goprojects
+export PATH=$PATH:$GOPATH/bin
 export PATH=$HOME/.rbenv/bin:/usr/local/bin:/usr/local/sbin:$PATH
 export PATH=$PATH:/Users/jon/utils:/Users/jon/utils/perl
 export PATH=$PATH:/usr/local/mysql/bin:./node_modules/mocha/bin:/usr/local/share/npm/bin
@@ -25,6 +28,10 @@ export HISTCONTROL=ignoreboth:erasedups
 export HISTIGNORE='ls:fg:bg:history'
 
 eval "$(rbenv init -)"
+
+smbip() {
+  smbutil lookup $1 | head -1 | ruby -nle 'puts $_.split.last;'
+}
 
 find_git_branch() {
   # Based on: http://stackoverflow.com/a/13003854/170413
@@ -97,6 +104,7 @@ export KABLAMMO=/projects/kablammo
 export BAR=/projects/barista
 
 alias xcode='/Applications/Xcode.app/Contents/MacOS/Xcode'
+alias simulator='open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app'
 
 export GIT_SSL_NO_VERIFY=true
 export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
@@ -110,3 +118,9 @@ export INCLUDE_PRY=1
 
 # for oracle
 export DYLD_LIBRARY_PATH=/usr/local/instantclient_11_2:$DYLD_LIBRARY_PATH
+
+
+# BEGIN Ruboto setup
+[ -f ~/.rubotorc ] && source ~/.rubotorc
+# END Ruboto setup
+
