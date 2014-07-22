@@ -22,6 +22,13 @@ export PATH=$PATH:$GOPATH/bin
 export PATH=$HOME/.rbenv/bin:/usr/local/bin:/usr/local/sbin:$PATH
 export PATH=$PATH:/Users/jon/utils:/Users/jon/utils/perl
 export PATH=$PATH:/usr/local/mysql/bin:./node_modules/mocha/bin:/usr/local/share/npm/bin
+
+export ANDROID_HOME=/projects/android-sdk-macosx/
+
+export PATH="/projects/android-sdk-macosx/tools:$PATH"
+export PATH="/projects/android-sdk-macosx/platform-tools:$PATH"
+export PATH="/projects/android-sdk-macosx/build-tools/19.0.2:$PATH"
+
 export MANPATH=$MANPATH:/usr/local/man
 export PG_USER=jon
 shopt -s histappend
@@ -101,7 +108,7 @@ export BRESBO=/projects/bresbo
 export SNAPSHOT=/projects/snapshot
 export KABLAMMO=/projects/kablammo
 export BAR=/projects/barista
-export ANDROID_HOME=/projects/android-sdk-macosx/
+
 alias xcode='/Applications/Xcode.app/Contents/MacOS/Xcode'
 alias simulator='open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app'
 
