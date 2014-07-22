@@ -63,6 +63,10 @@ find_git_dirty() {
   fi
 }
 
+whodunit() {
+  git ls-tree --name-only -z -r HEAD -- $1 | xargs -0 -n1 git blame --line-porcelain | grep "^author "|sort|uniq -c|sort -nr
+}
+
 PROMPT_COMMAND="find_git_branch; find_git_dirty; $PROMPT_COMMAND"
 #\$git_dirty
 export PS1="\h:\W \$git_branch (\!)$ "
