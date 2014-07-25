@@ -15,7 +15,7 @@ alias bi='bundle install '
 alias bu='bundle update '
 alias serveit='python -m SimpleHTTPServer '
 alias servit='serveit'
-alias subl='/Applications/Sublime\ Text\ 2.app/Contents/MacOS/Sublime\ Text\ 2'
+alias simulator='open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app'
 
 export GOPATH=/projects/goprojects
 export PATH=$PATH:$GOPATH/bin
@@ -34,6 +34,9 @@ export PG_USER=jon
 shopt -s histappend
 export HISTCONTROL=ignoreboth:erasedups
 export HISTIGNORE='ls:fg:bg:history'
+
+
+export GOPATH=/projects/goprojects
 
 eval "$(rbenv init -)"
 
@@ -71,9 +74,9 @@ PROMPT_COMMAND="find_git_branch; find_git_dirty; $PROMPT_COMMAND"
 #\$git_dirty
 export PS1="\h:\W \$git_branch (\!)$ "
 
-if [ -f `which hub` ]; then
-  alias git='hub'
-fi
+#if [ -f `which hub` ]; then
+  ## alias git='hub'
+#fi
 
 if [ -f /usr/local/etc/bash_completion ]; then
   . /usr/local/etc/bash_completion
@@ -97,6 +100,7 @@ export PYTHONPATH=/usr/local/lib/python2.5/site-packages
 
 export EDITOR=/usr/bin/vi
 export MAU=/projects/mau
+export COG=/projects/cognoa
 export QR=/projects/qr4r
 export HAZL=/scratch/eventserver/hazl/
 export ROMEY=/projects/romeydesigns
@@ -122,7 +126,7 @@ export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-export RACK_ENV=development
+#export RACK_ENV=development
 
 export INCLUDE_PRY=1
 

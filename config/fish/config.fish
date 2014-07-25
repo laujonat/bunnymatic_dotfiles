@@ -19,29 +19,12 @@ set -g __fish_git_prompt_color_invalidstate red
 set -g __fish_git_prompt_color_untrackedfiles $fish_color_normal
 set -g __fish_git_prompt_color_cleanstate green bold
 
+set -U ASIAN /projects/asian
 
-function fish_prompt --description 'Write out the prompt'
+set -x RBENV_SHELL fish
 
-  set -l last_status $status
-
-  if not set -q __fish_prompt_normal
-    set -g __fish_prompt_normal (set_color normal)
-  end
-
-  # PWD
-  set_color $fish_color_cwd
-  echo -n (prompt_pwd)
-  set_color normal
-
-  printf '%s ' (__fish_git_prompt)
-
-  if not test $last_status -eq 0
-  set_color $fish_color_error
-  end
-
-  echo -n '$ '
-
-end
+set -x PATH "~/.rbenv/bin" $PATH
+#. (rbenv init - | psub)
 
 # TODO - move these aliases (from bash) to functions for fish
 #alias pd="pushd"

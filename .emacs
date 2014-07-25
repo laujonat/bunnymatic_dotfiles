@@ -49,6 +49,8 @@
  '(javascript-indent-level 2)
  '(standard-indent 2))
  '(iswitchb-mode t)
+;; (icy-mode 1)
+`(dired-listing-switches "-dired")
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -133,6 +135,7 @@ mac-option-modifier 'none)
     (insert "\"")))
 
 (global-set-key "\C-c\C-q" 'insert-quotes)
+(global-set-key (kbd "C-M-<down>") 'mc/mark-next-lines)
 
 (when (> emacs-major-version 23)
   (require 'package)
