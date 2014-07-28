@@ -118,6 +118,12 @@ mac-option-modifier 'none)
 
 (set-frame-size-according-to-resolution)
 
+;; (defun convert-hashrockets () 
+;;   "Replace ruby hashrockets with new hash syntax"
+;;   (interactive)
+;;   (query-replace-regex ":\([-_A-Za-z0-9]+\)[[:space:]]=>", "\1")
+;; )
+
 (defun insert-quotes ()
   "Inserts quotes (\") around the current region or work."
   (interactive)
