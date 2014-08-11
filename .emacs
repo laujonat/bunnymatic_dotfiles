@@ -64,6 +64,7 @@
 (recentf-mode 1)
 (setq recentf-max-menu-items 25)
 (global-set-key "\C-x\ \C-r" 'recentf-open-files)
+(global-set-key "\M-\?" 'comment-or-uncomment-region)
 (setq auto-mode-alist (cons '("\\.rake$" . ruby-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.erb$" . html-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.html.erb$" . html-mode) auto-mode-alist))

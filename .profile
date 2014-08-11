@@ -117,6 +117,8 @@ export BRESBO=/projects/bresbo
 export SNAPSHOT=/projects/snapshot
 export KABLAMMO=/projects/kablammo
 export BAR=/projects/barista
+export KO=/projects/kohala
+export KU=/projects/kuju
 
 alias xcode='/Applications/Xcode.app/Contents/MacOS/Xcode'
 alias simulator='open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app'
