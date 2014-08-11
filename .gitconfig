@@ -3,6 +3,7 @@
   email = jon@bunnymatic.com
 [alias]
   st = status
+  ssb = status -sb
   ci = commit
   cia = commit --amend
   co = checkout
@@ -52,3 +53,7 @@
 [push]
   default = upstream
 
+[branch]
+	autosetupmerge = true
+[pull]
+	default = upstream
