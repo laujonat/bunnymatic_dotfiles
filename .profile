@@ -17,6 +17,7 @@ alias bu='bundle update '
 alias serveit='python -m SimpleHTTPServer '
 alias servit='serveit'
 alias simulator='open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app'
+alias googleunsafe='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --disable-web-security'
 
 export GOPATH=/projects/goprojects
 export PATH=$PATH:$GOPATH/bin
@@ -119,6 +120,8 @@ export KABLAMMO=/projects/kablammo
 export BAR=/projects/barista
 export KO=/projects/kohala
 export KU=/projects/kuju
+export HOOD=/projects/hood
+export SPRY=/projects/autodesk-spry
 
 alias xcode='/Applications/Xcode.app/Contents/MacOS/Xcode'
 alias simulator='open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app'
@@ -141,3 +144,12 @@ export DYLD_LIBRARY_PATH=/usr/local/instantclient_11_2:$DYLD_LIBRARY_PATH
 [ -f ~/.rubotorc ] && source ~/.rubotorc
 # END Ruboto setup
 
+setup_pair() {
+  name="$1 & $2"
+  em="$1+$2+dev@carbonfive.com"
+  em2=`echo ${em// /_}`
+  email=`echo $em2 | awk '{print tolower($0)}'`
+  echo "export GIT_AUTHOR_NAME=\"$name\""
+  export GIT_AUTHOR_NAME=$name
+  export GIT_AUTHOR_EMAIL=$email
+}
