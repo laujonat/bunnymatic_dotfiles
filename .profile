@@ -3,6 +3,7 @@ alias ll='ls -la '
 
 export UNAME=`uname`
 
+alias gs='git status'
 alias exercism='~/exercism/exercism'
 alias pd="pushd"
 alias pop="popd"
@@ -16,8 +17,12 @@ alias bi='bundle install '
 alias bu='bundle update '
 alias serveit='python -m SimpleHTTPServer '
 alias servit='serveit'
-alias simulator='open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app'
+alias simulator_android='/Users/jon/Library/Android/sdk/tools/emulator -netdelay none -netspeed full -avd Nexus_5_API_21_x86'
+alias simulator_ipad='xcrun instruments -w "iPad 2 (8.1 Simulator)"'
+alias simulator_iphone='xcrun instruments -w "iPhone 5 (8.1 Simulator)"'
 alias googleunsafe='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --disable-web-security'
+
+alias gitpairken='export GIT_AUTHOR_NAME="Jon Rogers and Ken Shimizu" GIT_AUTHOR_EMAIL="jon+ken+dev@carbonfive.com"'
 
 export GOPATH=/projects/goprojects
 export PATH=$PATH:$GOPATH/bin
@@ -122,6 +127,7 @@ export KO=/projects/kohala
 export KU=/projects/kuju
 export HOOD=/projects/hood
 export SPRY=/projects/autodesk-spry
+export ACAD=/projects/autocad360-web/
 
 alias xcode='/Applications/Xcode.app/Contents/MacOS/Xcode'
 alias simulator='open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app'

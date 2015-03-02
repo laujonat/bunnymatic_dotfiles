@@ -3,4 +3,5 @@
 \#*
 .idea
 .svn
+*.sublime-project
 
