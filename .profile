@@ -41,7 +41,7 @@ export PG_USER=jon
 shopt -s histappend
 export HISTCONTROL=ignoreboth:erasedups
 export HISTIGNORE='ls:fg:bg:history'
-
+export PHANTOMJS_BIN=`which phantomjs`
 
 export GOPATH=/projects/goprojects
 

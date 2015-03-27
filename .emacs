@@ -28,7 +28,7 @@
 (setq-default js-indent-level 2)
 (setq-default css-indent-offset 2)
 (setq-default indent-tabs-mode nil)
-
+(setq-default scss-compile-at-save nil)
 (setq show-trailing-whitespace t)
 
 (put 'downcase-region 'disabled nil)
