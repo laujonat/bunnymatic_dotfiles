@@ -24,17 +24,20 @@ alias googleunsafe='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chro
 
 alias gitpairken='export GIT_AUTHOR_NAME="Jon Rogers and Ken Shimizu" GIT_AUTHOR_EMAIL="jon+ken+dev@carbonfive.com"'
 
-export GOPATH=/projects/goprojects
+PROJECTS=/projects/
+[[ -d ~/projects/ ]] && PROJECTS=~/projects/
+
+export GOPATH=${PROJECTS}/goprojects
 export PATH=$PATH:$GOPATH/bin
 export PATH=$HOME/.rbenv/bin:/usr/local/bin:/usr/local/sbin:$PATH
 export PATH=$PATH:/Users/jon/utils:/Users/jon/utils/perl
 export PATH=$PATH:/usr/local/mysql/bin:./node_modules/mocha/bin:/usr/local/share/npm/bin
 
-export ANDROID_HOME=/projects/android-sdk-macosx/
+export ANDROID_HOME=${PROJECTS}/android-sdk-macosx/
 
-export PATH="/projects/android-sdk-macosx/tools:$PATH"
-export PATH="/projects/android-sdk-macosx/platform-tools:$PATH"
-export PATH="/projects/android-sdk-macosx/build-tools/19.0.2:$PATH"
+export PATH="${PROJECTS}/android-sdk-macosx/tools:$PATH"
+export PATH="${PROJECTS}/android-sdk-macosx/platform-tools:$PATH"
+export PATH="${PROJECTS}/android-sdk-macosx/build-tools/19.0.2:$PATH"
 
 export MANPATH=$MANPATH:/usr/local/man
 export PG_USER=jon
@@ -43,8 +46,9 @@ export HISTCONTROL=ignoreboth:erasedups
 export HISTIGNORE='ls:fg:bg:history'
 export PHANTOMJS_BIN=`which phantomjs`
 
-export GOPATH=/projects/goprojects
+export GOPATH=${PROJECTS}/goprojects
 
+echo 'init rbenv'
 eval "$(rbenv init -)"
 
 smbip() {
@@ -106,28 +110,29 @@ fi
 export PYTHONPATH=/usr/local/lib/python2.5/site-packages
 
 export EDITOR=/usr/bin/vi
-export MAU=/projects/mau
-export COG=/projects/cognoa
-export QR=/projects/qr4r
+export MAU=${PROJECTS}/mau
+export COG=${PROJECTS}/cognoa
+export QR=${PROJECTS}/qr4r
 export HAZL=/scratch/eventserver/hazl/
-export ROMEY=/projects/romeydesigns
-export FAUX=/projects/fauxtaux_booth
-export AM=/projects/anson_mills
-export E1890=/projects/1890web/
-export ASIAN=/projects/asian 
-export AAM=/projects/asian 
-export SC=/projects/selectors_choice
-export LT=/projects/localtakesf
-export MANDIBLE=/projects/mandible
-export BRESBO=/projects/bresbo
-export SNAPSHOT=/projects/snapshot
-export KABLAMMO=/projects/kablammo
-export BAR=/projects/barista
-export KO=/projects/kohala
-export KU=/projects/kuju
-export HOOD=/projects/hood
-export SPRY=/projects/autodesk-spry
-export ACAD=/projects/autocad360-web/
+export ROMEY=${PROJECTS}/romeydesigns
+export FAUX=${PROJECTS}/fauxtaux_booth
+export AM=${PROJECTS}/anson_mills
+export E1890=${PROJECTS}/1890web/
+export ASIAN=${PROJECTS}/asian 
+export AAM=${PROJECTS}/asian 
+export SC=${PROJECTS}/selectors_choice
+export LT=${PROJECTS}/localtakesf
+export MANDIBLE=${PROJECTS}/mandible
+export BRESBO=${PROJECTS}/bresbo
+export SNAPSHOT=${PROJECTS}/snapshot
+export KABLAMMO=${PROJECTS}/kablammo
+export BAR=${PROJECTS}/barista
+export KO=${PROJECTS}/kohala
+export KU=${PROJECTS}/kuju
+export HOOD=${PROJECTS}/hood
+export SPRY=${PROJECTS}/autodesk-spry
+export ACAD=${PROJECTS}/autocad360-web/
+export HM=${PROJECTS}/harrison-metal
 
 alias xcode='/Applications/Xcode.app/Contents/MacOS/Xcode'
 alias simulator='open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app'

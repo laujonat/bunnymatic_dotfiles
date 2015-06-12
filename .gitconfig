@@ -31,12 +31,23 @@
   # show merged branches that are not current and not master or develop
   #vmerge = !sh -c 'git branch --merged | egrep -v \'\\*\\s+|master\''
   scrub = !sh -c 'git checkout master && git branch --merged | grep -v \"*\" | xargs git branch -d && git remote prune origin'
+	di = diff
+	sta = stash
+	llog = log --date=local
+	flog = log --pretty=fuller --decorate
+	blog = log origin/master... --left-right
+	fixup = commit --fixup
+	squash = commit --squash
+	unstage = reset HEAD
+	rum = rebase master@{u}
 
 
 [color]
-  diff = auto
-  branch = auto
-  status = auto
+	diff = auto
+	branch = auto
+	status = auto
+	interactive = auto
+	ui = auto
 [pivotal]
   api-token = ffa56514e3a370a2f1c146722a7217cf
   rebase = 1
@@ -51,7 +62,7 @@
 [heroku]
 
 [push]
-  default = upstream
+	default = simple
 
 [branch]
 	autosetupmerge = true
@@ -61,3 +72,10 @@
 	account = rcode5
 [credential]
 	helper = osxkeychain
+[core]
+	pager = less -FXRS -x2
+	excludesfile = /Users/jon/.gitignore_global
+[apply]
+	whitespace = nowarn
+[rebase]
+	autosquash = true

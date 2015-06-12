@@ -1,0 +1,17 @@
+{
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Better CoffeeScript",
+		"Cucumber",
+		"Git",
+		"Package Control",
+		"Pretty YAML",
+		"Ruby Slim",
+		"RubyTest",
+		"SCSS",
+		"SideBarEnhancements"
+	]
+}
