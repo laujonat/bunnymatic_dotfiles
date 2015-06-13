@@ -34,6 +34,7 @@
 (put 'downcase-region 'disabled nil)
 
 (global-set-key "\C-c\C-g" 'rgrep)
+;; (global-set-key "\C-c\C-g" 'ag-files)
 
 (require 'color-theme)
 (color-theme-initialize)
