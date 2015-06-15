@@ -3,5 +3,7 @@
 \#*
 .idea
 .svn
+*.log
+*.sublime_session
 *.sublime-project
-
+Sublime\ Text\ 3/Local/*
