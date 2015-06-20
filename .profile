@@ -163,3 +163,9 @@ setup_pair() {
   export GIT_AUTHOR_NAME=$name
   export GIT_AUTHOR_EMAIL=$email
 }
+
+LUNCHY_DIR=$(dirname `gem which lunchy`)/../extras
+echo $LUNCHY_DIR
+if [ -f $LUNCH_DIR/lunchy-completion.bash ]; then
+  . $LUNCHY_DIR/lunchy-completion.bash
+fi
