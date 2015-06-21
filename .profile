@@ -3,6 +3,8 @@ alias ll='ls -la '
 
 export UNAME=`uname`
 
+[ -f '/Applications/Emacs.app/Contents/MacOS/Emacs' ] && alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs'
+
 alias gs='git status'
 alias exercism='~/exercism/exercism'
 alias pd="pushd"
@@ -165,7 +167,7 @@ setup_pair() {
 }
 
 LUNCHY_DIR=$(dirname `gem which lunchy`)/../extras
-echo $LUNCHY_DIR
-if [ -f $LUNCH_DIR/lunchy-completion.bash ]; then
+if [ -f $LUNCHY_DIR/lunchy-completion.bash ]; then
+  echo 'Setting up lunchy completion'
   . $LUNCHY_DIR/lunchy-completion.bash
 fi
