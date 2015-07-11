@@ -42,6 +42,9 @@
 ;;(load-theme 'solarized-dark t)
 ;;(color-theme-solarized-dark)
 
+(require 'ido)
+(ido-mode t)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -52,7 +55,7 @@
  '(inhibit-startup-screen t)
  '(javascript-indent-level 2)
  '(standard-indent 2))
- '(iswitchb-mode t)
+
 ;; (icy-mode 1)
 `(dired-listing-switches "-dired")
 (custom-set-faces
@@ -156,7 +159,6 @@ mac-option-modifier 'none)
   (add-to-list 'package-archives
                '("melpa" . "http://melpa.milkbox.net/packages/")
                'APPEND))
-(iswitchb-mode t)
 
 
 (defun toggle-fullscreen (&optional f)
