@@ -56,8 +56,8 @@
  '(javascript-indent-level 2)
  '(standard-indent 2))
 
-;; (icy-mode 1)
 `(dired-listing-switches "-dired")
+
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -72,6 +72,7 @@
 (setq auto-mode-alist (cons '("\\.rake$" . ruby-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.erb$" . html-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.html.erb$" . html-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.js.erb$" . javascript-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.rhtml$" . html-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.sass$" . css-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.scss$" . css-mode) auto-mode-alist))
@@ -110,7 +111,7 @@ mac-option-modifier 'none)
     ;; whatnot), then divide by the height of a char to
     ;; get the height we want
     (add-to-list 'default-frame-alist
-                 (cons 'height (/ (- (x-display-pixel-height) 200) (frame-char-height))))
+                 (cons 'height (/ (- (x-display-pixel-height) 250) (frame-char-height))))
     (add-to-list 'default-frame-alist
                  (cons 'top 50))
     )))
@@ -151,7 +152,7 @@ mac-option-modifier 'none)
     (insert "\"")))
 
 (global-set-key "\C-c\C-q" 'insert-quotes)
-(global-set-key (kbd "C-M-<down>") 'mc/mark-next-lines)
+e(global-set-key (kbd "C-M-<down>") 'mc/mark-next-lines)
 
 (when (> emacs-major-version 23)
   (require 'package)

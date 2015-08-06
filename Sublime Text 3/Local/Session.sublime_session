@@ -1,6 +1,9 @@
 {
 	"folder_history":
 	[
+		"/Users/jon/projects/harrison-metal",
+		"/Users/jon/projects/asian",
+		"/Users/jon/projects/timesheet",
 		"/projects/harrison-metal",
 		"/Users/jon/.rbenv/versions/2.2.2/gemsets/harrison-metal/gems/ri_cal-0.8.8",
 		"/projects/candidate-tracker",
@@ -10,17 +13,21 @@
 		"/projects/hood"
 	],
 	"last_version": 3083,
-	"last_window_id": 28,
+	"last_window_id": 44,
 	"log_indexing": false,
 	"settings":
 	{
-		"new_window_height": 856.0,
+		"new_window_height": 1144.0,
 		"new_window_settings":
 		{
 			"auto_complete":
 			{
 				"selected_items":
 				[
+					[
+						"is",
+						"iso8601"
+					],
 					[
 						"in",
 						"introduction"
@@ -42,6 +49,18 @@
 				"selected_items":
 				[
 					[
+						"new file",
+						"File: New File Relative to Current View"
+					],
+					[
+						"new",
+						"File: New File Relative to Current View"
+					],
+					[
+						"json",
+						"Set Syntax: JSON"
+					],
+					[
 						"inde",
 						"Indentation: Reindent Lines"
 					],
@@ -56,10 +75,6 @@
 					[
 						"ren",
 						"File: Rename"
-					],
-					[
-						"new",
-						"File: New File Relative to Current View"
 					],
 					[
 						"idn",
@@ -80,10 +95,6 @@
 					[
 						"inde	",
 						"Indentation: Reindent Lines"
-					],
-					[
-						"new file",
-						"File: New File Relative to Current View"
 					],
 					[
 						"user",
@@ -127,909 +138,73 @@
 			},
 			"file_history":
 			[
-				"/projects/harrison-metal/app/views/sections/index.html.slim",
-				"/projects/harrison-metal/app/views/courses/show.html.slim",
-				"/projects/harrison-metal/app/views/admin/courses/index.html.slim",
-				"/projects/candidate-tracker/spec/support/factory_girl.rb",
-				"/projects/candidate-tracker/spec/controllers/candidates_controller_spec.rb",
-				"/projects/candidate-tracker/spec/services/wufoo_translation_service_spec.rb",
-				"/projects/candidate-tracker/spec/models/candidate_spec.rb",
-				"/projects/candidate-tracker/spec/fixtures/wufoo_candidate_form.json",
-				"/projects/candidate-tracker/app/controllers/candidates_controller.rb",
-				"/projects/candidate-tracker/spec/fixtures/wufoo_minimum_candidate_form.json",
-				"/projects/candidate-tracker/app/models/candidate.rb",
-				"/projects/candidate-tracker/db/structure.sql",
-				"/projects/candidate-tracker/app/services/wufoo_translation_service.rb",
-				"/projects/candidate-tracker/Gemfile",
-				"/projects/candidate-tracker/spec/controllers/api/candidates_controller_spec.rb",
-				"/projects/candidate-tracker/app/views/candidates/show.html.slim",
-				"/projects/candidate-tracker/app/controllers/api/candidates_controller.rb",
-				"/projects/candidate-tracker/spec/support/fixture_loader.rb",
-				"/projects/candidate-tracker/spec/factories/candidates.rb",
-				"/projects/candidate-tracker/spec/support/authentication_helpers.rb",
-				"/projects/candidate-tracker/spec/controllers/api_controller_spec.rb",
-				"/projects/candidate-tracker/app/controllers/analytics_controller.rb",
-				"/projects/candidate-tracker/config/routes.rb",
-				"/projects/candidate-tracker/app/policies/candidate_policy.rb",
-				"/projects/harrison-metal/app/presenters/section_event_presenter.rb",
-				"/projects/harrison-metal/app/views/applicant_mailer/applicant_accepted.text.erb",
-				"/projects/harrison-metal/spec/features/sections_spec.rb",
-				"/projects/harrison-metal/app/controllers/application_controller.rb",
-				"/projects/harrison-metal/app/presenters/applicant_presenter.rb",
-				"/projects/harrison-metal/app/views/applicant_mailer/applicant_accepted.html.erb",
-				"/projects/harrison-metal/app/services/applicant_status_service.rb",
-				"/projects/harrison-metal/spec/services/applicant_status_service_spec.rb",
-				"/projects/harrison-metal/app/serializers/applicant_presenter_serializer.rb",
-				"/projects/harrison-metal/app/views/applicant_mailer/applicant_rejected.text.erb",
-				"/projects/harrison-metal/app/views/applicant_mailer/applicant_rejected.html.erb",
-				"/projects/harrison-metal/app/models/applicant.rb",
-				"/projects/harrison-metal/app/mailers/application_mailer.rb",
-				"/projects/harrison-metal/app/mailers/applicant_mailer.rb",
-				"/projects/harrison-metal/app/controllers/admin/applicants_controller.rb",
-				"/projects/harrison-metal/Gemfile",
-				"/projects/harrison-metal/.env.local",
-				"/projects/harrison-metal/spec/factories/sections.rb",
-				"/projects/harrison-metal/spec/factories/applicants.rb",
-				"/projects/harrison-metal/config/environments/development.rb",
-				"/projects/harrison-metal/config/environments/acceptance.rb",
-				"/projects/harrison-metal/config/environments/production.rb",
-				"/projects/harrison-metal/app/services/applicant_mailer_service.rb",
-				"/projects/harrison-metal/app/models/admin_email.rb",
-				"/projects/harrison-metal/db/migrate/20150513210305_create_admin_emails.rb",
-				"/projects/harrison-metal/spec/support/omniauth.rb",
-				"/projects/harrison-metal/spec/support/capybara.rb",
-				"/projects/harrison-metal/app/views/pages/root.html.slim",
-				"/projects/harrison-metal/app/models/user.rb",
-				"/projects/harrison-metal/db/migrate/20150513210305_create_admin_users.rb",
-				"/projects/harrison-metal/spec/support/flash_message_matchers.rb",
-				"/projects/harrison-metal/app/models/admin_user.rb",
-				"/projects/harrison-metal/app/controllers/sessions_controller.rb",
-				"/projects/harrison-metal/config/routes.rb",
-				"/projects/harrison-metal/app/views/layouts/application.html.slim",
-				"/projects/harrison-metal/spec/features/login_spec.rb",
-				"/projects/harrison-metal/lib/tasks/debug.rake",
-				"/projects/harrison-metal/db/seeds.rb",
-				"/projects/harrison-metal/app/views/sessions/new.html.slim",
-				"/projects/harrison-metal/spec/features/pages_spec.rb",
-				"/projects/harrison-metal/app/controllers/pages_controller.rb",
-				"/projects/harrison-metal/spec/models/user_spec.rb",
-				"/projects/harrison-metal/config/initializers/omniauth.rb",
-				"/projects/harrison-metal/db/migrate/20150513184917_create_users.rb",
-				"/projects/harrison-metal/config/initializers/basecamp_oauth_app.rb",
-				"/projects/hood/app/assets/components/admin/facilities_dashboard/module.js.coffee",
-				"/projects/hood/app/assets/components/service_request_editor/editable_section.js.coffee",
-				"/projects/ui-select/examples/demo.js",
-				"/projects/ui-select/dist/select.js",
-				"/projects/ui-select/examples/demo-tagging.html",
-				"/projects/hood/app/assets/components/service_request_editor/editable_section_templates/details.html.slim",
-				"/projects/hood/app/assets/components/root_cause_selector/root_cause_selector.js.coffee",
-				"/projects/hood/app/assets/components/service_request_service/service_request_service.js.coffee",
-				"/projects/hood/app/assets/components/models/service_request.js.coffee",
-				"/projects/hood/spec/javascripts/components/models/service_request_spec.coffee",
-				"/projects/hood/spec/features/admin_service_requests_spec.rb",
-				"/projects/hood/spec/serializers/facility_serializer_spec.rb",
-				"/projects/hood/db/migrate/20150401002506_add_root_cause_to_service_request.rb",
-				"/projects/hood/app/policies/service_request_policy.rb",
-				"/projects/hood/app/controllers/admin/service_requests_controller.rb",
-				"/projects/hood/app/models/service_request.rb",
-				"/projects/hood/app/assets/components/root_cause_selector/index.html.slim",
-				"/projects/hood/app/assets/components/service_request_editor/index.html.slim",
-				"/projects/hood/app/assets/components/service_request_editor/editable_section_templates/issue_assignment.html.slim",
-				"/projects/hood/app/assets/components/division_selector/division_selector.js.coffee",
-				"/projects/hood/app/assets/components/service_request_editor/editable_section_templates/root_cause_analysis.html.slim",
-				"/projects/hood/app/assets/components/service_request_editor/service_request_editor.js.coffee",
-				"/projects/hood/app/assets/components/root_causes_service/root_causes_service.js.coffee",
-				"/projects/hood/app/mailers/service_request_mailer.rb",
-				"/projects/hood/app/views/service_request_mailer/_created_service_request_detail.text.erb",
-				"/Users/jon/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-				"/projects/hood/app/assets/components/service_request_editor/editable_sections.scss"
-			],
-			"find":
-			{
-				"height": 25.0
-			},
-			"find_in_files":
-			{
-				"height": 93.0,
-				"where_history":
-				[
-					"*.rb",
-					"",
-					"app/assets",
-					""
-				]
-			},
-			"find_state":
-			{
-				"case_sensitive": false,
-				"find_history":
-				[
-					"google_",
-					"click_on_first",
-					"open_fixture",
-					"notif",
-					"notification_service",
-					"@wufoo_post",
-					"introduction",
-					"pry",
-					")\n",
-					"resume.pdf",
-					"def authori",
-					"override_",
-					"deliver_later",
-					"reject",
-					"yessorry",
-					"accept",
-					"applicant",
-					"accept",
-					"applied",
-					"accept",
-					"accepted",
-					"<p>",
-					"(applicant)",
-					"applicant_rejected",
-					"new(self).",
-					"end",
-					"student_acceptedsend",
-					"ssl",
-					"callback_url",
-					"adminuser",
-					"AdminUser",
-					"admin_user",
-					"AdminUser",
-					"email)",
-					"find_or_create_from",
-					"first_or_create",
-					"find_or_create",
-					"\"session\"",
-					"content",
-					"siign",
-					"37signalstwitter",
-					"basecamp",
-					")\n",
-					":to =>",
-					"binding.pry",
-					"Basecampith",
-					"under_warranty",
-					"warranty_managerunder_warranty",
-					"module",
-					"stuff.warranty_number",
-					"serviceRequest.warranty_number",
-					"select(",
-					"find",
-					".select(",
-					"is.expected to",
-					"is.expected",
-					"}",
-					"facility.:",
-					",",
-					"attributes",
-					"c.",
-					"blurp",
-					"debugger",
-					"rootCauseSelector",
-					"cscope",
-					"scope.",
-					"scope",
-					"scope.",
-					"$scope.serviceRequest.",
-					"if",
-					"rootCauseDetail",
-					"rootCause",
-					"scope"
-				],
-				"highlight": true,
-				"in_selection": false,
-				"preserve_case": false,
-				"regex": false,
-				"replace_history":
-				[
-				],
-				"reverse": false,
-				"show_context": true,
-				"use_buffer2": true,
-				"whole_word": false,
-				"wrap": true
-			},
-			"incremental_find":
-			{
-				"height": 25.0
-			},
-			"input":
-			{
-				"height": 31.0
-			},
-			"menu_visible": true,
-			"output.exec":
-			{
-				"height": 423.0
-			},
-			"output.find_results":
-			{
-				"height": 0.0
-			},
-			"pinned_build_system": "",
-			"replace":
-			{
-				"height": 46.0
-			},
-			"save_all_on_build": true,
-			"select_file":
-			{
-				"height": 0.0,
-				"last_filter": "",
-				"selected_items":
-				[
-					[
-						"ercurrence",
-						"lib/ri_cal/property_value/recurrence_rule.rb"
-					],
-					[
-						"pay.html",
-						"app/views/applicants/pay.html.slim"
-					],
-					[
-						"c/show",
-						"app/views/courses/show.html.slim"
-					],
-					[
-						"ap/view/cou/sho",
-						"app/views/courses/show.html.slim"
-					],
-					[
-						"a/v/course/ind",
-						"app/views/admin/courses/index.html.slim"
-					],
-					[
-						"ap/vi/in",
-						"app/views/sections/index.html.slim"
-					],
-					[
-						"spec/fea",
-						"spec/features/courses_spec.rb"
-					],
-					[
-						"fixture",
-						"spec/support/fixture_loader.rb"
-					],
-					[
-						"factory_girl",
-						"spec/support/factory_girl.rb"
-					],
-					[
-						"fixutre",
-						"spec/support/fixture_loader.rb"
-					],
-					[
-						"candidate_sp",
-						"spec/models/candidate_spec.rb"
-					],
-					[
-						"wc",
-						"spec/fixtures/wufoo_candidate_form.json"
-					],
-					[
-						"wufoo_trans",
-						"spec/services/wufoo_translation_service_spec.rb"
-					],
-					[
-						"wufoo",
-						"app/services/wufoo_translation_service.rb"
-					],
-					[
-						"candidates_con",
-						"spec/controllers/candidates_controller_spec.rb"
-					],
-					[
-						"user",
-						"app/models/user.rb"
-					],
-					[
-						"stagechanged",
-						"app/services/notification_service/stage_changed.rb"
-					],
-					[
-						"candidates",
-						"app/controllers/candidates_controller.rb"
-					],
-					[
-						"wufo",
-						"app/services/wufoo_translation_service.rb"
-					],
-					[
-						"candida",
-						"app/models/candidate.rb"
-					],
-					[
-						"api/ca",
-						"app/controllers/api/candidates_controller.rb"
-					],
-					[
-						"api/wufoo",
-						"app/services/wufoo_translation_service.rb"
-					],
-					[
-						"candidate",
-						"app/models/candidate.rb"
-					],
-					[
-						"struct",
-						"db/structure.sql"
-					],
-					[
-						"wuf",
-						"spec/fixtures/wufoo_candidate_form.json"
-					],
-					[
-						"struc",
-						"db/structure.sql"
-					],
-					[
-						"ge",
-						"Gemfile"
-					],
-					[
-						"api/candi",
-						"app/controllers/api/candidates_controller.rb"
-					],
-					[
-						"canddates.r",
-						"spec/factories/candidates.rb"
-					],
-					[
-						"authen",
-						"spec/support/authentication_helpers.rb"
-					],
-					[
-						"route",
-						"config/routes.rb"
-					],
-					[
-						"gemfil",
-						"Gemfile"
-					],
-					[
-						"cc",
-						"app/controllers/candidates_controller.rb"
-					],
-					[
-						"candidate.r",
-						"app/models/candidate.rb"
-					],
-					[
-						"ap_st_ser",
-						"spec/services/applicant_status_service_spec.rb"
-					],
-					[
-						"accet.text",
-						"app/views/applicant_mailer/applicant_accepted.text.erb"
-					],
-					[
-						"accepted",
-						"app/views/applicant_mailer/applicant_accepted.html.erb"
-					],
-					[
-						"service_se",
-						"spec/services/applicant_status_service_spec.rb"
-					],
-					[
-						"serialiser",
-						"app/serializers/applicant_presenter_serializer.rb"
-					],
-					[
-						"accet",
-						"app/views/applicant_mailer/applicant_accepted.text.erb"
-					],
-					[
-						"ap_ser",
-						"app/serializers/applicant_presenter_serializer.rb"
-					],
-					[
-						"app_",
-						"app/controllers/application_controller.rb"
-					],
-					[
-						"ap_acc",
-						"app/views/applicant_mailer/applicant_accepted.text.erb"
-					],
-					[
-						"section_e",
-						"app/presenters/section_event_presenter.rb"
-					],
-					[
-						"applicant_pr",
-						"app/presenters/applicant_presenter.rb"
-					],
-					[
-						"applicant_rp",
-						"app/presenters/applicant_presenter.rb"
-					],
-					[
-						"service",
-						"app/services/applicant_status_service.rb"
-					],
-					[
-						"sections.rb",
-						"spec/factories/sections.rb"
-					],
-					[
-						"factori/appl",
-						"spec/factories/applicants.rb"
-					],
-					[
-						"specs/erv/",
-						"spec/services/applicant_status_service_spec.rb"
-					],
-					[
-						"application_mail",
-						"app/mailers/application_mailer.rb"
-					],
-					[
-						"appli_m",
-						"app/mailers/applicant_mailer.rb"
-					],
-					[
-						"acc",
-						"config/environments/acceptance.rb"
-					],
-					[
-						"prod",
-						"config/environments/production.rb"
-					],
-					[
-						"",
-						"config/environments/development.rb"
-					],
-					[
-						".env.local",
-						".env.local"
-					],
-					[
-						"de",
-						"config/environments/development.rb"
-					],
-					[
-						"dev.rb",
-						"config/environments/development.rb"
-					],
-					[
-						"ap_m",
-						"app/mailers/applicant_mailer.rb"
-					],
-					[
-						"applicant.rb",
-						"app/models/applicant.rb"
-					],
-					[
-						"appser",
-						"app/services/applicant_status_service.rb"
-					],
-					[
-						"appserv",
-						"app/services/applicant_mailer_service.rb"
-					],
-					[
-						"ad/apc",
-						"app/controllers/admin/applicants_controller.rb"
-					],
-					[
-						"app_con",
-						"app/controllers/application_controller.rb"
-					],
-					[
-						"app_c.text",
-						"app/views/applicant_mailer/applicant_accepted.text.erb"
-					],
-					[
-						"app_acc.",
-						"app/views/applicant_mailer/applicant_accepted.html.erb"
-					],
-					[
-						"appr.t",
-						"app/views/applicant_mailer/applicant_rejected.text.erb"
-					],
-					[
-						"applicant_re",
-						"app/views/applicant_mailer/applicant_rejected.html.erb"
-					],
-					[
-						"applicant.",
-						"app/models/applicant.rb"
-					],
-					[
-						"seed",
-						"db/seeds.rb"
-					],
-					[
-						"admin_u",
-						"app/models/admin_user.rb"
-					],
-					[
-						"debug",
-						"lib/tasks/debug.rake"
-					],
-					[
-						"flash_",
-						"spec/support/flash_message_matchers.rb"
-					],
-					[
-						"login_sp",
-						"spec/features/login_spec.rb"
-					],
-					[
-						"routes",
-						"config/routes.rb"
-					],
-					[
-						"db/migadm",
-						"db/migrate/20150513210305_create_admin_users.rb"
-					],
-					[
-						"user.r",
-						"app/models/user.rb"
-					],
-					[
-						"logi",
-						"spec/features/login_spec.rb"
-					],
-					[
-						"session",
-						"app/controllers/sessions_controller.rb"
-					],
-					[
-						"sess",
-						"app/controllers/sessions_controller.rb"
-					],
-					[
-						"ses",
-						"app/controllers/sessions_controller.rb"
-					],
-					[
-						"se",
-						"app/controllers/sessions_controller.rb"
-					],
-					[
-						"login_s",
-						"spec/features/login_spec.rb"
-					],
-					[
-						"omni",
-						"spec/support/omniauth.rb"
-					],
-					[
-						"login",
-						"spec/features/login_spec.rb"
-					],
-					[
-						"_spec",
-						"spec/features/login_spec.rb"
-					],
-					[
-						"se/ne",
-						"app/views/sessions/new.html.slim"
-					],
-					[
-						"applihtm",
-						"app/views/layouts/application.html.slim"
-					],
-					[
-						"root",
-						"app/views/pages/root.html.slim"
-					],
-					[
-						"application.html",
-						"app/views/layouts/application.html.slim"
-					],
-					[
-						"sessions",
-						"app/controllers/sessions_controller.rb"
-					],
-					[
-						"omin",
-						"config/initializers/omniauth.rb"
-					],
-					[
-						"sec",
-						"app/controllers/sessions_controller.rb"
-					],
-					[
-						"appli",
-						"app/controllers/application_controller.rb"
-					],
-					[
-						"root.",
-						"app/views/pages/root.html.slim"
-					],
-					[
-						"migr/user",
-						"db/migrate/20150513184917_create_users.rb"
-					],
-					[
-						"pages_con",
-						"app/controllers/pages_controller.rb"
-					],
-					[
-						"roo",
-						"app/views/pages/root.html.slim"
-					],
-					[
-						"application_con",
-						"app/controllers/application_controller.rb"
-					],
-					[
-						"gem",
-						"Gemfile"
-					],
-					[
-						"new",
-						"app/views/sessions/new.html.slim"
-					],
-					[
-						"sesc",
-						"app/controllers/sessions_controller.rb"
-					],
-					[
-						"pages/roo",
-						"app/views/pages/root.html.slim"
-					],
-					[
-						"basecamp",
-						"config/initializers/basecamp_oauth_app.rb"
-					],
-					[
-						"in/omn",
-						"config/initializers/omniauth.rb"
-					],
-					[
-						"document_se",
-						"app/models/document_search.rb"
-					],
-					[
-						"searchservice",
-						"app/services/search_service.rb"
-					],
-					[
-						"f",
-						"app/models/facility.rb"
-					],
-					[
-						"facliity_ser",
-						"app/serializers/facility_serializer.rb"
-					],
-					[
-						"faciltser",
-						"app/serializers/facility_serializer.rb"
-					],
-					[
-						"row_ind",
-						"app/assets/components/admin/facilities_dashboard/row_index.html.slim"
-					],
-					[
-						"fac_ro",
-						"app/assets/components/admin/facilities_dashboard/facility_row.js.coffee"
-					],
-					[
-						"fac_d/in",
-						"app/assets/components/admin/facilities_dashboard/index.html.slim"
-					],
-					[
-						"facili_d",
-						"app/assets/components/admin/facilities_dashboard/facilities_dashboard.js.coffee"
-					],
-					[
-						"details.ht",
-						"app/assets/components/service_request_editor/editable_section_templates/details.html.slim"
-					],
-					[
-						"edit_s.j",
-						"app/assets/components/service_request_editor/editable_section.js.coffee"
-					],
-					[
-						"adminsrs",
-						"spec/features/admin_service_requests_spec.rb"
-					],
-					[
-						"serrjs",
-						"app/assets/components/models/service_request.js.coffee"
-					],
-					[
-						"srserv.js",
-						"app/assets/components/service_request_service/service_request_service.js.coffee"
-					],
-					[
-						"rootcauseselec",
-						"app/assets/components/root_cause_selector/root_cause_selector.js.coffee"
-					],
-					[
-						"migr/root",
-						"db/migrate/20150401002506_add_root_cause_to_service_request.rb"
-					],
-					[
-						"servicepol",
-						"app/policies/service_request_policy.rb"
-					],
-					[
-						"controlleradminservice",
-						"app/controllers/admin/service_requests_controller.rb"
-					],
-					[
-						"servicerequest",
-						"app/models/service_request.rb"
-					],
-					[
-						"assetmodelsservicereq",
-						"app/assets/components/models/service_request.js.coffee"
-					],
-					[
-						"rootcauseser",
-						"app/assets/components/root_causes_service/root_causes_service.js.coffee"
-					],
-					[
-						"rc/ind",
-						"app/assets/components/root_cause_selector/index.html.slim"
-					],
-					[
-						"srmailer",
-						"app/mailers/service_request_mailer.rb"
-					]
-				],
-				"width": 0.0
-			},
-			"select_project":
-			{
-				"height": 0.0,
-				"last_filter": "",
-				"selected_items":
-				[
-				],
-				"width": 0.0
-			},
-			"select_symbol":
-			{
-				"height": 0.0,
-				"last_filter": "",
-				"selected_items":
-				[
-				],
-				"width": 0.0
-			},
-			"show_minimap": true,
-			"show_open_files": false,
-			"show_tabs": true,
-			"side_bar_visible": true,
-			"side_bar_width": 198.0,
-			"status_bar_visible": true,
-			"template_settings":
-			{
-			}
-		},
-		"new_window_width": 979.0
-	},
-	"windows":
-	[
-		{
-			"auto_complete":
-			{
-				"selected_items":
-				[
-					[
-						"is",
-						"iso8601"
-					],
-					[
-						"in",
-						"introduction"
-					],
-					[
-						"root",
-						"rootCauses"
-					]
-				]
-			},
-			"buffers":
-			[
-			],
-			"build_system": "",
-			"build_system_choices":
-			[
-			],
-			"build_varint": "",
-			"command_palette":
-			{
-				"height": 392.0,
-				"last_filter": "inde",
-				"selected_items":
-				[
-					[
-						"inde",
-						"Indentation: Reindent Lines"
-					],
-					[
-						"idne",
-						"Indentation: Reindent Lines"
-					],
-					[
-						"ind",
-						"Indentation: Reindent Lines"
-					],
-					[
-						"ren",
-						"File: Rename"
-					],
-					[
-						"new",
-						"File: New File Relative to Current View"
-					],
-					[
-						"idn",
-						"Indentation: Reindent Lines"
-					],
-					[
-						"neew fil",
-						"File: New View into File"
-					],
-					[
-						"pretty",
-						"Pretty YAML: Reformat (Pretty Print) YAML"
-					],
-					[
-						"rename",
-						"File: Rename"
-					],
-					[
-						"inde	",
-						"Indentation: Reindent Lines"
-					],
-					[
-						"new file",
-						"File: New File Relative to Current View"
-					],
-					[
-						"user",
-						"Preferences: Settings - User"
-					],
-					[
-						"insta",
-						"Package Control: Install Package"
-					],
-					[
-						"pac",
-						"Package Control: Advanced Install Package"
-					],
-					[
-						"inst",
-						"Package Control: Install Package"
-					],
-					[
-						"pagk",
-						"Package Control: List Packages"
-					]
-				],
-				"width": 530.0
-			},
-			"console":
-			{
-				"height": 126.0,
-				"history":
-				[
-					"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
-				]
-			},
-			"distraction_free":
-			{
-				"menu_visible": true,
-				"show_minimap": false,
-				"show_open_files": false,
-				"show_tabs": false,
-				"side_bar_visible": false,
-				"status_bar_visible": false
-			},
-			"expanded_folders":
-			[
-				"/projects/harrison-metal"
-			],
-			"file_history":
-			[
+				"/Users/jon/projects/harrison-metal/spec/factories/courses.rb",
+				"/Users/jon/projects/harrison-metal/app/controllers/applicants_controller.rb",
+				"/Users/jon/projects/harrison-metal/config/routes.rb",
+				"/Users/jon/projects/harrison-metal/app/controllers/sections_controller.rb",
+				"/Users/jon/projects/harrison-metal/spec/controllers/admin/sections_controller_spec.rb",
+				"/Users/jon/projects/harrison-metal/spec/features/payment_spec.rb",
+				"/Users/jon/projects/harrison-metal/tmp/mails/jon@rcode5.com",
+				"/Users/jon/projects/harrison-metal/app/presenters/course_presenter.rb",
+				"/Users/jon/projects/harrison-metal/app/assets/stylesheets/application/section.scss",
+				"/Users/jon/projects/harrison-metal/app/views/sections/show.html.slim",
+				"/Users/jon/projects/harrison-metal/spec/presenters/course_presenter_spec.rb",
+				"/Users/jon/projects/harrison-metal/app/models/section.rb",
+				"/Users/jon/projects/harrison-metal/spec/support/authentication_helpers.rb",
+				"/Users/jon/projects/harrison-metal/app/assets/stylesheets/application/course.scss",
+				"/Users/jon/projects/harrison-metal/spec/features/courses_spec.rb",
+				"/Users/jon/projects/harrison-metal/app/views/courses/show.html.slim",
+				"/Users/jon/projects/harrison-metal/app/controllers/courses_controller.rb",
+				"/Users/jon/projects/harrison-metal/app/assets/stylesheets/application/mixins.scss",
+				"/Users/jon/projects/harrison-metal/app/assets/javascripts/application/section.js.coffee",
+				"/Users/jon/projects/harrison-metal/app/assets/stylesheets/application/fonts.scss",
+				"/Users/jon/projects/harrison-metal/spec/presenters/applicant_presenter_spec.rb",
+				"/Users/jon/projects/harrison-metal/app/assets/javascripts/application/user_navigation_bar.js.coffee",
+				"/Users/jon/projects/harrison-metal/app/assets/stylesheets/admin/courses.scss",
+				"/Users/jon/projects/harrison-metal/app/views/admin/courses/index.html.slim",
+				"/Users/jon/projects/harrison-metal/app/views/courses/_resource_list_item.html.slim",
+				"/Users/jon/projects/harrison-metal/spec/features/admin/applicant_adminstration_spec.rb",
+				"/Users/jon/Desktop/g icon_red.svg",
+				"/Users/jon/Downloads/newrelic.yml",
+				"/Users/jon/projects/harrison-metal/app/views/admin/courses/_form.html.slim",
+				"/Users/jon/projects/harrison-metal/spec/features/admin/sections_administration_spec.rb",
+				"/Users/jon/projects/harrison-metal/spec/features/login_spec.rb",
+				"/Users/jon/projects/harrison-metal/app/controllers/sessions_controller.rb",
+				"/Users/jon/projects/harrison-metal/app/views/courses/_resource.html.slim",
+				"/Users/jon/projects/harrison-metal/app/controllers/admin_controller.rb",
+				"/Users/jon/projects/harrison-metal/spec/controllers/applicant_controller_spec.rb",
+				"/Users/jon/projects/harrison-metal/spec/features/sections_spec.rb",
+				"/Users/jon/projects/harrison-metal/spec/factories/users.rb",
+				"/Users/jon/projects/harrison-metal/spec/features/admin/ideas_administration_spec.rb",
+				"/Users/jon/projects/harrison-metal/Gemfile",
+				"/Users/jon/projects/harrison-metal/app/controllers/application_controller.rb",
+				"/Users/jon/projects/harrison-metal/spec/models/applicant_spec.rb",
+				"/Users/jon/projects/harrison-metal/spec/controllers/admin_controller_spec.rb",
+				"/Users/jon/projects/harrison-metal/spec/controllers/admin/ideas_controller_spec.rb",
+				"/Users/jon/projects/harrison-metal/spec/features/admin/content_block_administration_spec.rb",
+				"/Users/jon/projects/harrison-metal/spec/features/admin/courses_administration_spec.rb",
+				"/Users/jon/projects/harrison-metal/spec/features/admin/dashboard_spec.rb",
+				"/Users/jon/projects/harrison-metal/spec/features/admin/sections_administration_spec.rb~",
+				"/Users/jon/projects/harrison-metal/app/models/user.rb",
+				"/Users/jon/projects/harrison-metal/config/initializers/omniauth.rb",
+				"/Users/jon/projects/harrison-metal/config/initializers/google_oauth_app.rb",
+				"/Users/jon/projects/harrison-metal/config/initializers/github_oauth_app.rb",
+				"/Users/jon/projects/harrison-metal/README.md",
+				"/Users/jon/projects/harrison-metal/.env.local",
+				"/Users/jon/projects/harrison-metal/config/initializers/session_store.rb",
+				"/Users/jon/projects/harrison-metal/app/views/sessions/new.html.slim",
+				"/Users/jon/projects/harrison-metal/app/assets/stylesheets/admin/sessions.scss",
+				"/Users/jon/projects/harrison-metal/config/initializers/google_api.rb",
+				"/Users/jon/projects/asian/circle.yml",
+				"/Users/jon/projects/asian/app/assets/stylesheets/application/info_panel.scss",
+				"/Users/jon/Downloads/onair_app.html",
+				"/Users/jon/projects/harrison-metal/app/controllers/admin/sections_controller.rb",
+				"/Users/jon/projects/harrison-metal/app/controllers/admin/courses_controller.rb",
+				"/Users/jon/projects/harrison-metal/app/services/google/authorizor.rb",
+				"/Users/jon/projects/harrison-metal/app/views/admin/courses/edit.html.slim",
+				"/Users/jon/projects/harrison-metal/app/views/pages/root.html.slim",
+				"/Users/jon/projects/harrison-metal/app/views/layouts/sign_in.html.slim",
+				"/Users/jon/projects/harrison-metal/app/views/layouts/admin.html.slim",
 				"/projects/harrison-metal/app/services/section_service.rb",
 				"/projects/harrison-metal/app/workers/section_synchronizer_job.rb",
 				"/projects/harrison-metal/README.md",
@@ -1090,64 +265,25 @@
 				"/projects/harrison-metal/config/environments/acceptance.rb",
 				"/projects/harrison-metal/config/environments/production.rb",
 				"/projects/harrison-metal/app/services/applicant_mailer_service.rb",
-				"/projects/harrison-metal/app/models/admin_email.rb",
-				"/projects/harrison-metal/db/migrate/20150513210305_create_admin_emails.rb",
-				"/projects/harrison-metal/spec/support/omniauth.rb",
-				"/projects/harrison-metal/spec/support/capybara.rb",
-				"/projects/harrison-metal/app/views/pages/root.html.slim",
-				"/projects/harrison-metal/app/models/user.rb",
-				"/projects/harrison-metal/db/migrate/20150513210305_create_admin_users.rb",
-				"/projects/harrison-metal/spec/support/flash_message_matchers.rb",
-				"/projects/harrison-metal/app/models/admin_user.rb",
-				"/projects/harrison-metal/app/controllers/sessions_controller.rb",
-				"/projects/harrison-metal/config/routes.rb",
-				"/projects/harrison-metal/app/views/layouts/application.html.slim",
-				"/projects/harrison-metal/spec/features/login_spec.rb",
-				"/projects/harrison-metal/lib/tasks/debug.rake",
-				"/projects/harrison-metal/db/seeds.rb",
-				"/projects/harrison-metal/app/views/sessions/new.html.slim",
-				"/projects/harrison-metal/spec/features/pages_spec.rb",
-				"/projects/harrison-metal/spec/models/user_spec.rb",
-				"/projects/harrison-metal/config/initializers/omniauth.rb",
-				"/projects/harrison-metal/db/migrate/20150513184917_create_users.rb",
-				"/projects/harrison-metal/config/initializers/basecamp_oauth_app.rb",
-				"/projects/hood/app/assets/components/admin/facilities_dashboard/module.js.coffee",
-				"/projects/hood/app/assets/components/service_request_editor/editable_section.js.coffee",
-				"/projects/ui-select/examples/demo.js",
-				"/projects/ui-select/dist/select.js",
-				"/projects/ui-select/examples/demo-tagging.html",
-				"/projects/hood/app/assets/components/service_request_editor/editable_section_templates/details.html.slim",
-				"/projects/hood/app/assets/components/root_cause_selector/root_cause_selector.js.coffee",
-				"/projects/hood/app/assets/components/service_request_service/service_request_service.js.coffee",
-				"/projects/hood/app/assets/components/models/service_request.js.coffee",
-				"/projects/hood/spec/javascripts/components/models/service_request_spec.coffee",
-				"/projects/hood/spec/features/admin_service_requests_spec.rb",
-				"/projects/hood/spec/serializers/facility_serializer_spec.rb",
-				"/projects/hood/db/migrate/20150401002506_add_root_cause_to_service_request.rb",
-				"/projects/hood/app/policies/service_request_policy.rb",
-				"/projects/hood/app/controllers/admin/service_requests_controller.rb",
-				"/projects/hood/app/models/service_request.rb",
-				"/projects/hood/app/assets/components/root_cause_selector/index.html.slim",
-				"/projects/hood/app/assets/components/service_request_editor/index.html.slim",
-				"/projects/hood/app/assets/components/service_request_editor/editable_section_templates/issue_assignment.html.slim",
-				"/projects/hood/app/assets/components/division_selector/division_selector.js.coffee",
-				"/projects/hood/app/assets/components/service_request_editor/editable_section_templates/root_cause_analysis.html.slim",
-				"/projects/hood/app/assets/components/service_request_editor/service_request_editor.js.coffee",
-				"/projects/hood/app/assets/components/root_causes_service/root_causes_service.js.coffee",
-				"/projects/hood/app/mailers/service_request_mailer.rb",
-				"/projects/hood/app/views/service_request_mailer/_created_service_request_detail.text.erb",
-				"/Users/jon/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-				"/projects/hood/app/assets/components/service_request_editor/editable_sections.scss"
+				"/projects/harrison-metal/app/models/admin_email.rb"
 			],
 			"find":
 			{
-				"height": 35.0
+				"height": 25.0
 			},
 			"find_in_files":
 			{
 				"height": 93.0,
 				"where_history":
 				[
+					"",
+					"app/**/*.scss",
+					"app/",
+					"spec/",
+					"",
+					"spec/",
+					"spec",
+					"spec/features",
 					"",
 					"*.rb",
 					"",
@@ -1160,6 +296,58 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"icon_class",
+					"font-awesome",
+					"ALLOW_GITHUB",
+					"section_path",
+					"sign_in",
+					"js-section-status",
+					"univers",
+					"lable",
+					"h4",
+					"sign_in ",
+					"let(;user",
+					"add_github_mock_",
+					"add_github",
+					"add_mock_",
+					"save",
+					"require_admin",
+					"apply",
+					"sign_in(",
+					"sign_in ",
+					"sign_in",
+					"apply",
+					"require_login",
+					"require_admin",
+					"require_login",
+					"github[:oauth",
+					"GITHUB_OAUTH_CLIENT_I",
+					"sign-in-button",
+					"GOOGLE_",
+					"config.google",
+					"pg:backups",
+					"setup_ex",
+					"exhibition",
+					"Vitals.",
+					"Vitals",
+					"Vital.",
+					"Vitals",
+					"data",
+					"readAPI",
+					"scope",
+					"email,",
+					"google::api",
+					"find_or_create",
+					"GOOGLE_",
+					"oauth_",
+					"employee",
+					"google_api_token",
+					"See Details",
+					"Apply",
+					"form-actions",
+					"form-actiuobns",
+					"transition",
+					"form-actions",
 					"section_sync",
 					"autoload",
 					"'America/Los_Angeles'",
@@ -1235,8 +423,7 @@
 					"$scope.serviceRequest.",
 					"if",
 					"rootCauseDetail",
-					"rootCause",
-					"scope"
+					"rootCause"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -1244,6 +431,7 @@
 				"regex": false,
 				"replace_history":
 				[
+					"sign_in_as_admin "
 				],
 				"reverse": false,
 				"show_context": true,
@@ -1251,20 +439,6 @@
 				"whole_word": false,
 				"wrap": true
 			},
-			"folders":
-			[
-				{
-					"path": "/projects/harrison-metal"
-				}
-			],
-			"groups":
-			[
-				{
-					"sheets":
-					[
-					]
-				}
-			],
 			"incremental_find":
 			{
 				"height": 25.0
@@ -1272,28 +446,6 @@
 			"input":
 			{
 				"height": 31.0
-			},
-			"layout":
-			{
-				"cells":
-				[
-					[
-						0,
-						0,
-						1,
-						1
-					]
-				],
-				"cols":
-				[
-					0.0,
-					1.0
-				],
-				"rows":
-				[
-					0.0,
-					1.0
-				]
 			},
 			"menu_visible": true,
 			"output.exec":
@@ -1305,8 +457,6 @@
 				"height": 0.0
 			},
 			"pinned_build_system": "",
-			"position": "0 1570 -238 1790 1108 1440 -300 1920 1177 ",
-			"project": "",
 			"replace":
 			{
 				"height": 46.0
@@ -1319,16 +469,388 @@
 				"selected_items":
 				[
 					[
+						"application.scss",
+						"app/assets/stylesheets/application.scss"
+					],
+					[
+						"courses.rb",
+						"spec/factories/courses.rb"
+					],
+					[
+						"courses_spec",
+						"spec/features/courses_spec.rb"
+					],
+					[
+						"sp/con/seci",
+						"spec/controllers/admin/sections_controller_spec.rb"
+					],
+					[
+						"sections_cont",
+						"app/controllers/sections_controller.rb"
+					],
+					[
+						"config/rout",
+						"config/routes.rb"
+					],
+					[
+						"tmp/mails/jon",
+						"tmp/mails/jon@rcode5.com"
+					],
+					[
+						"payment_sp",
+						"spec/features/payment_spec.rb"
+					],
+					[
+						"secion/show",
+						"app/views/sections/show.html.slim"
+					],
+					[
+						"cous/show",
+						"app/views/courses/show.html.slim"
+					],
+					[
+						"authentic",
+						"spec/support/authentication_helpers.rb"
+					],
+					[
+						"section.rb",
+						"app/models/section.rb"
+					],
+					[
+						"coures_pres",
+						"spec/presenters/course_presenter_spec.rb"
+					],
+					[
+						"coursepresp",
+						"spec/presenters/course_presenter_spec.rb"
+					],
+					[
+						"cours_con",
+						"app/controllers/courses_controller.rb"
+					],
+					[
+						"sections.sc",
+						"app/assets/stylesheets/application/section.scss"
+					],
+					[
+						"courpr",
+						"app/presenters/course_presenter.rb"
+					],
+					[
+						"section/sho",
+						"app/views/sections/show.html.slim"
+					],
+					[
+						"navi.js",
+						"app/assets/javascripts/application/user_navigation_bar.js.coffee"
+					],
+					[
+						"fonts",
+						"app/assets/stylesheets/application/fonts.scss"
+					],
+					[
+						"courscss",
+						"app/assets/stylesheets/application/course.scss"
+					],
+					[
+						"sections.scs",
+						"app/assets/stylesheets/application/section.scss"
+					],
+					[
+						"courses.scss",
+						"app/assets/stylesheets/admin/courses.scss"
+					],
+					[
+						"course/sinde",
+						"app/views/admin/courses/index.html.slim"
+					],
+					[
+						"resource_li",
+						"app/views/courses/_resource_list_item.html.slim"
+					],
+					[
+						"admin/courses/",
+						"app/views/admin/courses/_form.html.slim"
+					],
+					[
+						"course/show",
+						"app/views/courses/show.html.slim"
+					],
+					[
+						"spec/feat/pay",
+						"spec/features/payment_spec.rb"
+					],
+					[
+						"features/login",
+						"spec/features/login_spec.rb"
+					],
+					[
+						"sections_admini",
+						"spec/features/admin/sections_administration_spec.rb"
+					],
+					[
+						"sessions_",
+						"app/controllers/sessions_controller.rb"
+					],
+					[
+						"auth",
+						"spec/support/authentication_helpers.rb"
+					],
+					[
+						"applic_ad_s",
+						"spec/features/admin/applicant_adminstration_spec.rb"
+					],
+					[
+						"applicant_con",
+						"spec/controllers/applicant_controller_spec.rb"
+					],
+					[
+						"spec/sections_con",
+						"spec/controllers/admin/sections_controller_spec.rb"
+					],
+					[
+						"users.rb",
+						"spec/factories/users.rb"
+					],
+					[
+						"sectionsspe",
+						"spec/features/sections_spec.rb"
+					],
+					[
+						"sp/c/ad/se",
+						"spec/controllers/admin/sections_controller_spec.rb"
+					],
+					[
+						"auth_h",
+						"spec/support/authentication_helpers.rb"
+					],
+					[
+						"featu/app",
+						"spec/features/payment_spec.rb"
+					],
+					[
+						"applic_sp",
+						"spec/models/applicant_spec.rb"
+					],
+					[
+						"application_con",
+						"app/controllers/application_controller.rb"
+					],
+					[
+						"session_",
+						"app/controllers/sessions_controller.rb"
+					],
+					[
+						"admin_con",
+						"app/controllers/admin_controller.rb"
+					],
+					[
+						"user.rb",
+						"app/models/user.rb"
+					],
+					[
+						"applic",
+						"app/controllers/applicants_controller.rb"
+					],
+					[
+						"login_sp",
+						"spec/features/login_spec.rb"
+					],
+					[
+						"authen",
+						"spec/support/authentication_helpers.rb"
+					],
+					[
+						"appcon",
+						"app/controllers/applicants_controller.rb"
+					],
+					[
+						"user.r",
+						"app/models/user.rb"
+					],
+					[
+						"omni",
+						"config/initializers/omniauth.rb"
+					],
+					[
+						"sessinos/new",
+						"app/views/sessions/new.html.slim"
+					],
+					[
+						"sessions_con",
+						"app/controllers/sessions_controller.rb"
+					],
+					[
+						"conf/rou",
+						"config/routes.rb"
+					],
+					[
+						".env.local",
+						".env.local"
+					],
+					[
+						"readme",
+						"README.md"
+					],
+					[
+						"github_o",
+						"config/initializers/github_oauth_app.rb"
+					],
+					[
+						"omniauth",
+						"config/initializers/omniauth.rb"
+					],
+					[
+						"gem",
+						"Gemfile"
+					],
+					[
+						"model/user",
+						"app/models/user.rb"
+					],
+					[
+						"aam.",
+						"lib/tasks/aam.rake"
+					],
+					[
+						"pg",
+						"public/google5da44dde4a39e80f.html"
+					],
+					[
+						"layouts_cont",
+						"app/controllers/layouts_controller.rb"
+					],
+					[
+						"exhi",
+						"app/views/templates/exhibitions_index/_secondary_exhibition_list.erb"
+					],
+					[
+						"app/mo/",
+						"app/models/.gitkeep"
+					],
+					[
+						"circe",
+						"circle.yml"
+					],
+					[
+						"info.c",
+						"app/assets/stylesheets/application/info_panel.scss"
+					],
+					[
+						"home",
+						"app/controllers/homepage_controller.rb"
+					],
+					[
+						"vitral",
+						"app/controllers/admin/vitals_controller.rb"
+					],
+					[
+						"course/",
+						"app/views/courses/show.html.slim"
+					],
+					[
+						"views/section",
+						"app/views/admin/courses/_section.html.slim"
+					],
+					[
+						"service.rb",
+						"app/services/google/service.rb"
+					],
+					[
+						"google_cal",
+						"app/services/google_calendar_client.rb"
+					],
+					[
+						"goo",
+						"app/services/google_calendar_client.rb"
+					],
+					[
+						"authori",
+						"app/services/google/authorizor.rb"
+					],
+					[
+						"google/serv",
+						"app/services/google/service.rb"
+					],
+					[
+						"google_cl",
+						"app/services/google_calendar_client.rb"
+					],
+					[
+						"section_ser",
+						"app/services/section_service.rb"
+					],
+					[
+						"admin/sec",
+						"app/controllers/admin/sections_controller.rb"
+					],
+					[
+						"ad/co_co",
+						"app/controllers/admin/courses_controller.rb"
+					],
+					[
+						"admin/course/",
+						"app/views/admin/courses/edit.html.slim"
+					],
+					[
+						"pages/root",
+						"app/views/pages/root.html.slim"
+					],
+					[
+						"schema.rb",
+						"db/schema.rb"
+					],
+					[
+						"session",
+						"app/controllers/sessions_controller.rb"
+					],
+					[
+						"readme.md",
+						"README.md"
+					],
+					[
+						"omnit",
+						"config/initializers/omniauth.rb"
+					],
+					[
+						"service",
+						"app/services/google/service.rb"
+					],
+					[
+						"google/au",
+						"app/services/google/authorizor.rb"
+					],
+					[
+						"google.yl",
+						"config/google.yml"
+					],
+					[
+						"goog/serv",
+						"app/services/google/service.rb"
+					],
+					[
+						"button",
+						"app/assets/stylesheets/application/_buttons.scss"
+					],
+					[
+						"buttons",
+						"app/assets/stylesheets/application/_buttons.scss"
+					],
+					[
+						"form-actions",
+						"node_modules/karma-jasmine-jquery/node_modules/bower/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/lib/action.js"
+					],
+					[
+						"applciation",
+						"app/assets/stylesheets/application.scss"
+					],
+					[
 						".env.loc",
 						".env.local"
 					],
 					[
 						"schedule",
 						"config/schedule.rb"
-					],
-					[
-						"readme",
-						"README.md"
 					],
 					[
 						"conf/sche",
@@ -1345,10 +867,6 @@
 					[
 						"sche",
 						"config/schedule.rb"
-					],
-					[
-						"gem",
-						"Gemfile"
 					],
 					[
 						"scheduler",
@@ -1461,374 +979,1179 @@
 					[
 						"candidates",
 						"app/controllers/candidates_controller.rb"
-					],
-					[
-						"wufo",
-						"app/services/wufoo_translation_service.rb"
-					],
-					[
-						"candida",
-						"app/models/candidate.rb"
-					],
-					[
-						"api/ca",
-						"app/controllers/api/candidates_controller.rb"
-					],
-					[
-						"api/wufoo",
-						"app/services/wufoo_translation_service.rb"
-					],
-					[
-						"candidate",
-						"app/models/candidate.rb"
-					],
-					[
-						"struct",
-						"db/structure.sql"
-					],
-					[
-						"wuf",
-						"spec/fixtures/wufoo_candidate_form.json"
-					],
-					[
-						"struc",
-						"db/structure.sql"
-					],
-					[
-						"ge",
-						"Gemfile"
-					],
-					[
-						"api/candi",
-						"app/controllers/api/candidates_controller.rb"
-					],
-					[
-						"canddates.r",
-						"spec/factories/candidates.rb"
-					],
-					[
-						"authen",
-						"spec/support/authentication_helpers.rb"
-					],
-					[
-						"route",
-						"config/routes.rb"
-					],
-					[
-						"gemfil",
-						"Gemfile"
-					],
-					[
-						"cc",
-						"app/controllers/candidates_controller.rb"
-					],
-					[
-						"candidate.r",
-						"app/models/candidate.rb"
-					],
-					[
-						"ap_st_ser",
-						"spec/services/applicant_status_service_spec.rb"
-					],
-					[
-						"accet.text",
-						"app/views/applicant_mailer/applicant_accepted.text.erb"
-					],
-					[
-						"accepted",
-						"app/views/applicant_mailer/applicant_accepted.html.erb"
-					],
-					[
-						"service_se",
-						"spec/services/applicant_status_service_spec.rb"
-					],
-					[
-						"serialiser",
-						"app/serializers/applicant_presenter_serializer.rb"
-					],
-					[
-						"accet",
-						"app/views/applicant_mailer/applicant_accepted.text.erb"
-					],
-					[
-						"ap_ser",
-						"app/serializers/applicant_presenter_serializer.rb"
-					],
-					[
-						"app_",
-						"app/controllers/application_controller.rb"
-					],
-					[
-						"ap_acc",
-						"app/views/applicant_mailer/applicant_accepted.text.erb"
-					],
-					[
-						"section_e",
-						"app/presenters/section_event_presenter.rb"
-					],
-					[
-						"applicant_pr",
-						"app/presenters/applicant_presenter.rb"
-					],
-					[
-						"applicant_rp",
-						"app/presenters/applicant_presenter.rb"
-					],
-					[
-						"service",
-						"app/services/applicant_status_service.rb"
-					],
-					[
-						"sections.rb",
-						"spec/factories/sections.rb"
-					],
-					[
-						"factori/appl",
-						"spec/factories/applicants.rb"
-					],
-					[
-						"specs/erv/",
-						"spec/services/applicant_status_service_spec.rb"
-					],
-					[
-						"application_mail",
-						"app/mailers/application_mailer.rb"
-					],
-					[
-						"appli_m",
-						"app/mailers/applicant_mailer.rb"
-					],
-					[
-						"acc",
-						"config/environments/acceptance.rb"
-					],
-					[
-						"prod",
-						"config/environments/production.rb"
-					],
-					[
-						"",
-						"config/environments/development.rb"
-					],
-					[
-						".env.local",
-						".env.local"
-					],
-					[
-						"de",
-						"config/environments/development.rb"
-					],
-					[
-						"dev.rb",
-						"config/environments/development.rb"
-					],
-					[
-						"ap_m",
-						"app/mailers/applicant_mailer.rb"
-					],
-					[
-						"applicant.rb",
-						"app/models/applicant.rb"
-					],
-					[
-						"appser",
-						"app/services/applicant_status_service.rb"
-					],
-					[
-						"appserv",
-						"app/services/applicant_mailer_service.rb"
-					],
-					[
-						"ad/apc",
-						"app/controllers/admin/applicants_controller.rb"
-					],
-					[
-						"app_con",
-						"app/controllers/application_controller.rb"
-					],
-					[
-						"app_c.text",
-						"app/views/applicant_mailer/applicant_accepted.text.erb"
-					],
-					[
-						"app_acc.",
-						"app/views/applicant_mailer/applicant_accepted.html.erb"
-					],
-					[
-						"appr.t",
-						"app/views/applicant_mailer/applicant_rejected.text.erb"
-					],
-					[
-						"applicant_re",
-						"app/views/applicant_mailer/applicant_rejected.html.erb"
-					],
-					[
-						"applicant.",
-						"app/models/applicant.rb"
-					],
-					[
-						"seed",
-						"db/seeds.rb"
-					],
-					[
-						"admin_u",
-						"app/models/admin_user.rb"
-					],
-					[
-						"debug",
-						"lib/tasks/debug.rake"
-					],
-					[
-						"flash_",
-						"spec/support/flash_message_matchers.rb"
-					],
-					[
-						"login_sp",
-						"spec/features/login_spec.rb"
-					],
-					[
-						"routes",
-						"config/routes.rb"
-					],
-					[
-						"db/migadm",
-						"db/migrate/20150513210305_create_admin_users.rb"
-					],
-					[
-						"user.r",
-						"app/models/user.rb"
-					],
-					[
-						"logi",
-						"spec/features/login_spec.rb"
-					],
-					[
-						"session",
-						"app/controllers/sessions_controller.rb"
-					],
-					[
-						"sess",
-						"app/controllers/sessions_controller.rb"
-					],
-					[
-						"ses",
-						"app/controllers/sessions_controller.rb"
-					],
-					[
-						"se",
-						"app/controllers/sessions_controller.rb"
-					],
-					[
-						"login_s",
-						"spec/features/login_spec.rb"
-					],
-					[
-						"omni",
-						"spec/support/omniauth.rb"
-					],
-					[
-						"login",
-						"spec/features/login_spec.rb"
-					],
-					[
-						"_spec",
-						"spec/features/login_spec.rb"
-					],
-					[
-						"se/ne",
-						"app/views/sessions/new.html.slim"
-					],
-					[
-						"applihtm",
-						"app/views/layouts/application.html.slim"
+					]
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 238.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			}
+		},
+		"new_window_width": 1092.0
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"is",
+						"iso8601"
+					],
+					[
+						"in",
+						"introduction"
 					],
 					[
 						"root",
-						"app/views/pages/root.html.slim"
+						"rootCauses"
+					]
+				]
+			},
+			"buffers":
+			[
+				{
+					"contents": "",
+					"settings":
+					{
+						"buffer_size": 0,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/Users/jon/projects/harrison-metal/spec/controllers/applicants_controller_spec.rb",
+					"settings":
+					{
+						"buffer_size": 3380,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"contents": "Searching 19594 files for \"flash.now\"\n\n0 matches",
+					"settings":
+					{
+						"buffer_size": 48,
+						"line_ending": "Unix",
+						"name": "Find Results",
+						"scratch": true
+					}
+				}
+			],
+			"build_system": "",
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 392.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"reind",
+						"Indentation: Reindent Lines"
 					],
 					[
-						"application.html",
-						"app/views/layouts/application.html.slim"
+						"reindie",
+						"Indentation: Reindent Lines"
 					],
 					[
-						"sessions",
+						"new file",
+						"File: New File Relative to Current View"
+					],
+					[
+						"new",
+						"File: New File Relative to Current View"
+					],
+					[
+						"json",
+						"Set Syntax: JSON"
+					],
+					[
+						"inde",
+						"Indentation: Reindent Lines"
+					],
+					[
+						"idne",
+						"Indentation: Reindent Lines"
+					],
+					[
+						"ind",
+						"Indentation: Reindent Lines"
+					],
+					[
+						"ren",
+						"File: Rename"
+					],
+					[
+						"idn",
+						"Indentation: Reindent Lines"
+					],
+					[
+						"neew fil",
+						"File: New View into File"
+					],
+					[
+						"pretty",
+						"Pretty YAML: Reformat (Pretty Print) YAML"
+					],
+					[
+						"rename",
+						"File: Rename"
+					],
+					[
+						"inde	",
+						"Indentation: Reindent Lines"
+					],
+					[
+						"user",
+						"Preferences: Settings - User"
+					],
+					[
+						"insta",
+						"Package Control: Install Package"
+					],
+					[
+						"pac",
+						"Package Control: Advanced Install Package"
+					],
+					[
+						"inst",
+						"Package Control: Install Package"
+					],
+					[
+						"pagk",
+						"Package Control: List Packages"
+					]
+				],
+				"width": 458.0
+			},
+			"console":
+			{
+				"height": 126.0,
+				"history":
+				[
+					"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"expanded_folders":
+			[
+				"/Users/jon/projects/harrison-metal",
+				"/Users/jon/projects/harrison-metal/app"
+			],
+			"file_history":
+			[
+				"/Users/jon/projects/harrison-metal/app/controllers/applicants_controller.rb",
+				"/Users/jon/projects/harrison-metal/spec/controllers/applicants_controller_spec.rb",
+				"/Users/jon/projects/harrison-metal/app/validators/user_unique_in_applicants_validator.rb",
+				"/Users/jon/projects/harrison-metal/app/models/applicant.rb",
+				"/Users/jon/projects/harrison-metal/spec/models/course_spec.rb",
+				"/Users/jon/projects/harrison-metal/spec/features/courses_spec.rb",
+				"/Users/jon/projects/harrison-metal/spec/features/sections_spec.rb",
+				"/Users/jon/projects/harrison-metal/spec/features/admin/resource_administration_spec.rb",
+				"/Users/jon/projects/harrison-metal/app/assets/stylesheets/application.scss",
+				"/Users/jon/projects/harrison-metal/app/assets/stylesheets/admin.scss",
+				"/Users/jon/projects/harrison-metal/app/views/courses/show.html.slim",
+				"/Users/jon/projects/harrison-metal/app/presenters/resource_presenter.rb",
+				"/Users/jon/projects/harrison-metal/app/views/sections/show.html.slim",
+				"/Users/jon/projects/harrison-metal/spec/factories/courses.rb",
+				"/Users/jon/projects/harrison-metal/config/routes.rb",
+				"/Users/jon/projects/harrison-metal/app/controllers/sections_controller.rb",
+				"/Users/jon/projects/harrison-metal/spec/controllers/admin/sections_controller_spec.rb",
+				"/Users/jon/projects/harrison-metal/spec/features/payment_spec.rb",
+				"/Users/jon/projects/harrison-metal/tmp/mails/jon@rcode5.com",
+				"/Users/jon/projects/harrison-metal/app/presenters/course_presenter.rb",
+				"/Users/jon/projects/harrison-metal/app/assets/stylesheets/application/section.scss",
+				"/Users/jon/projects/harrison-metal/spec/presenters/course_presenter_spec.rb",
+				"/Users/jon/projects/harrison-metal/app/models/section.rb",
+				"/Users/jon/projects/harrison-metal/spec/support/authentication_helpers.rb",
+				"/Users/jon/projects/harrison-metal/app/assets/stylesheets/application/course.scss",
+				"/Users/jon/projects/harrison-metal/app/controllers/courses_controller.rb",
+				"/Users/jon/projects/harrison-metal/app/assets/stylesheets/application/mixins.scss",
+				"/Users/jon/projects/harrison-metal/app/assets/javascripts/application/section.js.coffee",
+				"/Users/jon/projects/harrison-metal/app/assets/stylesheets/application/fonts.scss",
+				"/Users/jon/projects/harrison-metal/spec/presenters/applicant_presenter_spec.rb",
+				"/Users/jon/projects/harrison-metal/app/assets/javascripts/application/user_navigation_bar.js.coffee",
+				"/Users/jon/projects/harrison-metal/app/assets/stylesheets/admin/courses.scss",
+				"/Users/jon/projects/harrison-metal/app/views/admin/courses/index.html.slim",
+				"/Users/jon/projects/harrison-metal/app/views/courses/_resource_list_item.html.slim",
+				"/Users/jon/projects/harrison-metal/spec/features/admin/applicant_adminstration_spec.rb",
+				"/Users/jon/Desktop/g icon_red.svg",
+				"/Users/jon/Downloads/newrelic.yml",
+				"/Users/jon/projects/harrison-metal/app/views/admin/courses/_form.html.slim",
+				"/Users/jon/projects/harrison-metal/spec/features/admin/sections_administration_spec.rb",
+				"/Users/jon/projects/harrison-metal/spec/features/login_spec.rb",
+				"/Users/jon/projects/harrison-metal/app/controllers/sessions_controller.rb",
+				"/Users/jon/projects/harrison-metal/app/views/courses/_resource.html.slim",
+				"/Users/jon/projects/harrison-metal/app/controllers/admin_controller.rb",
+				"/Users/jon/projects/harrison-metal/spec/controllers/applicant_controller_spec.rb",
+				"/Users/jon/projects/harrison-metal/spec/factories/users.rb",
+				"/Users/jon/projects/harrison-metal/spec/features/admin/ideas_administration_spec.rb",
+				"/Users/jon/projects/harrison-metal/Gemfile",
+				"/Users/jon/projects/harrison-metal/app/controllers/application_controller.rb",
+				"/Users/jon/projects/harrison-metal/spec/models/applicant_spec.rb",
+				"/Users/jon/projects/harrison-metal/spec/controllers/admin_controller_spec.rb",
+				"/Users/jon/projects/harrison-metal/spec/controllers/admin/ideas_controller_spec.rb",
+				"/Users/jon/projects/harrison-metal/spec/features/admin/content_block_administration_spec.rb",
+				"/Users/jon/projects/harrison-metal/spec/features/admin/courses_administration_spec.rb",
+				"/Users/jon/projects/harrison-metal/spec/features/admin/dashboard_spec.rb",
+				"/Users/jon/projects/harrison-metal/spec/features/admin/sections_administration_spec.rb~",
+				"/Users/jon/projects/harrison-metal/app/models/user.rb",
+				"/Users/jon/projects/harrison-metal/config/initializers/omniauth.rb",
+				"/Users/jon/projects/harrison-metal/config/initializers/google_oauth_app.rb",
+				"/Users/jon/projects/harrison-metal/config/initializers/github_oauth_app.rb",
+				"/Users/jon/projects/harrison-metal/README.md",
+				"/Users/jon/projects/harrison-metal/.env.local",
+				"/Users/jon/projects/harrison-metal/config/initializers/session_store.rb",
+				"/Users/jon/projects/harrison-metal/app/views/sessions/new.html.slim",
+				"/Users/jon/projects/harrison-metal/app/assets/stylesheets/admin/sessions.scss",
+				"/Users/jon/projects/harrison-metal/config/initializers/google_api.rb",
+				"/Users/jon/projects/asian/circle.yml",
+				"/Users/jon/projects/asian/app/assets/stylesheets/application/info_panel.scss",
+				"/Users/jon/Downloads/onair_app.html",
+				"/Users/jon/projects/harrison-metal/app/controllers/admin/sections_controller.rb",
+				"/Users/jon/projects/harrison-metal/app/controllers/admin/courses_controller.rb",
+				"/Users/jon/projects/harrison-metal/app/services/google/authorizor.rb",
+				"/Users/jon/projects/harrison-metal/app/views/admin/courses/edit.html.slim",
+				"/Users/jon/projects/harrison-metal/app/views/pages/root.html.slim",
+				"/Users/jon/projects/harrison-metal/app/views/layouts/sign_in.html.slim",
+				"/Users/jon/projects/harrison-metal/app/views/layouts/admin.html.slim",
+				"/projects/harrison-metal/app/services/section_service.rb",
+				"/projects/harrison-metal/app/workers/section_synchronizer_job.rb",
+				"/projects/harrison-metal/README.md",
+				"/projects/harrison-metal/config/schedule.rb",
+				"/projects/harrison-metal/.env.local",
+				"/projects/harrison-metal/Gemfile",
+				"/projects/harrison-metal/node_modules/karma/node_modules/colors/ReadMe.md",
+				"/projects/harrison-metal/Procfile",
+				"/projects/harrison-metal/app/helpers/application_helper.rb",
+				"/projects/harrison-metal/app/models/section.rb",
+				"/projects/harrison-metal/spec/services/section_service_spec.rb",
+				"/projects/harrison-metal/app/models/calendar_event.rb",
+				"/projects/harrison-metal/app/controllers/pages_controller.rb",
+				"/projects/harrison-metal/config/initializers/schedule.rb",
+				"/projects/harrison-metal/config/application.rb",
+				"/projects/harrison-metal/app/views/sections/index.html.slim",
+				"/projects/harrison-metal/app/views/courses/show.html.slim",
+				"/projects/harrison-metal/app/views/admin/courses/index.html.slim",
+				"/projects/candidate-tracker/spec/support/factory_girl.rb",
+				"/projects/candidate-tracker/spec/controllers/candidates_controller_spec.rb",
+				"/projects/candidate-tracker/spec/services/wufoo_translation_service_spec.rb",
+				"/projects/candidate-tracker/spec/models/candidate_spec.rb",
+				"/projects/candidate-tracker/spec/fixtures/wufoo_candidate_form.json",
+				"/projects/candidate-tracker/app/controllers/candidates_controller.rb",
+				"/projects/candidate-tracker/spec/fixtures/wufoo_minimum_candidate_form.json",
+				"/projects/candidate-tracker/app/models/candidate.rb",
+				"/projects/candidate-tracker/db/structure.sql",
+				"/projects/candidate-tracker/app/services/wufoo_translation_service.rb",
+				"/projects/candidate-tracker/Gemfile",
+				"/projects/candidate-tracker/spec/controllers/api/candidates_controller_spec.rb",
+				"/projects/candidate-tracker/app/views/candidates/show.html.slim",
+				"/projects/candidate-tracker/app/controllers/api/candidates_controller.rb",
+				"/projects/candidate-tracker/spec/support/fixture_loader.rb",
+				"/projects/candidate-tracker/spec/factories/candidates.rb",
+				"/projects/candidate-tracker/spec/support/authentication_helpers.rb",
+				"/projects/candidate-tracker/spec/controllers/api_controller_spec.rb",
+				"/projects/candidate-tracker/app/controllers/analytics_controller.rb",
+				"/projects/candidate-tracker/config/routes.rb",
+				"/projects/candidate-tracker/app/policies/candidate_policy.rb",
+				"/projects/harrison-metal/app/presenters/section_event_presenter.rb",
+				"/projects/harrison-metal/app/views/applicant_mailer/applicant_accepted.text.erb",
+				"/projects/harrison-metal/spec/features/sections_spec.rb",
+				"/projects/harrison-metal/app/controllers/application_controller.rb",
+				"/projects/harrison-metal/app/presenters/applicant_presenter.rb",
+				"/projects/harrison-metal/app/views/applicant_mailer/applicant_accepted.html.erb",
+				"/projects/harrison-metal/app/services/applicant_status_service.rb",
+				"/projects/harrison-metal/spec/services/applicant_status_service_spec.rb",
+				"/projects/harrison-metal/app/serializers/applicant_presenter_serializer.rb",
+				"/projects/harrison-metal/app/views/applicant_mailer/applicant_rejected.text.erb",
+				"/projects/harrison-metal/app/views/applicant_mailer/applicant_rejected.html.erb",
+				"/projects/harrison-metal/app/models/applicant.rb",
+				"/projects/harrison-metal/app/mailers/application_mailer.rb",
+				"/projects/harrison-metal/app/mailers/applicant_mailer.rb"
+			],
+			"find":
+			{
+				"height": 35.0
+			},
+			"find_in_files":
+			{
+				"height": 93.0,
+				"where_history":
+				[
+					"",
+					"app/**/*.scss",
+					"app/",
+					"spec/",
+					"",
+					"spec/",
+					"spec",
+					"spec/features",
+					"",
+					"*.rb",
+					"",
+					"app/assets",
+					""
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"flash.now",
+					"flash.notice",
+					"have_flash",
+					"icon_class",
+					"font-awesome",
+					"ALLOW_GITHUB",
+					"section_path",
+					"sign_in",
+					"js-section-status",
+					"univers",
+					"lable",
+					"h4",
+					"sign_in ",
+					"let(;user",
+					"add_github_mock_",
+					"add_github",
+					"add_mock_",
+					"save",
+					"require_admin",
+					"apply",
+					"sign_in(",
+					"sign_in ",
+					"sign_in",
+					"apply",
+					"require_login",
+					"require_admin",
+					"require_login",
+					"github[:oauth",
+					"GITHUB_OAUTH_CLIENT_I",
+					"sign-in-button",
+					"GOOGLE_",
+					"config.google",
+					"pg:backups",
+					"setup_ex",
+					"exhibition",
+					"Vitals.",
+					"Vitals",
+					"Vital.",
+					"Vitals",
+					"data",
+					"readAPI",
+					"scope",
+					"email,",
+					"google::api",
+					"find_or_create",
+					"GOOGLE_",
+					"oauth_",
+					"employee",
+					"google_api_token",
+					"See Details",
+					"Apply",
+					"form-actions",
+					"form-actiuobns",
+					"transition",
+					"form-actions",
+					"section_sync",
+					"autoload",
+					"'America/Los_Angeles'",
+					"future_events",
+					"google_",
+					"click_on_first",
+					"open_fixture",
+					"notif",
+					"notification_service",
+					"@wufoo_post",
+					"introduction",
+					"pry",
+					")\n",
+					"resume.pdf",
+					"def authori",
+					"override_",
+					"deliver_later",
+					"reject",
+					"yessorry",
+					"accept",
+					"applicant",
+					"accept",
+					"applied",
+					"accept",
+					"accepted",
+					"<p>",
+					"(applicant)",
+					"applicant_rejected",
+					"new(self).",
+					"end",
+					"student_acceptedsend",
+					"ssl",
+					"callback_url",
+					"adminuser",
+					"AdminUser",
+					"admin_user",
+					"AdminUser",
+					"email)",
+					"find_or_create_from",
+					"first_or_create",
+					"find_or_create",
+					"\"session\"",
+					"content",
+					"siign",
+					"37signalstwitter",
+					"basecamp",
+					")\n",
+					":to =>",
+					"binding.pry",
+					"Basecampith",
+					"under_warranty",
+					"warranty_managerunder_warranty",
+					"module",
+					"stuff.warranty_number",
+					"serviceRequest.warranty_number",
+					"select(",
+					"find",
+					".select(",
+					"is.expected to",
+					"is.expected",
+					"}",
+					"facility.:",
+					",",
+					"attributes",
+					"c.",
+					"blurp",
+					"debugger",
+					"rootCauseSelector",
+					"cscope",
+					"scope.",
+					"scope",
+					"scope.",
+					"$scope.serviceRequest."
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+					"sign_in_as_admin "
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"folders":
+			[
+				{
+					"path": "/Users/jon/projects/harrison-metal"
+				}
+			],
+			"groups":
+			[
+				{
+					"selected": 2,
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 0,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"auto_name": "",
+									"default_dir": "/Users/jon/projects/harrison-metal",
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 2,
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/Users/jon/projects/harrison-metal/spec/controllers/applicants_controller_spec.rb",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 3380,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										250,
+										250
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Ruby/Ruby.tmLanguage",
+									"tab_size": 2,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 1,
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 48,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"default_dir": "/Users/jon/projects/harrison-metal",
+									"detect_indentation": false,
+									"line_numbers": false,
+									"output_tag": 1,
+									"result_base_dir": "",
+									"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+									"result_line_regex": "^ +([0-9]+):",
+									"scroll_past_end": true,
+									"syntax": "Packages/Default/Find Results.hidden-tmLanguage",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 0,
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 25.0
+			},
+			"input":
+			{
+				"height": 31.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.exec":
+			{
+				"height": 423.0
+			},
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "",
+			"position": "0 15 180 1162 877 0 0 1920 1057 ",
+			"project": "",
+			"replace":
+			{
+				"height": 46.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"contapplicant_spec",
+						"spec/controllers/applicants_controller_spec.rb"
+					],
+					[
+						"applicant_cont",
+						"app/controllers/applicants_controller.rb"
+					],
+					[
+						"appli_con_sp",
+						"spec/controllers/applicants_controller_spec.rb"
+					],
+					[
+						"sections_sec",
+						"spec/features/sections_spec.rb"
+					],
+					[
+						"user_u",
+						"app/validators/user_unique_in_applicants_validator.rb"
+					],
+					[
+						"app",
+						"app/models/applicant.rb"
+					],
+					[
+						"courses_spec",
+						"spec/features/courses_spec.rb"
+					],
+					[
+						"course_spec",
+						"spec/models/course_spec.rb"
+					],
+					[
+						"application.scss",
+						"app/assets/stylesheets/application.scss"
+					],
+					[
+						"courses.rb",
+						"spec/factories/courses.rb"
+					],
+					[
+						"sp/con/seci",
+						"spec/controllers/admin/sections_controller_spec.rb"
+					],
+					[
+						"sections_cont",
+						"app/controllers/sections_controller.rb"
+					],
+					[
+						"config/rout",
+						"config/routes.rb"
+					],
+					[
+						"tmp/mails/jon",
+						"tmp/mails/jon@rcode5.com"
+					],
+					[
+						"payment_sp",
+						"spec/features/payment_spec.rb"
+					],
+					[
+						"secion/show",
+						"app/views/sections/show.html.slim"
+					],
+					[
+						"cous/show",
+						"app/views/courses/show.html.slim"
+					],
+					[
+						"authentic",
+						"spec/support/authentication_helpers.rb"
+					],
+					[
+						"section.rb",
+						"app/models/section.rb"
+					],
+					[
+						"coures_pres",
+						"spec/presenters/course_presenter_spec.rb"
+					],
+					[
+						"coursepresp",
+						"spec/presenters/course_presenter_spec.rb"
+					],
+					[
+						"cours_con",
+						"app/controllers/courses_controller.rb"
+					],
+					[
+						"sections.sc",
+						"app/assets/stylesheets/application/section.scss"
+					],
+					[
+						"courpr",
+						"app/presenters/course_presenter.rb"
+					],
+					[
+						"section/sho",
+						"app/views/sections/show.html.slim"
+					],
+					[
+						"navi.js",
+						"app/assets/javascripts/application/user_navigation_bar.js.coffee"
+					],
+					[
+						"fonts",
+						"app/assets/stylesheets/application/fonts.scss"
+					],
+					[
+						"courscss",
+						"app/assets/stylesheets/application/course.scss"
+					],
+					[
+						"sections.scs",
+						"app/assets/stylesheets/application/section.scss"
+					],
+					[
+						"courses.scss",
+						"app/assets/stylesheets/admin/courses.scss"
+					],
+					[
+						"course/sinde",
+						"app/views/admin/courses/index.html.slim"
+					],
+					[
+						"resource_li",
+						"app/views/courses/_resource_list_item.html.slim"
+					],
+					[
+						"admin/courses/",
+						"app/views/admin/courses/_form.html.slim"
+					],
+					[
+						"course/show",
+						"app/views/courses/show.html.slim"
+					],
+					[
+						"spec/feat/pay",
+						"spec/features/payment_spec.rb"
+					],
+					[
+						"features/login",
+						"spec/features/login_spec.rb"
+					],
+					[
+						"sections_admini",
+						"spec/features/admin/sections_administration_spec.rb"
+					],
+					[
+						"sessions_",
 						"app/controllers/sessions_controller.rb"
 					],
 					[
-						"omin",
-						"config/initializers/omniauth.rb"
+						"auth",
+						"spec/support/authentication_helpers.rb"
 					],
 					[
-						"sec",
-						"app/controllers/sessions_controller.rb"
+						"applic_ad_s",
+						"spec/features/admin/applicant_adminstration_spec.rb"
 					],
 					[
-						"appli",
-						"app/controllers/application_controller.rb"
+						"applicant_con",
+						"spec/controllers/applicant_controller_spec.rb"
 					],
 					[
-						"root.",
-						"app/views/pages/root.html.slim"
+						"spec/sections_con",
+						"spec/controllers/admin/sections_controller_spec.rb"
 					],
 					[
-						"migr/user",
-						"db/migrate/20150513184917_create_users.rb"
+						"users.rb",
+						"spec/factories/users.rb"
 					],
 					[
-						"pages_con",
-						"app/controllers/pages_controller.rb"
+						"sectionsspe",
+						"spec/features/sections_spec.rb"
 					],
 					[
-						"roo",
-						"app/views/pages/root.html.slim"
+						"sp/c/ad/se",
+						"spec/controllers/admin/sections_controller_spec.rb"
+					],
+					[
+						"auth_h",
+						"spec/support/authentication_helpers.rb"
+					],
+					[
+						"featu/app",
+						"spec/features/payment_spec.rb"
+					],
+					[
+						"applic_sp",
+						"spec/models/applicant_spec.rb"
 					],
 					[
 						"application_con",
 						"app/controllers/application_controller.rb"
 					],
 					[
-						"new",
-						"app/views/sessions/new.html.slim"
-					],
-					[
-						"sesc",
+						"session_",
 						"app/controllers/sessions_controller.rb"
 					],
 					[
-						"pages/roo",
-						"app/views/pages/root.html.slim"
+						"admin_con",
+						"app/controllers/admin_controller.rb"
 					],
 					[
-						"basecamp",
-						"config/initializers/basecamp_oauth_app.rb"
+						"user.rb",
+						"app/models/user.rb"
 					],
 					[
-						"in/omn",
+						"applic",
+						"app/controllers/applicants_controller.rb"
+					],
+					[
+						"login_sp",
+						"spec/features/login_spec.rb"
+					],
+					[
+						"authen",
+						"spec/support/authentication_helpers.rb"
+					],
+					[
+						"appcon",
+						"app/controllers/applicants_controller.rb"
+					],
+					[
+						"user.r",
+						"app/models/user.rb"
+					],
+					[
+						"omni",
 						"config/initializers/omniauth.rb"
 					],
 					[
-						"document_se",
-						"app/models/document_search.rb"
+						"sessinos/new",
+						"app/views/sessions/new.html.slim"
 					],
 					[
-						"searchservice",
-						"app/services/search_service.rb"
+						"sessions_con",
+						"app/controllers/sessions_controller.rb"
 					],
 					[
-						"f",
-						"app/models/facility.rb"
+						"conf/rou",
+						"config/routes.rb"
 					],
 					[
-						"facliity_ser",
-						"app/serializers/facility_serializer.rb"
+						".env.local",
+						".env.local"
 					],
 					[
-						"faciltser",
-						"app/serializers/facility_serializer.rb"
+						"readme",
+						"README.md"
 					],
 					[
-						"row_ind",
-						"app/assets/components/admin/facilities_dashboard/row_index.html.slim"
+						"github_o",
+						"config/initializers/github_oauth_app.rb"
+					],
+					[
+						"omniauth",
+						"config/initializers/omniauth.rb"
+					],
+					[
+						"gem",
+						"Gemfile"
+					],
+					[
+						"model/user",
+						"app/models/user.rb"
+					],
+					[
+						"aam.",
+						"lib/tasks/aam.rake"
+					],
+					[
+						"pg",
+						"public/google5da44dde4a39e80f.html"
+					],
+					[
+						"layouts_cont",
+						"app/controllers/layouts_controller.rb"
+					],
+					[
+						"exhi",
+						"app/views/templates/exhibitions_index/_secondary_exhibition_list.erb"
+					],
+					[
+						"app/mo/",
+						"app/models/.gitkeep"
+					],
+					[
+						"circe",
+						"circle.yml"
+					],
+					[
+						"info.c",
+						"app/assets/stylesheets/application/info_panel.scss"
+					],
+					[
+						"home",
+						"app/controllers/homepage_controller.rb"
+					],
+					[
+						"vitral",
+						"app/controllers/admin/vitals_controller.rb"
+					],
+					[
+						"course/",
+						"app/views/courses/show.html.slim"
+					],
+					[
+						"views/section",
+						"app/views/admin/courses/_section.html.slim"
+					],
+					[
+						"service.rb",
+						"app/services/google/service.rb"
+					],
+					[
+						"google_cal",
+						"app/services/google_calendar_client.rb"
+					],
+					[
+						"goo",
+						"app/services/google_calendar_client.rb"
+					],
+					[
+						"authori",
+						"app/services/google/authorizor.rb"
+					],
+					[
+						"google/serv",
+						"app/services/google/service.rb"
+					],
+					[
+						"google_cl",
+						"app/services/google_calendar_client.rb"
+					],
+					[
+						"section_ser",
+						"app/services/section_service.rb"
+					],
+					[
+						"admin/sec",
+						"app/controllers/admin/sections_controller.rb"
+					],
+					[
+						"ad/co_co",
+						"app/controllers/admin/courses_controller.rb"
+					],
+					[
+						"admin/course/",
+						"app/views/admin/courses/edit.html.slim"
+					],
+					[
+						"pages/root",
+						"app/views/pages/root.html.slim"
+					],
+					[
+						"schema.rb",
+						"db/schema.rb"
+					],
+					[
+						"session",
+						"app/controllers/sessions_controller.rb"
+					],
+					[
+						"readme.md",
+						"README.md"
+					],
+					[
+						"omnit",
+						"config/initializers/omniauth.rb"
+					],
+					[
+						"service",
+						"app/services/google/service.rb"
+					],
+					[
+						"google/au",
+						"app/services/google/authorizor.rb"
+					],
+					[
+						"google.yl",
+						"config/google.yml"
+					],
+					[
+						"goog/serv",
+						"app/services/google/service.rb"
+					],
+					[
+						"button",
+						"app/assets/stylesheets/application/_buttons.scss"
+					],
+					[
+						"buttons",
+						"app/assets/stylesheets/application/_buttons.scss"
+					],
+					[
+						"form-actions",
+						"node_modules/karma-jasmine-jquery/node_modules/bower/node_modules/configstore/node_modules/js-yaml/node_modules/argparse/lib/action.js"
+					],
+					[
+						"applciation",
+						"app/assets/stylesheets/application.scss"
+					],
+					[
+						".env.loc",
+						".env.local"
+					],
+					[
+						"schedule",
+						"config/schedule.rb"
+					],
+					[
+						"conf/sche",
+						"config/schedule.rb"
+					],
+					[
+						"env.lo",
+						".env.local"
+					],
+					[
+						"proc",
+						"Procfile"
+					],
+					[
+						"sche",
+						"config/schedule.rb"
+					],
+					[
+						"scheduler",
+						"config/initializers/scheduler.rb"
+					],
+					[
+						"application.rb",
+						"config/application.rb"
+					],
+					[
+						"gemfile",
+						"Gemfile"
+					],
+					[
+						"pages",
+						"app/controllers/pages_controller.rb"
+					],
+					[
+						"ssj",
+						"app/workers/section_synchronizer_job.rb"
+					],
+					[
+						"section.r",
+						"app/models/section.rb"
+					],
+					[
+						"calendar_event",
+						"app/models/calendar_event.rb"
+					],
+					[
+						"sersesp",
+						"spec/services/section_service_spec.rb"
+					],
+					[
+						"secser",
+						"app/services/section_service.rb"
+					],
+					[
+						"ercurrence",
+						"lib/ri_cal/property_value/recurrence_rule.rb"
+					],
+					[
+						"pay.html",
+						"app/views/applicants/pay.html.slim"
+					],
+					[
+						"c/show",
+						"app/views/courses/show.html.slim"
+					],
+					[
+						"ap/view/cou/sho",
+						"app/views/courses/show.html.slim"
+					],
+					[
+						"a/v/course/ind",
+						"app/views/admin/courses/index.html.slim"
+					],
+					[
+						"ap/vi/in",
+						"app/views/sections/index.html.slim"
+					],
+					[
+						"spec/fea",
+						"spec/features/courses_spec.rb"
+					],
+					[
+						"fixture",
+						"spec/support/fixture_loader.rb"
+					],
+					[
+						"factory_girl",
+						"spec/support/factory_girl.rb"
+					],
+					[
+						"fixutre",
+						"spec/support/fixture_loader.rb"
+					],
+					[
+						"candidate_sp",
+						"spec/models/candidate_spec.rb"
+					],
+					[
+						"wc",
+						"spec/fixtures/wufoo_candidate_form.json"
 					]
 				],
 				"width": 0.0
@@ -1859,12 +2182,12 @@
 			"show_open_files": false,
 			"show_tabs": true,
 			"side_bar_visible": true,
-			"side_bar_width": 198.0,
+			"side_bar_width": 238.0,
 			"status_bar_visible": true,
 			"template_settings":
 			{
 			},
-			"window_id": 28,
+			"window_id": 43,
 			"workspace_name": ""
 		}
 	],

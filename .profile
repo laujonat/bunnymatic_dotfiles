@@ -20,8 +20,8 @@ alias bu='bundle update '
 alias serveit='python -m SimpleHTTPServer '
 alias servit='serveit'
 alias simulator_android='/Users/jon/Library/Android/sdk/tools/emulator -netdelay none -netspeed full -avd Nexus_5_API_21_x86'
-alias simulator_ipad='xcrun instruments -w "iPad 2 (8.2 Simulator)"'
-alias simulator_iphone='xcrun instruments -w "iPhone 6 (8.2 Simulator)"'
+alias simulator_ipad='xcrun instruments -w "iPad 2 (8.4 Simulator)"'
+alias simulator_iphone='xcrun instruments -w "iPhone 6 (8.4 Simulator)"'
 alias googleunsafe='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --disable-web-security'
 
 alias gitpairken='export GIT_AUTHOR_NAME="Jon Rogers and Ken Shimizu" GIT_AUTHOR_EMAIL="jon+ken+dev@carbonfive.com"'
@@ -143,7 +143,7 @@ export ACAD=${PROJECTS}/autocad360-web/
 export HM=${PROJECTS}/harrison-metal
 
 alias xcode='/Applications/Xcode.app/Contents/MacOS/Xcode'
-alias simulator='open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app'
+#alias simulator='open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app'
 
 export GIT_SSL_NO_VERIFY=true
 export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
