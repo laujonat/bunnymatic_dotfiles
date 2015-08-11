@@ -152,7 +152,7 @@ mac-option-modifier 'none)
     (insert "\"")))
 
 (global-set-key "\C-c\C-q" 'insert-quotes)
-e(global-set-key (kbd "C-M-<down>") 'mc/mark-next-lines)
+(global-set-key (kbd "C-M-<down>") 'mc/mark-next-lines)
 
 (when (> emacs-major-version 23)
   (require 'package)
