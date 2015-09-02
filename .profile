@@ -102,11 +102,11 @@ if [ -d ~/bash_completions/ ]; then
 fi
 
 if [ -f /usr/local/git/contrib/completion/git-completion.bash ]; then
-    . /usr/local/git/contrib/completion/git-completion.bash 
+    . /usr/local/git/contrib/completion/git-completion.bash
 fi
 
 if [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
-    . /usr/local/etc/bash_completion.d/git-completion.bash 
+    . /usr/local/etc/bash_completion.d/git-completion.bash
 fi
 
 LUNCHY_DIR=$(dirname `gem which lunchy`)/../extras
@@ -126,8 +126,8 @@ export ROMEY=${PROJECTS}/romeydesigns
 export FAUX=${PROJECTS}/fauxtaux_booth
 export AM=${PROJECTS}/anson_mills
 export E1890=${PROJECTS}/1890web/
-export ASIAN=${PROJECTS}/asian 
-export AAM=${PROJECTS}/asian 
+export ASIAN=${PROJECTS}/asian
+export AAM=${PROJECTS}/asian
 export SC=${PROJECTS}/selectors_choice
 export LT=${PROJECTS}/localtakesf
 export MANDIBLE=${PROJECTS}/mandible
@@ -141,6 +141,8 @@ export HOOD=${PROJECTS}/hood
 export SPRY=${PROJECTS}/autodesk-spry
 export ACAD=${PROJECTS}/autocad360-web/
 export HM=${PROJECTS}/harrison-metal
+export PATENT=${PROJECTS}/patent-scraper
+export GLUEBOT=${PROJECTS}/gluebot
 
 alias xcode='/Applications/Xcode.app/Contents/MacOS/Xcode'
 #alias simulator='open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app'
