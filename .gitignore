@@ -6,5 +6,6 @@
 *.log
 *.sublime_session
 *.sublime-project
-Sublime\ Text\ */Local/*
 Sublime\ Text\ */Index/*
+Sublime\ Text\ */Cache/*
+Sublime\ Text\ */Local/*

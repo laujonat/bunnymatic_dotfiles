@@ -177,3 +177,5 @@ mac-option-modifier 'none)
 
 ;; Disable Menu Bar
 (menu-bar-mode -1)
+
+(add-hook 'before-save-hook 'whitespace-cleanup)
