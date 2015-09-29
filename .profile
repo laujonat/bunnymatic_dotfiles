@@ -143,6 +143,7 @@ export ACAD=${PROJECTS}/autocad360-web/
 export HM=${PROJECTS}/harrison-metal
 export PATENT=${PROJECTS}/patent-scraper
 export GLUEBOT=${PROJECTS}/gluebot
+export EDEN=${PROJECTS}/papaya
 
 alias xcode='/Applications/Xcode.app/Contents/MacOS/Xcode'
 #alias simulator='open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app'
