@@ -42,8 +42,10 @@
 ;;(load-theme 'solarized-dark t)
 ;;(color-theme-solarized-dark)
 
-(require 'ido)
-(ido-mode t)
+(require 'flx-ido)
+(ido-mode 1)
+(ido-everywhere 1)
+(flx-ido-mode 1)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -51,7 +53,12 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(coffee-tab-width 2)
- '(grep-find-ignored-directories (quote ("SCCS" "RCS" "CVS" "MCVS" ".svn" ".git" ".hg" ".bzr" "_MTN" "_darcs" "{arch}" "log" ".meteor" "node_modules" ".idea")))
+ '(grep-find-ignored-directories
+   (quote
+    ("SCCS" "RCS" "CVS" "MCVS" ".svn" ".git" ".hg" ".bzr" "_MTN" "_darcs" "{arch}" "log" ".meteor" "node_modules" ".idea")))
+
+ '(ido-enable-flex-matching t)
+ '(ido-use-faces nil)
  '(inhibit-startup-screen t)
  '(javascript-indent-level 2)
  '(standard-indent 2))
