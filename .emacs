@@ -61,7 +61,8 @@
  '(ido-use-faces nil)
  '(inhibit-startup-screen t)
  '(javascript-indent-level 2)
- '(standard-indent 2))
+ '(standard-indent 2)
+ '(jsx-indent-level 2))
 
 `(dired-listing-switches "-dired")
 
@@ -76,6 +77,7 @@
 (setq recentf-max-menu-items 25)
 (global-set-key "\C-x\ \C-r" 'recentf-open-files)
 (global-set-key "\M-\?" 'comment-or-uncomment-region)
+(setq auto-mode-alist (cons '("\\.jsx$" . jsx-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.rake$" . ruby-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.erb$" . html-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.html.erb$" . html-mode) auto-mode-alist))
@@ -93,6 +95,7 @@
 (setq auto-mode-alist (cons '("\\.jade$" . jade-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.styl$" . jade-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.coffee$" . coffee-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.es6$" . js2-mode) auto-mode-alist))
 
 ;;; cmd key for meta
 (setq mac-option-key-is-meta nil
@@ -186,3 +189,5 @@ mac-option-modifier 'none)
 (menu-bar-mode -1)
 
 (add-hook 'before-save-hook 'whitespace-cleanup)
+
+(setq mouse-wheel-progressive-speed nil)

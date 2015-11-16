@@ -1,4 +1,5 @@
 {
+	"bootstrapped": true,
 	"in_process_packages":
 	[
 	],
@@ -7,6 +8,7 @@
 		"Better CoffeeScript",
 		"Cucumber",
 		"Git",
+		"JavaScriptNext - ES6 Syntax",
 		"Package Control",
 		"Pretty YAML",
 		"Ruby Slim",

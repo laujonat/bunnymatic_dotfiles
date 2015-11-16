@@ -21,7 +21,7 @@ alias serveit='python -m SimpleHTTPServer '
 alias servit='serveit'
 alias simulator_android='/Users/jon/Library/Android/sdk/tools/emulator -netdelay none -netspeed full -avd Nexus_5_API_21_x86'
 alias simulator_ipad='xcrun instruments -w "iPad 2 (8.4 Simulator)"'
-alias simulator_iphone='xcrun instruments -w "iPhone 6 (8.4 Simulator)"'
+alias simulator_iphone='xcrun instruments -w "iPhone 5s (9.0)"'
 alias googleunsafe='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --disable-web-security'
 
 alias gitpairken='export GIT_AUTHOR_NAME="Jon Rogers and Ken Shimizu" GIT_AUTHOR_EMAIL="jon+ken+dev@carbonfive.com"'
@@ -33,7 +33,7 @@ export GOPATH=${PROJECTS}/goprojects
 export PATH=$PATH:$GOPATH/bin
 export PATH=$HOME/.rbenv/bin:/usr/local/bin:/usr/local/sbin:$PATH
 export PATH=$PATH:/Users/jon/utils:/Users/jon/utils/perl
-export PATH=$PATH:/usr/local/mysql/bin:./node_modules/mocha/bin:/usr/local/share/npm/bin
+export PATH=$PATH:/usr/local/mysql/bin:./node_modules/.bin:/usr/local/share/npm/bin
 
 export ANDROID_HOME=${PROJECTS}/android-sdk-macosx/
 
@@ -113,7 +113,6 @@ LUNCHY_DIR=$(dirname `gem which lunchy`)/../extras
 if [ -f $LUNCHY_DIR/lunchy-completion.bash ]; then
     . $LUNCHY_DIR/lunchy-completion.bash
 fi
-
 
 export PYTHONPATH=/usr/local/lib/python2.5/site-packages
 
