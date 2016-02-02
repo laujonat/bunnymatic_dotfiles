@@ -145,7 +145,7 @@ mac-option-modifier 'none)
     (replace-match ( concat (match-string 1) ":") t nil )))
 
 
-(defun insert-quotes ()
+(defun insert-double-quotes ()
   "Inserts quotes (\") around the current region or work."
   (interactive)
   (let (start end bounds)
@@ -161,7 +161,24 @@ mac-option-modifier 'none)
     (goto-char (+ end 1))
     (insert "\"")))
 
-(global-set-key "\C-c\C-q" 'insert-quotes)
+(defun insert-single-quotes ()
+  "Inserts single quotes (\') around the current region or work."
+  (interactive)
+  (let (start end bounds)
+    (if (and transient-mark-mode mark-active)
+        (setq start (region-beginning)
+              end (region-end))
+      (progn
+        (setq bounds (bounds-of-thing-at-point 'symbol))
+        (setq start (car bounds)
+              end (cdr bounds))))
+    (goto-char start)
+    (insert "'")
+    (goto-char (+ end 1))
+    (insert "'")))
+
+(global-set-key "\C-c\C-w" 'insert-single-quotes)
+(global-set-key "\C-c\C-q" 'insert-double-quotes)
 (global-set-key (kbd "C-M-<down>") 'mc/mark-next-lines)
 
 (when (> emacs-major-version 23)
