@@ -77,7 +77,7 @@
 (setq recentf-max-menu-items 25)
 (global-set-key "\C-x\ \C-r" 'recentf-open-files)
 (global-set-key "\M-\?" 'comment-or-uncomment-region)
-(setq auto-mode-alist (cons '("\\.jsx$" . jsx-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.jsx$" . web-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.rake$" . ruby-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.erb$" . html-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.html.erb$" . html-mode) auto-mode-alist))
@@ -191,3 +191,8 @@ mac-option-modifier 'none)
 (add-hook 'before-save-hook 'whitespace-cleanup)
 
 (setq mouse-wheel-progressive-speed nil)
+
+(defun sort-lines-nocase ()
+  (interactive)
+  (let ((sort-fold-case t))
+    (call-interactively 'sort-lines)))
