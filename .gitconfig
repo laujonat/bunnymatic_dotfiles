@@ -31,16 +31,16 @@
   # show merged branches that are not current and not master or develop
   #vmerge = !sh -c 'git branch --merged | egrep -v \'\\*\\s+|master\''
   scrub = !sh -c 'git checkout master && git branch --merged | grep -v \"*\" | xargs git branch -d && git remote prune origin'
-	di = diff
-	sta = stash
-	llog = log --date=local
-	flog = log --pretty=fuller --decorate
-	blog = log origin/master... --left-right
-	fixup = commit --fixup
-	squash = commit --squash
-	unstage = reset HEAD
-	rum = rebase master@{u}
-
+  di = diff
+  sta = stash
+  llog = log --date=local
+  flog = log --pretty=fuller --decorate
+  blog = log origin/master... --left-right
+  fixup = commit --fixup
+  squash = commit --squash
+  unstage = reset HEAD
+  rum = rebase master@{u}
+  stashitall = stash -u -k
 
 [color]
 	diff = auto
