@@ -5,15 +5,19 @@
 	],
 	"installed_packages":
 	[
+		"Base16 Color Schemes",
 		"Better CoffeeScript",
 		"Cucumber",
 		"Git",
+		"Indent XML",
 		"JavaScriptNext - ES6 Syntax",
 		"Package Control",
+		"Pretty JSON",
 		"Pretty YAML",
 		"Ruby Slim",
 		"RubyTest",
 		"SCSS",
-		"SideBarEnhancements"
+		"SideBarEnhancements",
+		"Six - Future JavaScript Syntax"
 	]
 }
