@@ -145,6 +145,7 @@ export GLUEBOT=${PROJECTS}/gluebot
 export HABIT=${PROJECTS}/papaya
 export PAPAYA=${PROJECTS}/papaya
 export MANGO=${PROJECTS}/mango
+export SEARCHER=${PROJECTS}/elasticsearcher
 
 alias xcode='/Applications/Xcode.app/Contents/MacOS/Xcode'
 #alias simulator='open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app'
