@@ -79,10 +79,10 @@
 (global-set-key "\M-\?" 'comment-or-uncomment-region)
 (setq auto-mode-alist (cons '("\\.jsx$" . web-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.rake$" . ruby-mode) auto-mode-alist))
-(setq auto-mode-alist (cons '("\\.erb$" . html-mode) auto-mode-alist))
-(setq auto-mode-alist (cons '("\\.html.erb$" . html-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.erb$" . web-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.html.erb$" . web-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.js.erb$" . javascript-mode) auto-mode-alist))
-(setq auto-mode-alist (cons '("\\.rhtml$" . html-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.rhtml$" . web-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.sass$" . css-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.scss$" . css-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.less$" . css-mode) auto-mode-alist))
@@ -96,6 +96,13 @@
 (setq auto-mode-alist (cons '("\\.styl$" . jade-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.coffee$" . coffee-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.es6$" . js2-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.jsx$" . web-mode) auto-mode-alist))
+
+(defadvice web-mode-highlight-part (around tweak-jsx activate)
+  (if (equal web-mode-content-type "jsx")
+      (let ((web-mode-enable-part-face nil))
+        ad-do-it)
+    ad-do-it))
 
 ;;; cmd key for meta
 (setq mac-option-key-is-meta nil
