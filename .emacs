@@ -81,6 +81,7 @@
 (setq auto-mode-alist (cons '("\\.rake$" . ruby-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.erb$" . web-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.html.erb$" . web-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.html$" . web-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.js.erb$" . javascript-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.rhtml$" . web-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.sass$" . css-mode) auto-mode-alist))
