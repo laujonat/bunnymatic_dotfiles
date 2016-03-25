@@ -41,6 +41,7 @@
   unstage = reset HEAD
   rum = rebase master@{u}
   stashitall = stash -u -k
+  resethh = reset --hard HEAD
 
 [color]
 	diff = auto

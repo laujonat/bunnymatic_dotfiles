@@ -146,7 +146,6 @@ export HABIT=${PROJECTS}/papaya
 export PAPAYA=${PROJECTS}/papaya
 export MANGO=${PROJECTS}/mango
 export SEARCHER=${PROJECTS}/elasticsearcher
-export UITOOL=${PROJECTS}/tr-webui
 export NEON=${PROJECTS}/tr/1p-frontend-new/1p-frontend-webapp
 export TRWEB=${PROJECTS}/tr/tr-webui
 
