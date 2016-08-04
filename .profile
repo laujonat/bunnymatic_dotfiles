@@ -6,7 +6,6 @@ export UNAME=`uname`
 [ -f '/Applications/Emacs.app/Contents/MacOS/Emacs' ] && alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs'
 
 alias gs='git status'
-alias exercism='~/exercism/exercism'
 alias pd="pushd"
 alias pop="popd"
 alias lookfor="history | grep"
