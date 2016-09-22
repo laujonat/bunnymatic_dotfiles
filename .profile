@@ -41,7 +41,7 @@ export PATH="${PROJECTS}/android-sdk-macosx/platform-tools:$PATH"
 export PATH="${PROJECTS}/android-sdk-macosx/build-tools/19.0.2:$PATH"
 
 export MANPATH=$MANPATH:/usr/local/man
-export PG_USER=jon
+#export PG_USER=jon
 shopt -s histappend
 export HISTCONTROL=ignoreboth:erasedups
 export HISTIGNORE='ls:fg:bg:history'
@@ -126,7 +126,7 @@ export AM=${PROJECTS}/anson_mills
 export E1890=${PROJECTS}/1890web/
 export ASIAN=${PROJECTS}/asian
 export AAM=${PROJECTS}/asian
-export SC=${PROJECTS}/selectors_choice
+export SC=${PROJECTS}/selectorschoice
 export LT=${PROJECTS}/localtakesf
 export MANDIBLE=${PROJECTS}/mandible
 export BRESBO=${PROJECTS}/bresbo
