@@ -32,6 +32,20 @@
 (setq-default scss-compile-at-save nil)
 (setq show-trailing-whitespace t)
 
+(add-hook 'java-mode-hook (lambda ()
+                            (setq c-basic-offset 2
+                                  tab-width 2
+                                  indent-tabs-mode nil)))
+
+
+(defun my-web-mode-hook ()
+  "Hooks for Web mode."
+  (setq web-mode-markup-indent-offset 2)
+  (setq web-mode-css-indent-offset 2)
+  (setq web-mode-code-indent-offset 2)
+)
+(add-hook 'web-mode-hook  'my-web-mode-hook)
+
 (put 'downcase-region 'disabled nil)
 
 (global-set-key "\C-c\C-g" 'rgrep)
@@ -107,7 +121,7 @@
     ad-do-it))
 
 ;;; cmd key for meta
-(setq mac-option-key-is-meta nil
+;; (setq mac-option-key-is-meta nil
 mac-command-key-is-meta t
 mac-command-modifier 'meta
 mac-option-modifier 'none)

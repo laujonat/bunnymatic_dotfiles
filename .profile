@@ -3,7 +3,9 @@ alias ll='ls -la '
 
 export UNAME=`uname`
 
-[ -f '/Applications/Emacs.app/Contents/MacOS/Emacs' ] && alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs'
+alias ed='emacs --daemon'
+alias e='emacsclient -t'
+alias ec='emacsclient -c -a ""'
 
 alias gs='git status'
 alias pd="pushd"
@@ -24,6 +26,8 @@ alias simulator_iphone='xcrun instruments -w "iPhone 5s (9.0)"'
 alias googleunsafe='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --disable-web-security'
 
 alias gitpairken='export GIT_AUTHOR_NAME="Jon Rogers and Ken Shimizu" GIT_AUTHOR_EMAIL="jon+ken+dev@carbonfive.com"'
+
+
 
 PROJECTS=/projects/
 [[ -d ~/projects/ ]] && PROJECTS=~/projects/
@@ -147,6 +151,17 @@ export MANGO=${PROJECTS}/mango
 export SEARCHER=${PROJECTS}/elasticsearcher
 export NEON=${PROJECTS}/tr/1p-frontend-new/1p-frontend-webapp
 export TRWEB=${PROJECTS}/tr/tr-webui
+export TIMESHEET=${PROJECTS}/timesheet
+export ALLOCATIONS=${PROJECTS}/allocations
+
+export GAP=${PROJECTS}/gap
+export TISVC=${GAP}/target-inventory-service
+export APSVC=${GAP}/allocation-fulfillment-service
+export AWEB=${GAP}/allocation-web
+export CATSVC=${GAP}/allocation-catalog-service
+export BOOK=${GAP}/booking-manager
+export BOOKUI=${GAP}/booking-manager-ui
+
 
 alias xcode='/Applications/Xcode.app/Contents/MacOS/Xcode'
 #alias simulator='open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app'
@@ -161,6 +176,7 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 export INCLUDE_PRY=1
 
+export JAVA_HOME=`/usr/libexec/java_home`
 # for oracle
 export DYLD_LIBRARY_PATH=/usr/local/instantclient_11_2:$DYLD_LIBRARY_PATH
 
@@ -184,3 +200,8 @@ if [ -f $LUNCHY_DIR/lunchy-completion.bash ]; then
   echo 'Setting up lunchy completion'
   . $LUNCHY_DIR/lunchy-completion.bash
 fi
+
+alias gw='./gradlew'
+
+
+export CLASSPATH=$CLASSPATH:~/Downloads/db2jcc.jar

@@ -9,3 +9,9 @@
 Sublime\ Text\ */Index/*
 Sublime\ Text\ */Cache/*
 Sublime\ Text\ */Local/*
+tmp/*
+
+
+# emacs temp files
+*~
+\.\#*

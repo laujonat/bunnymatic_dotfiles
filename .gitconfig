@@ -1,6 +1,4 @@
 [user]
-  name = Mr Rogers
-  email = jon@bunnymatic.com
 [alias]
   st = status
   ssb = status -sb
@@ -33,7 +31,6 @@
   scrub = !sh -c 'git checkout master && git branch --merged | grep -v \"*\" | xargs git branch -d && git remote prune origin'
   di = diff
   sta = stash
-  llog = log --date=local
   flog = log --pretty=fuller --decorate
   blog = log origin/master... --left-right
   fixup = commit --fixup
@@ -43,12 +40,15 @@
   stashitall = stash -u -k
   resethh = reset --hard HEAD
 
+  stashshow = "!f() { git stash show stash^{/$*} -p; }; f"
+  stashapply = "!f() { git stash apply stash^{/$*}; }; f"
+
 [color]
-	diff = auto
-	branch = auto
-	status = auto
-	interactive = auto
-	ui = auto
+  diff = auto
+  branch = auto
+  status = auto
+  interactive = auto
+  ui = auto
 [pivotal]
   api-token = ffa56514e3a370a2f1c146722a7217cf
   rebase = 1
@@ -63,20 +63,24 @@
 [heroku]
 
 [push]
-	default = simple
+  default = simple
 
 [branch]
-	autosetupmerge = true
+  autosetupmerge = true
 [pull]
-	default = upstream
+  default = upstream
 [heroku]
-	account = rcode5
+  account = rcode5
 [credential]
-	helper = osxkeychain
+  helper = osxkeychain
 [core]
-	pager = less -FXRS -x2
-	excludesfile = /Users/jon/.gitignore_global
+  pager = less -FXRS -x2
+  excludesfile = /Users/jon/.gitignore_global
 [apply]
-	whitespace = nowarn
+  whitespace = nowarn
 [rebase]
-	autosquash = true
+  autosquash = true
+[user]
+[user]
+  email = jon@carbonfive.com
+  name = Mr Rogers
