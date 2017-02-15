@@ -122,9 +122,9 @@
 
 ;;; cmd key for meta
 ;; (setq mac-option-key-is-meta nil
-mac-command-key-is-meta t
-mac-command-modifier 'meta
-mac-option-modifier 'none)
+;; mac-command-key-is-meta t
+;; mac-command-modifier 'meta
+;; mac-option-modifier 'none)
 
 ;; auto revert files
 (global-auto-revert-mode t)
