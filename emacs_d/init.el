@@ -3,7 +3,6 @@
 ;; (setq load-path (cons (expand-file-name "~/emacs/site-lisp/git-emacs") load-path))
 ;; (setq load-path (cons (expand-file-name "~/emacs/site-lisp") load-path))
 
-(x-focus-frame nil)
 ;; added with package installer
 
 (when (>= emacs-major-version 24)
@@ -71,13 +70,15 @@
  '(grep-find-ignored-directories
    (quote
     ("SCCS" "RCS" "CVS" "MCVS" ".svn" ".git" ".hg" ".bzr" "_MTN" "_darcs" "{arch}" "log" ".meteor" "node_modules" ".idea")))
-
  '(ido-enable-flex-matching t)
  '(ido-use-faces nil)
  '(inhibit-startup-screen t)
  '(javascript-indent-level 2)
- '(standard-indent 2)
- '(jsx-indent-level 2))
+ '(jsx-indent-level 2)
+ '(package-selected-packages
+   (quote
+    (yaml-mode web-mode tramp-term sws-mode slim-mode scss-mode sass-mode rspec-mode projectile-rails multiple-cursors magit jump jsx-mode js2-mode jade-mode icicles helm git-blame flx-ido feature-mode exec-path-from-shell color-theme coffee-mode base16-theme alchemist ag)))
+ '(standard-indent 2))
 
 `(dired-listing-switches "-dired")
 
@@ -223,7 +224,7 @@
 (global-set-key "\C-\M-g" 'toggle-fullscreen)
 
 ;; Disable tool-bar
-(tool-bar-mode -1)
+;;(tool-bar-mode -1)
 
 ;; Disable Menu Bar
 (menu-bar-mode -1)

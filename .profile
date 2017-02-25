@@ -4,8 +4,8 @@ alias ll='ls -la '
 export UNAME=`uname`
 
 alias ed='emacs --daemon'
-alias e='emacsclient -t'
-alias ec='emacsclient -c -a ""'
+alias ec='emacsclient -c -a=""'
+alias killemacs="emacsclient -e '(kill-emacs)'"
 
 alias gs='git status'
 alias pd="pushd"
@@ -21,8 +21,8 @@ alias bu='bundle update '
 alias serveit='python -m SimpleHTTPServer '
 alias servit='serveit'
 alias simulator_android='/Users/jon/Library/Android/sdk/tools/emulator -netdelay none -netspeed full -avd Nexus_5_API_21_x86'
-alias simulator_ipad='xcrun instruments -w "iPad Air (10.1)"'
-alias simulator_iphone='xcrun instruments -w "iPhone 5s (10.1)"'
+alias simulator_ipad='xcrun instruments -w "iPad Air 2 (10.2)"'
+alias simulator_iphone='xcrun instruments -w "iPhone 6 (10.2)"'
 alias googleunsafe='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --disable-web-security'
 
 alias gitpairken='export GIT_AUTHOR_NAME="Jon Rogers and Ken Shimizu" GIT_AUTHOR_EMAIL="jon+ken+dev@carbonfive.com"'
