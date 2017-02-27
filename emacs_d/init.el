@@ -115,6 +115,9 @@
 (setq auto-mode-alist (cons '("\\.es6$" . js2-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.jsx$" . web-mode) auto-mode-alist))
 
+(setq mouse-wheel-scroll-amount '(3 ((shift) . 1) ((control) . nil)))
+(setq mouse-wheel-progressive-speed nil)
+
 (defadvice web-mode-highlight-part (around tweak-jsx activate)
   (if (equal web-mode-content-type "jsx")
       (let ((web-mode-enable-part-face nil))
