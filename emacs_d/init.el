@@ -31,6 +31,8 @@
 (setq-default scss-compile-at-save nil)
 (setq show-trailing-whitespace t)
 
+(add-hook 'compilation-filter-hook 'inf-ruby-auto-enter)
+
 (add-hook 'java-mode-hook (lambda ()
                             (setq c-basic-offset 2
                                   tab-width 2
@@ -77,7 +79,7 @@
  '(jsx-indent-level 2)
  '(package-selected-packages
    (quote
-    (yaml-mode web-mode tramp-term sws-mode slim-mode scss-mode sass-mode rspec-mode projectile-rails multiple-cursors magit jump jsx-mode js2-mode jade-mode icicles helm git-blame flx-ido feature-mode exec-path-from-shell color-theme coffee-mode base16-theme alchemist ag)))
+    (projectile-git-autofetch projectile yaml-mode web-mode tramp-term sws-mode slim-mode scss-mode sass-mode rspec-mode projectile-rails multiple-cursors magit jump jsx-mode js2-mode jade-mode icicles helm git-blame flx-ido feature-mode exec-path-from-shell color-theme coffee-mode base16-theme alchemist ag)))
  '(standard-indent 2))
 
 `(dired-listing-switches "-dired")
@@ -240,3 +242,5 @@
   (interactive)
   (let ((sort-fold-case t))
     (call-interactively 'sort-lines)))
+
+(projectile-mode)

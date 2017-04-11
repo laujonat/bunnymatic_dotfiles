@@ -41,3 +41,32 @@ ruby binary_search_tree_test.rb
 ruby binary_search_tree_test.rb
 ruby binary_search_tree_test.rb
 ruby binary_search_tree_test.rb
+bin/rails runner in_the_mission_tests.rb 
+bin/rails runner in_the_mission_tests.rb 
+bin/rails runner in_the_mission_tests.rb 
+bin/rails runner in_the_mission_tests.rb 
+bin/rails runner in_the_mission_tests.rb 
+bin/rails runner in_the_mission_tests.rb 
+bin/rails runner in_the_mission_tests.rb 
+bin/rails runner in_the_mission_tests.rb 
+bin/rails runner in_the_mission_tests.rb 
+bin/rails runner in_the_mission_tests.rb 
+bundle exec rake runner 'Artist.in_the_mission.count'
+bin/rails runner 'Artist.in_the_mission.count'
+bin/rails runner 'Artist.in_the_mission.count'
+bin/rails runner 'Artist.in_the_mission.count'
+bin/rails runner 'Artist.in_the_mission.count'
+bin/rails runner 'Artist.in_the_mission.count'
+bin/rails runner 'Artist.in_the_mission.count'
+bin/rails runner 'Artist.in_the_mission.count'
+bin/rails runner 'Artist.in_the_mission.count'
+bin/rails runner 'Artist.in_the_mission.count'
+exit
+rspec spec/presenters
+cd ../../
+be rspec spec/presenters/
+bundle exec rspec spec/presenters/
+bundle exec rspec spec/presenters/
+exit
+bundle
+exit

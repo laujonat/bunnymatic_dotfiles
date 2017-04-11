@@ -5,6 +5,7 @@
       '(
         kill-region
         mc/mark-next-lines
+        slim-electric-backspace
         ))
 
 (setq mc/cmds-to-run-once
