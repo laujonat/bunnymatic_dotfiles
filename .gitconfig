@@ -24,6 +24,7 @@
   pick = cherry-pick
   pl   = pull origin HEAD
   ph   = push origin HEAD
+  phf   = push origin HEAD --force-with-lease
   pup  = push -u origin HEAD
   prun = remote prune origin
   # show merged branches that are not current and not master or develop
