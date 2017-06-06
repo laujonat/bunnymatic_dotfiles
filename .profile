@@ -164,6 +164,7 @@ export AWEB=${GAP}/allocation-web
 export CATSVC=${GAP}/allocation-catalog-service
 export BOOK=${GAP}/booking-manager
 export BOOKUI=${GAP}/booking-manager-ui
+export NETPERF=${PROJECTS}/net_performance_monitor
 
 
 alias xcode='/Applications/Xcode.app/Contents/MacOS/Xcode'
