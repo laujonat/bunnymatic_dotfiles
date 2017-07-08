@@ -76,7 +76,7 @@
   helper = osxkeychain
 [core]
   pager = less -FXRS -x2
-  excludesfile = /Users/jon/.gitignore_global
+  excludesfile = /Users/jon/.gitignore
 [apply]
   whitespace = nowarn
 [rebase]

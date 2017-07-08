@@ -22,10 +22,8 @@ alias serveit='python -m SimpleHTTPServer '
 alias servit='serveit'
 alias simulator_android='/Users/jon/Library/Android/sdk/tools/emulator -netdelay none -netspeed full -avd Nexus_5_API_21_x86'
 alias simulator_ipad='xcrun instruments -w "iPad Air 2 (9.0)"'
-alias simulator_iphone='xcrun instruments -w "iPhone 5s (9.0)"'
+alias simulator_iphone='xcrun instruments -w "iPhone 6s (9.0)"'
 alias googleunsafe='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --disable-web-security'
-
-alias gitpairken='export GIT_AUTHOR_NAME="Jon Rogers and Ken Shimizu" GIT_AUTHOR_EMAIL="jon+ken+dev@carbonfive.com"'
 
 foremandev() {
   foreman "$1" -f Procfile.dev
@@ -38,7 +36,8 @@ export GOPATH=${PROJECTS}/goprojects
 export PATH=$PATH:$GOPATH/bin
 export PATH=$HOME/.rbenv/bin:/usr/local/bin:/usr/local/sbin:$PATH
 export PATH=$PATH:/Users/jon/utils:/Users/jon/utils/perl
-export PATH=$PATH:/usr/local/mysql/bin:./node_modules/.bin:/usr/local/share/npm/bin
+export PATH=./.git/safe/../../bin:./.git/safe/../../node_modules/.bin:${PATH}
+export PATH="$(brew --prefix qt@5.7)/bin:${PATH}"
 
 export ANDROID_HOME=${PROJECTS}/android-sdk-macosx/
 
@@ -156,6 +155,7 @@ export TRWEB=${PROJECTS}/tr/tr-webui
 export TIMESHEET=${PROJECTS}/timesheet
 export ALLOCATIONS=${PROJECTS}/allocations
 export CTA=${PROJECTS}/cta
+export SP=${PROJECTS}/sharespost/sharex
 
 export GAP=${PROJECTS}/gap
 export TISVC=${GAP}/target-inventory-service
@@ -171,12 +171,6 @@ alias xcode='/Applications/Xcode.app/Contents/MacOS/Xcode'
 #alias simulator='open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app'
 
 export GIT_SSL_NO_VERIFY=true
-export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
-#export RACK_ENV=development
 
 export INCLUDE_PRY=1
 
