@@ -21,7 +21,7 @@ alias bu='bundle update '
 alias serveit='python -m SimpleHTTPServer '
 alias servit='serveit'
 alias simulator_android='/Users/jon/Library/Android/sdk/tools/emulator -netdelay none -netspeed full -avd Nexus_5_API_21_x86'
-alias simulator_ipad='xcrun instruments -w "iPad Air 2 (9.0)"'
+alias simulator_ipad='xcrun instruments -w "iPad Air 2 (10.3.1)"'
 alias simulator_iphone='xcrun instruments -w "iPhone 6s (9.0)"'
 alias googleunsafe='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --disable-web-security'
 
@@ -38,6 +38,7 @@ export PATH=$HOME/.rbenv/bin:/usr/local/bin:/usr/local/sbin:$PATH
 export PATH=$PATH:/Users/jon/utils:/Users/jon/utils/perl
 export PATH=./.git/safe/../../bin:./.git/safe/../../node_modules/.bin:${PATH}
 export PATH="$(brew --prefix qt@5.7)/bin:${PATH}"
+export PATH=$PATH:/usr/local/opt/qt@5.5/bin
 
 export ANDROID_HOME=${PROJECTS}/android-sdk-macosx/
 

@@ -15,3 +15,13 @@ tmp/*
 # emacs temp files
 *~
 \.\#*
+
+emacs_d/.mc-lists.el
+emacs_d/elpa/archives/gnu/archive-contents
+emacs_d/elpa/archives/melpa/archive-contents
+emacs_d/eshell/history
+emacs_d/eshell/lastdir
+emacs_d/ido.last
+emacs_d/init.el
+emacs_d/projectile-bookmarks.eld
+emacs_d/recentf
