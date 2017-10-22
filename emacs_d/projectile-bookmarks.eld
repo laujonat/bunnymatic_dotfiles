@@ -1,1 +1,0 @@
-("~/dotfiles/" "/projects/net_performance_monitor/" "/projects/speedtest-cli/" "~/" "/projects/romeydesigns/" "~/projects/mau/" "~/projects/localtakesf/" "~/projects/cta/" "~/projects/art_pricelist_generator/" "~/projects/sir-camps-alot/" "~/exercism/" "~/projects/harrison-metal/")
