@@ -39,6 +39,7 @@ export PATH=$PATH:/Users/jon/utils:/Users/jon/utils/perl
 export PATH=./.git/safe/../../bin:./.git/safe/../../node_modules/.bin:${PATH}
 export PATH="$(brew --prefix qt@5.7)/bin:${PATH}"
 export PATH=$PATH:/usr/local/opt/qt@5.5/bin
+export PATH=$PATH:~/.mix/escripts/
 
 export ANDROID_HOME=${PROJECTS}/android-sdk-macosx/
 
