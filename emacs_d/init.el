@@ -79,7 +79,7 @@
  '(jsx-indent-level 2)
  '(package-selected-packages
    (quote
-    (projectile-git-autofetch projectile yaml-mode web-mode tramp-term sws-mode slim-mode scss-mode sass-mode rspec-mode projectile-rails multiple-cursors magit jump jsx-mode js2-mode jade-mode icicles helm git-blame flx-ido feature-mode exec-path-from-shell color-theme coffee-mode base16-theme alchemist ag)))
+    (flycheck json-mode add-node-modules-path ruby-compilation ruby-tools rubocop projectile-git-autofetch projectile yaml-mode web-mode tramp-term sws-mode slim-mode scss-mode sass-mode rspec-mode projectile-rails multiple-cursors magit jump jsx-mode js2-mode jade-mode icicles helm git-blame flx-ido feature-mode exec-path-from-shell color-theme coffee-mode base16-theme alchemist ag)))
  '(standard-indent 2))
 
 `(dired-listing-switches "-dired")

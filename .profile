@@ -115,10 +115,6 @@ if [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
     . /usr/local/etc/bash_completion.d/git-completion.bash
 fi
 
-LUNCHY_DIR=$(dirname `gem which lunchy`)/../extras
-if [ -f $LUNCHY_DIR/lunchy-completion.bash ]; then
-    . $LUNCHY_DIR/lunchy-completion.bash
-fi
 
 export PYTHONPATH=/usr/local/lib/python2.5/site-packages
 
@@ -195,13 +191,15 @@ setup_pair() {
   export GIT_AUTHOR_EMAIL=$email
 }
 
-LUNCHY_DIR=$(dirname `gem which lunchy`)/../extras
-if [ -f $LUNCHY_DIR/lunchy-completion.bash ]; then
-  echo 'Setting up lunchy completion'
-  . $LUNCHY_DIR/lunchy-completion.bash
+if `which lunchy`; then
+  LUNCHY_DIR=$(dirname `gem which lunchy`)/../extras
+  if [ -f $LUNCHY_DIR/lunchy-completion.bash ]; then
+    echo 'Setting up lunchy completion'
+    . $LUNCHY_DIR/lunchy-completion.bash
+  fi
 fi
 
 alias gw='./gradlew'
 
-
 export CLASSPATH=$CLASSPATH:~/Downloads/db2jcc.jar
+export PATH="$(brew --prefix qt@5.5)/bin:$PATH"
