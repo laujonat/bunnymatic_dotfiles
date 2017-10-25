@@ -26,7 +26,7 @@ alias simulator_iphone='xcrun instruments -w "iPhone 6s (9.0)"'
 alias googleunsafe='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --disable-web-security'
 
 foremandev() {
-  foreman "$1" -f Procfile.dev
+    foreman "$1" -f Procfile.dev
 }
 
 PROJECTS=/projects/
@@ -59,33 +59,38 @@ export GOPATH=${PROJECTS}/goprojects
 eval "$(rbenv init -)"
 
 smbip() {
-  smbutil lookup $1 | head -1 | ruby -nle 'puts $_.split.last;'
+    smbutil lookup $1 | head -1 | ruby -nle 'puts $_.split.last;'
 }
 
 find_git_branch() {
-  # Based on: http://stackoverflow.com/a/13003854/170413
-  local branch
-  if branch=$(git rev-parse --abbrev-ref HEAD 2> /dev/null); then
-    if [[ "$branch" == "HEAD" ]]; then
-      branch='detached*'
+    # Based on: http://stackoverflow.com/a/13003854/170413
+    local branch
+    if branch=$(git rev-parse --abbrev-ref HEAD 2> /dev/null); then
+        if [[ "$branch" == "HEAD" ]]; then
+            branch='detached*'
+        fi
+        git_branch="($branch)"
+    else
+        git_branch=""
     fi
-    git_branch="($branch)"
-  else
-    git_branch=""
-  fi
 }
 
 find_git_dirty() {
-  local status=$(git status --porcelain 2> /dev/null)
-  if [[ "$status" != "" ]]; then
-    git_dirty='*'
-  else
-    git_dirty=''
-  fi
+    local status=$(git status --porcelain 2> /dev/null)
+    if [[ "$status" != "" ]]; then
+        git_dirty='*'
+    else
+        git_dirty=''
+    fi
 }
 
 whodunit() {
-  git ls-tree --name-only -z -r HEAD -- $1 | xargs -0 -n1 git blame --line-porcelain | grep "^author "|sort|uniq -c|sort -nr
+    git ls-tree --name-only -z -r HEAD -- $1 | xargs -0 -n1 git blame --line-porcelain | grep "^author "|sort|uniq -c|sort -nr
+}
+
+sourceit() {
+    f=$1
+    [ -f $f ] && source $f
 }
 
 PROMPT_COMMAND="find_git_branch; find_git_dirty; $PROMPT_COMMAND"
@@ -93,27 +98,17 @@ PROMPT_COMMAND="find_git_branch; find_git_dirty; $PROMPT_COMMAND"
 export PS1="\h:\W \$git_branch (\!)$ "
 
 #if [ -f `which hub` ]; then
-  ## alias git='hub'
+## alias git='hub'
 #fi
 
-if [ -f /usr/local/etc/bash_completion ]; then
-  . /usr/local/etc/bash_completion
-fi
+sourceit /usr/local/etc/bash_completion
 
-if [ -d ~/bash_completions/ ]; then
-  # regex here is to exclude emacs tmp files
-  for script in ~/bash_completions/completion-*[^~]; do
-    . $script
-  done
-fi
+for script in ~/bash_completions/completion-*[^~]; do
+    sourceit $script
+done
 
-if [ -f /usr/local/git/contrib/completion/git-completion.bash ]; then
-    . /usr/local/git/contrib/completion/git-completion.bash
-fi
-
-if [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
-    . /usr/local/etc/bash_completion.d/git-completion.bash
-fi
+sourceit /usr/local/git/contrib/completion/git-completion.bash
+sourceit /usr/local/etc/bash_completion.d/git-completion.bash
 
 
 export PYTHONPATH=/usr/local/lib/python2.5/site-packages
@@ -178,25 +173,22 @@ export DYLD_LIBRARY_PATH=/usr/local/instantclient_11_2:$DYLD_LIBRARY_PATH
 
 
 # BEGIN Ruboto setup
-[ -f ~/.rubotorc ] && source ~/.rubotorc
+sourceit ~/.rubotorc
 # END Ruboto setup
 
 setup_pair() {
-  name="$1 & $2"
-  em="$1+$2+dev@carbonfive.com"
-  em2=`echo ${em// /_}`
-  email=`echo $em2 | awk '{print tolower($0)}'`
-  echo "export GIT_AUTHOR_NAME=\"$name\""
-  export GIT_AUTHOR_NAME=$name
-  export GIT_AUTHOR_EMAIL=$email
+    name="$1 & $2"
+    em="$1+$2+dev@carbonfive.com"
+    em2=`echo ${em// /_}`
+    email=`echo $em2 | awk '{print tolower($0)}'`
+    echo "export GIT_AUTHOR_NAME=\"$name\""
+    export GIT_AUTHOR_NAME=$name
+    export GIT_AUTHOR_EMAIL=$email
 }
 
 if `which lunchy`; then
-  LUNCHY_DIR=$(dirname `gem which lunchy`)/../extras
-  if [ -f $LUNCHY_DIR/lunchy-completion.bash ]; then
-    echo 'Setting up lunchy completion'
-    . $LUNCHY_DIR/lunchy-completion.bash
-  fi
+    LUNCHY_DIR=$(dirname `gem which lunchy`)/../extras
+    sourceit $LUNCHY_DIR/lunchy-completion.bash
 fi
 
 alias gw='./gradlew'
