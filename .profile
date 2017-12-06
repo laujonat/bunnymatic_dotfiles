@@ -190,3 +190,4 @@ alias gw='./gradlew'
 
 export CLASSPATH=$CLASSPATH:~/Downloads/db2jcc.jar
 export PATH="$(brew --prefix qt@5.5)/bin:$PATH"
+export PATH=${PATH}:~/Library/Python/3.6/bin/

@@ -31,6 +31,8 @@
 
 (add-hook 'compilation-filter-hook 'inf-ruby-auto-enter)
 
+(add-hook 'after-init-hook #'global-emojify-mode)
+
 (add-hook 'java-mode-hook (lambda ()
                             (setq c-basic-offset 2
                                   tab-width 2
@@ -50,12 +52,6 @@
 (global-set-key "\C-c\C-g" 'rgrep)
 (global-set-key "\C-c\C-m" 'mc/edit-lines)
 ;; (global-set-key "\C-c\C-g" 'ag-files)
-
-(require 'color-theme)
-(color-theme-initialize)
-(color-theme-jsc-dark)
-;;(load-theme 'solarized-dark t)
-;;(color-theme-solarized-dark)
 
 (require 'flx-ido)
 (ido-mode 1)
@@ -77,8 +73,8 @@
  '(javascript-indent-level 2)
  '(jsx-indent-level 2)
  '(package-selected-packages
-   (quote
-    (rjsx-mode flycheck json-mode add-node-modules-path ruby-compilation ruby-tools rubocop projectile-git-autofetch projectile yaml-mode web-mode tramp-term sws-mode slim-mode scss-mode sass-mode rspec-mode projectile-rails multiple-cursors magit jump jsx-mode js2-mode jade-mode icicles helm git-blame flx-ido feature-mode exec-path-from-shell color-theme coffee-mode base16-theme alchemist ag helm-projectile projectile-direnv)))
+   (quoteSession only
+    (emoji-cheat-sheet-plus emojify rjsx-mode flycheck json-mode add-node-modules-path ruby-compilation ruby-tools rubocop projectile-git-autofetch projectile yaml-mode web-mode tramp-term sws-mode slim-mode scss-mode sass-mode rspec-mode projectile-rails multiple-cursors magit jump jsx-mode js2-mode jade-mode icicles helm git-blame flx-ido feature-mode exec-path-from-shell coffee-mode base16-theme alchemist ag helm-projectile projectile-direnv projectile-git-autofetch projectile yaml-mode web-mode tramp-term sws-mode slim-mode scss-mode sass-mode rspec-mode projectile-rails multiple-cursors magit jump jsx-mode js2-mode jade-mode icicles helm git-blame flx-ido feature-mode exec-path-from-shell color-theme coffee-mode base16-theme alchemist ag)))
  '(standard-indent 2))
 
 `(dired-listing-switches "-dired")
@@ -243,3 +239,10 @@
 
 (projectile-mode)
 (set-default-font "Monaco-14")
+
+
+(require 'color-theme)
+(color-theme-initialize)
+(load-theme 'solarized-dark t)
+(color-theme-solarized-dark)
+
