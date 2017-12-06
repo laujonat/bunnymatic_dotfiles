@@ -16,9 +16,6 @@
 (require 'sws-mode)
 (require 'jade-mode)
 (require 'haml-mode)
-(require 'flycheck)
-(global-flycheck-mode)
-;; (require 'git-emacs)
 
 (require 'tramp)
 (setq tramp-default-method "ssh")
@@ -81,8 +78,7 @@
  '(jsx-indent-level 2)
  '(package-selected-packages
    (quote
-    (rjsx-mode flycheck json-mode add-node-modules-path ruby-compilation ruby-tools rubocop projectile-git-autofetch projectile yaml-mode web-mode tramp-term sws-mode slim-mode scss-mode sass-mode rspec-mode projectile-rails multiple-cursors magit jump jsx-mode js2-mode jade-mode icicles helm git-blame flx-ido feature-mode exec-path-from-shell color-theme coffee-mode base16-theme alchemist ag)))
-    (helm-projectile projectile-direnv projectile-git-autofetch projectile yaml-mode web-mode tramp-term sws-mode slim-mode scss-mode sass-mode rspec-mode projectile-rails multiple-cursors magit jump jsx-mode js2-mode jade-mode icicles helm git-blame flx-ido feature-mode exec-path-from-shell color-theme coffee-mode base16-theme alchemist ag)))
+    (rjsx-mode flycheck json-mode add-node-modules-path ruby-compilation ruby-tools rubocop projectile-git-autofetch projectile yaml-mode web-mode tramp-term sws-mode slim-mode scss-mode sass-mode rspec-mode projectile-rails multiple-cursors magit jump jsx-mode js2-mode jade-mode icicles helm git-blame flx-ido feature-mode exec-path-from-shell color-theme coffee-mode base16-theme alchemist ag helm-projectile projectile-direnv)))
  '(standard-indent 2))
 
 `(dired-listing-switches "-dired")
