@@ -21,8 +21,8 @@ alias bu='bundle update '
 alias serveit='python -m SimpleHTTPServer '
 alias servit='serveit'
 alias simulator_android='/Users/jon/Library/Android/sdk/tools/emulator -netdelay none -netspeed full -avd Nexus_5_API_21_x86'
-alias simulator_ipad='xcrun instruments -w "iPad Air 2 (10.3.1)"'
-alias simulator_iphone='xcrun instruments -w "iPhone 6s (9.0)"'
+alias simulator_ipad='xcrun instruments -w "iPad Air 2"'
+alias simulator_iphone='xcrun instruments -w "iPhone 6s Plus"'
 alias googleunsafe='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --disable-web-security'
 
 foremandev() {
