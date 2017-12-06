@@ -16,7 +16,8 @@
 (require 'sws-mode)
 (require 'jade-mode)
 (require 'haml-mode)
-
+(require 'flycheck)
+(global-flycheck-mode)
 ;; (require 'git-emacs)
 
 (require 'tramp)
@@ -50,6 +51,7 @@
 (put 'downcase-region 'disabled nil)
 
 (global-set-key "\C-c\C-g" 'rgrep)
+(global-set-key "\C-c\C-m" 'mc/edit-lines)
 ;; (global-set-key "\C-c\C-g" 'ag-files)
 
 (require 'color-theme)

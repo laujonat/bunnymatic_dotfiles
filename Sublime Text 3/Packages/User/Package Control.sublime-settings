@@ -2,6 +2,12 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
+		"Base16 Color Schemes",
+		"Indent XML",
+		"JavaScriptNext - ES6 Syntax",
+		"Ruby Slim",
+		"RubyTest",
+		"SideBarEnhancements"
 	],
 	"installed_packages":
 	[
