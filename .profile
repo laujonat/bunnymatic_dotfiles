@@ -32,14 +32,16 @@ foremandev() {
 PROJECTS=/projects/
 [[ -d ~/projects/ ]] && PROJECTS=~/projects/
 
+eval "$(rbenv init -)"
 export GOPATH=${PROJECTS}/goprojects
 export PATH=$PATH:$GOPATH/bin
-export PATH=$HOME/.rbenv/bin:/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 export PATH=$PATH:/Users/jon/utils:/Users/jon/utils/perl
 export PATH=./.git/safe/../../bin:./.git/safe/../../node_modules/.bin:${PATH}
 export PATH="$(brew --prefix qt@5.7)/bin:${PATH}"
 export PATH=$PATH:/usr/local/opt/qt@5.5/bin
 export PATH=$PATH:~/.mix/escripts/
+
 
 export ANDROID_HOME=${PROJECTS}/android-sdk-macosx/
 
@@ -56,7 +58,6 @@ export PHANTOMJS_BIN=`which phantomjs`
 
 export GOPATH=${PROJECTS}/goprojects
 
-eval "$(rbenv init -)"
 
 smbip() {
     smbutil lookup $1 | head -1 | ruby -nle 'puts $_.split.last;'
