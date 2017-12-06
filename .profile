@@ -187,11 +187,6 @@ setup_pair() {
     export GIT_AUTHOR_EMAIL=$email
 }
 
-if `which lunchy`; then
-    LUNCHY_DIR=$(dirname `gem which lunchy`)/../extras
-    sourceit $LUNCHY_DIR/lunchy-completion.bash
-fi
-
 alias gw='./gradlew'
 
 export CLASSPATH=$CLASSPATH:~/Downloads/db2jcc.jar
