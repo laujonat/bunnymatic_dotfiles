@@ -80,6 +80,7 @@
  '(package-selected-packages
    (quote
     (flycheck json-mode add-node-modules-path ruby-compilation ruby-tools rubocop projectile-git-autofetch projectile yaml-mode web-mode tramp-term sws-mode slim-mode scss-mode sass-mode rspec-mode projectile-rails multiple-cursors magit jump jsx-mode js2-mode jade-mode icicles helm git-blame flx-ido feature-mode exec-path-from-shell color-theme coffee-mode base16-theme alchemist ag)))
+    (helm-projectile projectile-direnv projectile-git-autofetch projectile yaml-mode web-mode tramp-term sws-mode slim-mode scss-mode sass-mode rspec-mode projectile-rails multiple-cursors magit jump jsx-mode js2-mode jade-mode icicles helm git-blame flx-ido feature-mode exec-path-from-shell color-theme coffee-mode base16-theme alchemist ag)))
  '(standard-indent 2))
 
 `(dired-listing-switches "-dired")
@@ -244,3 +245,4 @@
     (call-interactively 'sort-lines)))
 
 (projectile-mode)
+(set-default-font "Monaco-14")
