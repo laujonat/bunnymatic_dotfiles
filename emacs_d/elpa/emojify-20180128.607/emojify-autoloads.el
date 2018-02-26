@@ -1,11 +1,11 @@
 ;;; emojify-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
+(add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads nil "emojify" "emojify.el" (23187 28654 943150
-;;;;;;  157000))
-;;; Generated autoloads from emojify.el
+;;;### (autoloads nil "emojify" "../../../../.emacs.d/elpa/emojify-20180128.607/emojify.el"
+;;;;;;  "2202a52af591ed7a7d35db7a4b5f0744")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/emojify-20180128.607/emojify.el
 
 (autoload 'emojify-set-emoji-styles "emojify" "\
 Set the type of emojis that should be displayed.
@@ -20,9 +20,8 @@ Emojify mode
 \(fn &optional ARG)" t nil)
 
 (defvar global-emojify-mode nil "\
-Non-nil if Global Emojify mode is enabled.
-See the `global-emojify-mode' command
-for a description of this minor mode.
+Non-nil if Global-Emojify mode is enabled.
+See the command `global-emojify-mode' for a description of this minor mode.
 Setting this variable directly does not take effect;
 either customize it (see the info node `Easy Customization')
 or call the function `global-emojify-mode'.")
@@ -31,7 +30,7 @@ or call the function `global-emojify-mode'.")
 
 (autoload 'global-emojify-mode "emojify" "\
 Toggle Emojify mode in all buffers.
-With prefix ARG, enable Global Emojify mode if ARG is positive;
+With prefix ARG, enable Global-Emojify mode if ARG is positive;
 otherwise, disable it.  If called from Lisp, enable the mode if
 ARG is omitted or nil.
 
@@ -47,9 +46,8 @@ Emojify mode line
 \(fn &optional ARG)" t nil)
 
 (defvar global-emojify-mode-line-mode nil "\
-Non-nil if Global Emojify-Mode-Line mode is enabled.
-See the `global-emojify-mode-line-mode' command
-for a description of this minor mode.
+Non-nil if Global-Emojify-Mode-Line mode is enabled.
+See the command `global-emojify-mode-line-mode' for a description of this minor mode.
 Setting this variable directly does not take effect;
 either customize it (see the info node `Easy Customization')
 or call the function `global-emojify-mode-line-mode'.")
@@ -58,7 +56,7 @@ or call the function `global-emojify-mode-line-mode'.")
 
 (autoload 'global-emojify-mode-line-mode "emojify" "\
 Toggle Emojify-Mode-Line mode in all buffers.
-With prefix ARG, enable Global Emojify-Mode-Line mode if ARG is positive;
+With prefix ARG, enable Global-Emojify-Mode-Line mode if ARG is positive;
 otherwise, disable it.  If called from Lisp, enable the mode if
 ARG is omitted or nil.
 
@@ -82,8 +80,10 @@ This respects the `emojify-emoji-styles' variable.
 
 ;;;***
 
-;;;### (autoloads nil nil ("emojify-pkg.el") (23187 28654 941983
-;;;;;;  968000))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/emojify-20180128.607/emojify-autoloads.el"
+;;;;;;  "../../../../.emacs.d/elpa/emojify-20180128.607/emojify-pkg.el"
+;;;;;;  "../../../../.emacs.d/elpa/emojify-20180128.607/emojify.el")
+;;;;;;  (23188 18231 753530 0))
 
 ;;;***
 
