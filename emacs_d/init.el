@@ -73,8 +73,8 @@
  '(javascript-indent-level 2)
  '(jsx-indent-level 2)
  '(package-selected-packages
-   (quoteSession only
-    (emoji-cheat-sheet-plus emojify rjsx-mode flycheck json-mode add-node-modules-path ruby-compilation ruby-tools rubocop projectile-git-autofetch projectile yaml-mode web-mode tramp-term sws-mode slim-mode scss-mode sass-mode rspec-mode projectile-rails multiple-cursors magit jump jsx-mode js2-mode jade-mode icicles helm git-blame flx-ido feature-mode exec-path-from-shell coffee-mode base16-theme alchemist ag helm-projectile projectile-direnv projectile-git-autofetch projectile yaml-mode web-mode tramp-term sws-mode slim-mode scss-mode sass-mode rspec-mode projectile-rails multiple-cursors magit jump jsx-mode js2-mode jade-mode icicles helm git-blame flx-ido feature-mode exec-path-from-shell color-theme coffee-mode base16-theme alchemist ag)))
+   (quote
+    (emojify web-mode tramp-term sws-mode slim-mode scss-mode sass-mode ruby-tools ruby-compilation rubocop projectile-git-autofetch projectile-direnv multiple-cursors magit jump jsx-mode json-mode js2-mode jade-mode icicles helm-projectile git-blame flycheck flx-ido feature-mode exec-path-from-shell color-theme-sanityinc-solarized color-theme coffee-mode base16-theme alchemist ag add-node-modules-path)))
  '(standard-indent 2))
 
 `(dired-listing-switches "-dired")
@@ -238,11 +238,10 @@
     (call-interactively 'sort-lines)))
 
 (projectile-mode)
-(set-default-font "Monaco-14")
-
+;; (set-default-font "Monaco-14")
 
 (require 'color-theme)
 (color-theme-initialize)
-(load-theme 'solarized-dark t)
-(color-theme-solarized-dark)
-
+(color-theme-jsc-dark)
+;; (load-theme 'solarized-dark t)
+;; (color-theme-solarized-dark)
