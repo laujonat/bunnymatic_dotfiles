@@ -90,7 +90,6 @@
 (setq recentf-max-menu-items 25)
 (global-set-key "\C-x\ \C-r" 'recentf-open-files)
 (global-set-key "\M-\?" 'comment-or-uncomment-region)
-(setq auto-mode-alist (cons '("\\.*.es6$" . rjsx-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.rake$" . ruby-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.erb$" . web-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.html.erb$" . web-mode) auto-mode-alist))
@@ -110,6 +109,7 @@
 (setq auto-mode-alist (cons '("\\.styl$" . jade-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.coffee$" . coffee-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.es6$" . js2-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.jsx$" . jsx-mode) auto-mode-alist))
 
 (setq mouse-wheel-scroll-amount '(3 ((shift) . 1) ((control) . nil)))
 (setq mouse-wheel-progressive-speed nil)
