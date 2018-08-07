@@ -35,7 +35,7 @@ eval "$(rbenv init -)"
 
 export GOPATH=${PROJECTS}/goprojects
 export PATH=$PATH:$GOPATH/bin
-export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=$PATH:/usr/local/bin:/usr/local/sbin
 export PATH=$PATH:/Users/jon/utils:/Users/jon/utils/perl
 export PATH=./.git/safe/../../bin/:./.git/safe/../../node_modules/.bin/:${PATH}
 export PATH="$(brew --prefix qt@5.7)/bin:${PATH}"
@@ -114,6 +114,7 @@ sourceit /usr/local/etc/bash_completion.d/git-completion.bash
 export PYTHONPATH=/usr/local/lib/python2.5/site-packages
 
 export EDITOR=/usr/bin/vi
+export DORO=${PROJECTS}/doro
 export MAU=${PROJECTS}/mau
 export COG=${PROJECTS}/cognoa
 export QR=${PROJECTS}/qr4r

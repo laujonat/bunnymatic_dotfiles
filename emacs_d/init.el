@@ -49,6 +49,7 @@
 
 (put 'downcase-region 'disabled nil)
 
+(global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
 (global-set-key "\C-c\C-g" 'rgrep)
 (global-set-key "\C-c\C-m" 'mc/edit-lines)
 ;; (global-set-key "\C-c\C-g" 'ag-files)
@@ -109,7 +110,7 @@
 (setq auto-mode-alist (cons '("\\.styl$" . jade-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.coffee$" . coffee-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.es6$" . js2-mode) auto-mode-alist))
-(setq auto-mode-alist (cons '("\\.jsx$" . jsx-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.jsx$" . web-mode) auto-mode-alist))
 
 (setq mouse-wheel-scroll-amount '(3 ((shift) . 1) ((control) . nil)))
 (setq mouse-wheel-progressive-speed nil)
