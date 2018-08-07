@@ -49,7 +49,7 @@
 
 (put 'downcase-region 'disabled nil)
 
-(global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
+(global-set-key (kbd "C-c C-c") 'mc/edit-lines)
 (global-set-key "\C-c\C-g" 'rgrep)
 (global-set-key "\C-c\C-m" 'mc/edit-lines)
 ;; (global-set-key "\C-c\C-g" 'ag-files)
