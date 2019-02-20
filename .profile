@@ -33,6 +33,11 @@ PROJECTS=/projects/
 
 eval "$(rbenv init -)"
 
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
+
+
 export GOPATH=${PROJECTS}/goprojects
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:/usr/local/bin:/usr/local/sbin
@@ -159,7 +164,8 @@ export CATSVC=${GAP}/allocation-catalog-service
 export BOOK=${GAP}/booking-manager
 export BOOKUI=${GAP}/booking-manager-ui
 export NETPERF=${PROJECTS}/net_performance_monitor
-
+export BAPI=${PROJECTS}/bunnymatic-api
+export WORTHI=${PROJECTS}/worthi
 
 alias xcode='/Applications/Xcode.app/Contents/MacOS/Xcode'
 #alias simulator='open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app'

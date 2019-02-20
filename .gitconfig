@@ -76,12 +76,18 @@
   helper = osxkeychain
 [core]
   pager = less -FXRS -x2
-  excludesfile = /Users/jon/.gitignore
+	excludesfile = /Users/jon/.gitignore
 [apply]
   whitespace = nowarn
 [rebase]
   autosquash = true
 [user]
 [user]
-  email = jon@carbonfive.com
-  name = Mr Rogers
+	email = jon@carbonfive.com
+	name = Jon Rogers
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
