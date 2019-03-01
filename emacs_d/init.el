@@ -19,6 +19,7 @@
 (load (format "%s/%s" emacs-configuration-file-directory "tramp.el"))
 (load (format "%s/%s" emacs-configuration-file-directory "lint-fix-on-save.el"))
 (load (format "%s/%s" emacs-configuration-file-directory "ruby.el"))
+(load (format "%s/%s" emacs-configuration-file-directory "typescript.el"))
 
 ;; `customize` settings
 (setq custom-file (file-truename "./custom.el"))
@@ -33,4 +34,7 @@
 
 (set-frame-size-according-to-resolution)
 
-(projectile-mode)
+(add-hook 'after-make-frame-functions
+          (lambda (frame)
+            (projectile-mode)
+            ))
